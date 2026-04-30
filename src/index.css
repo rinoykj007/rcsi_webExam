@@ -1,0 +1,123 @@
+/* Web fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RCSI Exam Agent — design system. All colors HSL. */
+
+@layer base {
+  :root {
+    /* Surfaces */
+    --background: 240 14% 97%;        /* #f7f7f9 */
+    --foreground: 240 30% 13%;        /* #1a1a2e navy */
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 30% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 30% 13%;
+
+    /* Brand */
+    --primary: 240 30% 13%;           /* navy */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 14% 94%;
+    --secondary-foreground: 240 30% 13%;
+
+    --muted: 240 14% 94%;
+    --muted-foreground: 220 9% 46%;   /* #6b7280 */
+
+    --accent: 248 76% 67%;            /* purple #7c6aef */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 248 76% 67%;
+
+    --radius: 1rem;
+
+    /* RCSI palette tokens */
+    --rcsi-navy: 240 30% 13%;
+    --rcsi-green: 146 50% 48%;        /* #3db87a */
+    --rcsi-mint: 169 56% 86%;         /* #cdeee7 */
+    --rcsi-lavender: 256 67% 92%;     /* #e5dffa */
+    --rcsi-lavender-light: 256 76% 96%;
+    --rcsi-yellow-light: 55 92% 95%;
+    --rcsi-peach: 16 100% 96%;
+    --rcsi-purple: 248 76% 67%;       /* progress accent */
+    --rcsi-purple-soft: 252 80% 92%;  /* avatar bg */
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(240 30% 13%), hsl(248 50% 22%));
+    --gradient-purple: linear-gradient(135deg, hsl(248 76% 67%), hsl(262 70% 60%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 14px -4px hsl(240 30% 13% / 0.08);
+    --shadow-soft: 0 2px 8px -2px hsl(240 30% 13% / 0.06);
+    --shadow-elevated: 0 12px 30px -10px hsl(240 30% 13% / 0.18);
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 240 30% 13%;
+    --sidebar-primary: 240 30% 13%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 14% 96%;
+    --sidebar-accent-foreground: 240 30% 13%;
+    --sidebar-border: 240 6% 92%;
+    --sidebar-ring: 248 76% 67%;
+  }
+
+  .dark {
+    --background: 240 30% 8%;
+    --foreground: 0 0% 98%;
+    --card: 240 30% 11%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 30% 11%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 30% 13%;
+    --secondary: 240 20% 16%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 20% 16%;
+    --muted-foreground: 220 9% 65%;
+    --accent: 248 76% 67%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 20% 18%;
+    --input: 240 20% 18%;
+    --ring: 248 76% 67%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+    @apply tracking-tight;
+  }
+}
+
+@layer utilities {
+  .shadow-card { box-shadow: var(--shadow-card); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-elevated { box-shadow: var(--shadow-elevated); }
+
+  /* Flip card */
+  .perspective { perspective: 1000px; }
+  .preserve-3d { transform-style: preserve-3d; }
+  .backface-hidden { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+  .rotate-y-180 { transform: rotateY(180deg); }
+
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+}
