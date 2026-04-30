@@ -2,8 +2,9 @@ import { useEffect, useMemo, useState } from "react";
 import { TOPICS } from "@/data/topics";
 import { useAuthStore } from "@/stores/useAuthStore";
 import { useProgressStore } from "@/stores/useProgressStore";
+import { useRewardsStore } from "@/stores/useRewardsStore";
 import { motion } from "framer-motion";
-import { Flame, CalendarCheck, BookOpenCheck, Target, Minus, Plus } from "lucide-react";
+import { Flame, CalendarCheck, BookOpenCheck, Target, Minus, Plus, Star } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -29,6 +30,7 @@ interface FlashcardRow { topic_id: string; known: boolean }
 const Progress = () => {
   const { user } = useAuthStore();
   const { load, performance, totalCorrect, overallPct } = useProgressStore();
+  const { load: loadRewards, loaded: rewardsLoaded, totalPoints, badges } = useRewardsStore();
   const [range, setRange] = useState<Range>("week");
   const [completedDates, setCompletedDates] = useState<string[]>([]);
   const [flashcards, setFlashcards] = useState<{ id: string; topic_id: string }[]>([]);
@@ -37,6 +39,7 @@ const Progress = () => {
   const [savingGoal, setSavingGoal] = useState(false);
 
   useEffect(() => { if (user?.id) load(user.id); }, [user?.id, load]);
+  useEffect(() => { if (user?.id && !rewardsLoaded) loadRewards(user.id); }, [user?.id, rewardsLoaded, loadRewards]);
 
   // Load weekly goal
   useEffect(() => {
@@ -143,6 +146,36 @@ const Progress = () => {
           <div className="font-display text-3xl font-bold text-rcsi-navy mt-0.5">{pct}%</div>
           <div className="text-sm text-rcsi-navy/70">Score</div>
         </div>
+      </div>
+
+      {/* Total points + badges */}
+      <div className="bg-card rounded-3xl p-5 shadow-card">
+        <div className="flex items-center gap-2 mb-4">
+          <Star className="text-yellow-500" size={18} />
+          <h3 className="font-display font-bold text-foreground">Rewards & Achievements</h3>
+          <div className="ml-auto bg-rcsi-navy text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">
+            {totalPoints} pts
+          </div>
+        </div>
+        {badges.length === 0 ? (
+          <div className="text-sm text-muted-foreground text-center py-4">
+            No badges yet — complete quizzes and modules to earn them!
+          </div>
+        ) : (
+          <div className="grid grid-cols-3 gap-3">
+            {badges.map((b) => (
+              <motion.div key={b.id}
+                initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
+                className="flex flex-col items-center bg-muted rounded-2xl p-3 text-center gap-1">
+                <span className="text-3xl">{b.emoji}</span>
+                <span className="text-[11px] font-bold text-rcsi-navy leading-tight">{b.label}</span>
+                <span className="text-[10px] text-muted-foreground">
+                  {new Date(b.earnedAt).toLocaleDateString("en-IE", { day: "numeric", month: "short" })}
+                </span>
+              </motion.div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Streak + days studied */}

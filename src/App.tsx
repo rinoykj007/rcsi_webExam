@@ -18,9 +18,12 @@ import Progress from "./pages/Progress";
 import Schedule from "./pages/Schedule";
 import StationOverview from "./pages/StationOverview";
 import Quiz from "./pages/Quiz";
+import QuestionBank from "./pages/QuestionBank";
 import InfectionControl from "./pages/modules/InfectionControl";
 import AcuteManagement from "./pages/modules/AcuteManagement";
 import AcuteCondition from "./pages/modules/AcuteCondition";
+import FundamentalsOfNursing from "./pages/modules/FundamentalsOfNursing";
+import ISBARCommunication from "./pages/modules/ISBARCommunication";
 import ModulePlaceholder from "./pages/modules/ModulePlaceholder";
 import ImportData from "./pages/admin/ImportData";
 import NotFound from "./pages/NotFound";
@@ -63,6 +66,7 @@ const App = () => {
             </Route>
 
             <Route path="/station/:topicId" element={<ProtectedRoute><StationOverview /></ProtectedRoute>} />
+            <Route path="/question-bank" element={<ProtectedRoute><QuestionBank /></ProtectedRoute>} />
             <Route path="/quiz/mock" element={<ProtectedRoute><Quiz /></ProtectedRoute>} />
             <Route path="/quiz/:topicId" element={<ProtectedRoute><Quiz /></ProtectedRoute>} />
 
@@ -70,8 +74,8 @@ const App = () => {
             <Route path="/screens/acuteManagement" element={<ProtectedRoute><AcuteManagement /></ProtectedRoute>} />
             <Route path="/screens/acuteManagement/:conditionId" element={<ProtectedRoute><AcuteCondition /></ProtectedRoute>} />
             <Route path="/screens/practical/:topicId" element={<ProtectedRoute><ModulePlaceholder /></ProtectedRoute>} />
-            <Route path="/screens/fon" element={<ProtectedRoute><ModulePlaceholder /></ProtectedRoute>} />
-            <Route path="/screens/isbar" element={<ProtectedRoute><ModulePlaceholder /></ProtectedRoute>} />
+            <Route path="/screens/fon" element={<ProtectedRoute><FundamentalsOfNursing /></ProtectedRoute>} />
+            <Route path="/screens/isbar" element={<ProtectedRoute><ISBARCommunication /></ProtectedRoute>} />
 
             <Route path="/admin/import" element={<ProtectedRoute><ImportData /></ProtectedRoute>} />
 

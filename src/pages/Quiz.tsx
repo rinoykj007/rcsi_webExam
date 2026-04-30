@@ -10,17 +10,19 @@ import type { Question } from "@/data/questions";
 import { formatTime, getGrade, shuffle } from "@/lib/quiz";
 import { useAuthStore } from "@/stores/useAuthStore";
 import { useProgressStore } from "@/stores/useProgressStore";
+import { useRewardsStore } from "@/stores/useRewardsStore";
 
 const Quiz = () => {
   const { topicId = "" } = useParams();
   const [params] = useSearchParams();
-  const mode = params.get("mode"); // "exam" | "mock" | null (practice)
-  const isMock = mode === "mock" || topicId === "mock";
-  const isExam = mode === "exam" || isMock;
+  const mode = params.get("mode"); // "exam" | "practice" | null
+  const isMock = topicId === "mock";
+  const isExam = mode === "exam" || (isMock && mode !== "practice");
   const nav = useNavigate();
   const topic = isMock ? null : getTopicById(topicId);
   const { user } = useAuthStore();
   const { recordResult } = useProgressStore();
+  const { addPoints, awardBadge, hasBadge, load: loadRewards, loaded: rewardsLoaded } = useRewardsStore();
 
   const examDuration = isMock ? 30 * 60 : 10 * 60; // 30 min mock, 10 min topic exam
 
@@ -29,7 +31,7 @@ const Quiz = () => {
   useEffect(() => {
     let active = true;
     setLoading(true);
-    const loader = isMock ? fetchAllQuestions(30) : fetchQuestions(topicId);
+    const loader = isMock ? fetchAllQuestions(200) : fetchQuestions(topicId);
     loader.then((qs) => {
       if (!active) return;
       setQuestions(shuffle(qs));
@@ -69,12 +71,18 @@ const Quiz = () => {
     return () => clearInterval(t);
   }, [isExam, finished]);
 
-  // record + confetti when finishing
+  // Load rewards once the user is known
+  useEffect(() => {
+    if (user?.id && !rewardsLoaded) loadRewards(user.id);
+  }, [user?.id, rewardsLoaded, loadRewards]);
+
+  // record + confetti + gamification when finishing
   useEffect(() => {
     if (!finished || recordedRef.current) return;
     recordedRef.current = true;
     const correctCount = answers.filter((a) => a.correct).length;
     const pct = answers.length ? Math.round((correctCount / answers.length) * 100) : 0;
+
     if (user?.id) {
       // Record per topic so mock exam updates each station's accuracy
       const grouped: Record<string, { correct: number; total: number }> = {};
@@ -85,11 +93,37 @@ const Quiz = () => {
         grouped[a.topicId] = g;
       });
       Object.entries(grouped).forEach(([tid, g]) => recordResult(user.id, tid, g.correct, g.total));
+
+      // Award points (10 per correct answer)
+      if (correctCount > 0) addPoints(user.id, correctCount * 10);
+
+      // Badge: first quiz ever
+      if (!hasBadge("first_quiz")) awardBadge(user.id, "first_quiz");
+
+      // Badge: mock exam taken
+      if (isMock && !hasBadge("mock_exam")) awardBadge(user.id, "mock_exam");
+
+      // Badge: perfect score
+      if (pct === 100 && !hasBadge("perfect_score")) awardBadge(user.id, "perfect_score");
+
+      // Badge: 80%+ on specific topic
+      if (!isMock && topicId && pct >= 80) {
+        const badgeMap: Record<string, string> = {
+          infection_control:  "score_infection",
+          fundamentals:       "score_fundamentals",
+          isbar:              "score_isbar",
+          acute_management:   "score_acute",
+          sepsis:             "score_sepsis",
+        };
+        const bid = badgeMap[topicId];
+        if (bid && !hasBadge(bid)) awardBadge(user.id, bid);
+      }
     }
+
     if (pct >= 70) {
       setTimeout(() => confetti({ particleCount: 120, spread: 80, origin: { y: 0.6 } }), 200);
     }
-  }, [finished, answers, user?.id, recordResult]);
+  }, [finished, answers, user?.id, recordResult, addPoints, awardBadge, hasBadge, isMock, topicId]);
 
   if (loading || questions.length === 0) {
     return (

@@ -1,5 +1,7 @@
+import { collection, getDocs } from "firebase/firestore";
 import { supabase } from "@/integrations/supabase/client";
 import { getQuestions as getLocalQuestions, type Question } from "@/data/questions";
+import { firebaseDb } from "@/lib/firebase";
 
 export interface DbQuestion {
   id: string;
@@ -12,45 +14,116 @@ export interface DbQuestion {
   image_url?: string | null;
 }
 
+// ── Firebase helpers ──────────────────────────────────────────────────────────
+
+const TAG_MAP: Record<string, string> = {
+  infection_control: "Infection Control",
+  fundamentals: "Fundamentals of Nursing",
+  isbar: "ISBAR",
+  sepsis: "Sepsis",
+  older_person: "Older Person",
+  wound_dressing: "Wound Dressing",
+  iv_infusion: "IV Infusion",
+  chest_infection: "Chest Infection",
+  oral_drug: "Oral Drug",
+  nok_discussion: "NOK Discussion",
+  death_dying: "Death & Dying",
+  chronic_disease: "Chronic Disease",
+  teaching: "Teaching",
+  acute_management: "Acute Management",
+};
+
+const ALL_TOPICS = Object.keys(TAG_MAP);
+
+function toQuestion(topicId: string, docId: string, d: Record<string, unknown>): Question {
+  return {
+    id: docId,
+    topicId,
+    tag: TAG_MAP[topicId] ?? topicId,
+    question: d.question as string,
+    options: ((d.options as string[]) ?? []).map((text, i) => ({
+      key: ["A", "B", "C", "D"][i] as "A" | "B" | "C" | "D",
+      text,
+    })),
+    correct: d.correct as number,
+    explanation: (d.explanation as string) ?? "",
+    image_url: null,
+  };
+}
+
+async function firebaseTopicQuestions(topicId: string): Promise<Question[]> {
+  try {
+    const snap = await getDocs(collection(firebaseDb, "questions", topicId, "items"));
+    return snap.docs.map((doc) => toQuestion(topicId, doc.id, doc.data() as Record<string, unknown>));
+  } catch {
+    return [];
+  }
+}
+
+async function firebaseAllQuestions(): Promise<Question[]> {
+  const results = await Promise.all(ALL_TOPICS.map(firebaseTopicQuestions));
+  return results.flat();
+}
+
+// ── Public API ────────────────────────────────────────────────────────────────
+
 export async function fetchQuestions(topicId: string): Promise<Question[]> {
+  // Firebase first — always has the full question bank
+  const fbQs = await firebaseTopicQuestions(topicId);
+  if (fbQs.length > 0) return fbQs;
+
+  // Firebase unavailable → try Supabase
   const { data, error } = await supabase
     .from("questions")
     .select("*")
     .eq("topic_id", topicId);
 
-  if (error || !data || data.length === 0) {
-    return getLocalQuestions(topicId);
+  if (!error && data && data.length > 0) {
+    return data.map((row: Record<string, unknown>) => ({
+      id: row.id as string,
+      topicId: row.topic_id as string,
+      tag: row.tag as string,
+      question: row.question as string,
+      options: row.options as Question["options"],
+      correct: row.correct as number,
+      explanation: row.explanation as string,
+      image_url: (row.image_url as string | null) ?? null,
+    }));
   }
 
-  return data.map((row: any) => ({
-    id: row.id,
-    topicId: row.topic_id,
-    tag: row.tag,
-    question: row.question,
-    options: row.options as Question["options"],
-    correct: row.correct,
-    explanation: row.explanation,
-    image_url: row.image_url ?? null,
-  }));
+  // Final fallback: local static bank
+  return getLocalQuestions(topicId);
 }
 
-/** Fetch a mixed pool of questions across all topics (mock exam). */
+/** Fetch a mixed pool across all topics (mock exam / home MCQ button). */
 export async function fetchAllQuestions(limit = 30): Promise<Question[]> {
-  const { data, error } = await supabase.from("questions").select("*");
-  if (error || !data || data.length === 0) {
-    const { QUESTIONS } = await import("@/data/questions");
-    return Object.values(QUESTIONS).flat().slice(0, limit);
+  // Firebase first — all 200+ questions across every station
+  const fbQs = await firebaseAllQuestions();
+  if (fbQs.length > 0) {
+    return fbQs.sort(() => Math.random() - 0.5).slice(0, limit);
   }
-  return data.slice(0, limit).map((row: any) => ({
-    id: row.id,
-    topicId: row.topic_id,
-    tag: row.tag,
-    question: row.question,
-    options: row.options as Question["options"],
-    correct: row.correct,
-    explanation: row.explanation,
-    image_url: row.image_url ?? null,
-  }));
+
+  // Firebase unavailable → try Supabase
+  const { data, error } = await supabase.from("questions").select("*");
+  if (!error && data && data.length > 0) {
+    return data
+      .map((row: Record<string, unknown>) => ({
+        id: row.id as string,
+        topicId: row.topic_id as string,
+        tag: row.tag as string,
+        question: row.question as string,
+        options: row.options as Question["options"],
+        correct: row.correct as number,
+        explanation: row.explanation as string,
+        image_url: (row.image_url as string | null) ?? null,
+      }))
+      .sort(() => Math.random() - 0.5)
+      .slice(0, limit);
+  }
+
+  // Final fallback: local static bank
+  const { QUESTIONS } = await import("@/data/questions");
+  return Object.values(QUESTIONS).flat().sort(() => Math.random() - 0.5).slice(0, limit);
 }
 
 export interface DbFlashcard {
