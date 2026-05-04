@@ -173,3 +173,58 @@ export async function fetchGlossary(topicId: string): Promise<GlossaryTerm[]> {
   if (error || !data) return [];
   return data as GlossaryTerm[];
 }
+
+export interface StationOverviewData {
+  id: string;
+  station_id: string;
+  title: string;
+  description: string;
+  hero_description: string;
+  sections: unknown[];
+  steps: unknown[];
+  flashcards: unknown[];
+  quiz_questions: unknown[];
+  compare_table: unknown[];
+  learning_objectives: string[];
+  important_points: string[];
+  created_at: string;
+}
+
+export async function fetchStationOverview(stationId: string): Promise<StationOverviewData | null> {
+  const { data, error } = await supabase
+    .from("station_overviews")
+    .select("*")
+    .eq("station_id", stationId)
+    .single();
+
+  if (error || !data) {
+    // Fallback to local content for now
+    if (stationId === "infection_control") {
+      const {
+        INFECTION_CONTROL_OVERVIEW,
+        INFECTION_CONTROL_STEPS,
+        INFECTION_CONTROL_FLASHCARDS,
+        INFECTION_CONTROL_QUIZ,
+        INFECTION_CONTROL_COMPARE_TABLE,
+      } = await import("@/data/infectionControlContent");
+
+      return {
+        id: "ic-1",
+        station_id: "infection_control",
+        title: INFECTION_CONTROL_OVERVIEW.title,
+        description: INFECTION_CONTROL_OVERVIEW.description,
+        hero_description: INFECTION_CONTROL_OVERVIEW.hero_description,
+        sections: INFECTION_CONTROL_OVERVIEW.sections,
+        steps: INFECTION_CONTROL_STEPS,
+        flashcards: INFECTION_CONTROL_FLASHCARDS,
+        quiz_questions: INFECTION_CONTROL_QUIZ,
+        compare_table: INFECTION_CONTROL_COMPARE_TABLE,
+        learning_objectives: INFECTION_CONTROL_OVERVIEW.learning_objectives,
+        important_points: INFECTION_CONTROL_OVERVIEW.important_points,
+        created_at: new Date().toISOString(),
+      };
+    }
+  }
+
+  return data as StationOverviewData;
+}

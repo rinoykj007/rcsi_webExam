@@ -1,145 +1,155 @@
-import { Link, useNavigate, useParams } from "react-router-dom";
-import { ArrowLeft, Brain, Stethoscope, Clock, Zap } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { getTopicById, studyModuleRoute } from "@/data/topics";
-import { GlossarySection } from "@/components/GlossarySection";
+import {
+  ArrowRight,
+  Download,
+  Eye,
+  Play,
+  Briefcase,
+  FileQuestion,
+  FileText,
+  LayoutGrid,
+  PlayCircle,
+} from "lucide-react";
+import { useNavigate, useParams } from "react-router-dom";
 
 const StationOverview = () => {
   const { topicId = "" } = useParams();
   const nav = useNavigate();
-  const topic = getTopicById(topicId);
-
-  if (!topic) {
-    return (
-      <div className="min-h-screen grid place-items-center px-6">
-        <div className="text-center">
-          <p className="text-muted-foreground mb-4">Station not found</p>
-          <Button onClick={() => nav("/")}>Go home</Button>
-        </div>
-      </div>
-    );
-  }
-
-  const accent = topic.dotColor;
-
   return (
-    <div className="min-h-screen bg-background pb-20">
-      <div className="mx-auto w-full max-w-2xl px-5 py-6 lg:py-10">
-        <button
-          onClick={() => nav(-1)}
-          className="h-10 w-10 rounded-full bg-card shadow-soft grid place-items-center hover:scale-105 transition mb-6"
-        >
-          <ArrowLeft size={18} />
-        </button>
+    <div className="px-5 pt-6 pb-10 bg-[#eef0f7] min-h-screen">
+      {/* Learning Modules */}
+      <h1 className="text-[26px] font-extrabold text-gray-900 leading-tight">
+        Learning Modules
+      </h1>
+      <p className="text-gray-500 text-[14px] mt-0.5 mb-5">
+        Three pillars of clinical excellence
+      </p>
 
-        <div className="flex items-center gap-3 mb-3">
-          <div className="h-3 w-3 rounded-full" style={{ background: accent }} />
-          <div className="text-xs font-bold tracking-widest text-muted-foreground">
-            STATION {topic.station_id}
-          </div>
+      {/* Practical Prep Card */}
+      <button
+        onClick={() => nav(`/screens/practical/${topicId}`)}
+        className="w-full text-left bg-white rounded-[18px] p-5 mb-4 border-b-[3px] border-[#4a47a3] hover:shadow-md transition cursor-pointer"
+      >
+        <div className="w-[52px] h-[52px] bg-[#e8e7f5] rounded-[14px] flex items-center justify-center mb-3">
+          <Briefcase
+            className="w-[26px] h-[26px] text-[#4a47a3]"
+            strokeWidth={1.8}
+          />
         </div>
-        <h1 className="font-display font-extrabold text-3xl md:text-4xl text-rcsi-navy mb-3">
-          {topic.label}
-        </h1>
-        <p className="text-muted-foreground leading-relaxed mb-8">
-          {topic.description}
+        <h2 className="text-[17px] font-bold text-gray-900">Practical Prep</h2>
+        <p className="text-gray-500 text-[13px] mt-1.5 leading-snug">
+          Master clinical protocols and step-by-step techniques in real-world
+          settings.
         </p>
+        <div className="flex justify-between items-center mt-4">
+          <span className="text-[#4a47a3] text-[11px] font-bold tracking-widest">
+            8 LESSONS
+          </span>
+          <ArrowRight className="w-5 h-5 text-[#4a47a3]" strokeWidth={2} />
+        </div>
+      </button>
 
-        {/* Two main sections */}
-        <div className="grid grid-cols-1 gap-4">
+      {/* MCQ Challenge Card */}
+      <button
+        onClick={() => nav(`/quiz/${topicId}`)}
+        className="w-full text-left bg-white rounded-[18px] p-5 mb-8 border-b-[3px] border-[#2c4a72] hover:shadow-md transition cursor-pointer"
+      >
+        <div className="w-[52px] h-[52px] bg-[#d8e8f5] rounded-[14px] flex items-center justify-center mb-3">
+          <FileQuestion
+            className="w-[26px] h-[26px] text-[#2c4a72]"
+            strokeWidth={1.8}
+          />
+        </div>
+        <h2 className="text-[17px] font-bold text-gray-900">MCQ Challenge</h2>
+        <p className="text-gray-500 text-[13px] mt-1.5 leading-snug">
+          Test your knowledge on protocols and criteria under active exam
+          conditions.
+        </p>
+        <div className="flex justify-between items-center mt-4">
+          <span className="text-[#2c4a72] text-[11px] font-bold tracking-widest">
+            27 QUESTIONS
+          </span>
+          <ArrowRight className="w-5 h-5 text-[#2c4a72]" strokeWidth={2} />
+        </div>
+      </button>
 
-          {/* ── MCQ Section ── */}
-          <div
-            className="rounded-3xl overflow-hidden shadow-card border-2"
-            style={{ borderColor: accent + "40" }}
-          >
-            <div
-              className="px-6 py-4 flex items-center gap-3"
-              style={{ background: accent + "18" }}
-            >
-              <div
-                className="h-10 w-10 rounded-2xl grid place-items-center"
-                style={{ background: accent }}
-              >
-                <Brain size={20} className="text-white" />
-              </div>
-              <div>
-                <div className="font-display font-bold text-rcsi-navy text-lg">
-                  MCQ
-                </div>
-                <div className="text-xs text-muted-foreground">
-                  Multiple-choice questions
-                </div>
-              </div>
-            </div>
+      {/* Quick Resources */}
+      <h2 className="text-[22px] font-extrabold text-gray-900 mb-4">
+        Quick Resources
+      </h2>
 
-            <div className="px-6 pb-5 pt-4 bg-card space-y-3">
-              {/* Exam mode */}
-              <Button
-                asChild
-                className="w-full h-13 rounded-2xl justify-between px-5"
-                style={{ background: accent }}
-              >
-                <Link to={`/quiz/${topic.id}?mode=exam`}>
-                  <span className="flex items-center gap-2 font-semibold">
-                    <Zap size={17} /> Exam Mode
-                  </span>
-                  <span className="flex items-center gap-1 text-xs opacity-80">
-                    <Clock size={13} /> 10 min
-                  </span>
-                </Link>
-              </Button>
-
-              {/* Practice mode */}
-              <Button
-                asChild
-                variant="outline"
-                className="w-full h-12 rounded-2xl justify-between px-5"
-                style={{ borderColor: accent + "60", color: accent }}
-              >
-                <Link to={`/quiz/${topic.id}`}>
-                  <span className="flex items-center gap-2 font-semibold">
-                    <Brain size={17} /> Practice Mode
-                  </span>
-                  <span className="text-xs opacity-70">Untimed</span>
-                </Link>
-              </Button>
-            </div>
+      {/* Tool PDF */}
+      <div className="bg-white rounded-2xl px-4 py-[14px] flex items-center justify-between mb-3">
+        <div className="flex items-center gap-4">
+          <div className="w-[46px] h-[46px] rounded-full bg-[#fce8e8] flex items-center justify-center flex-shrink-0">
+            <FileText
+              className="w-[22px] h-[22px] text-[#c0392b]"
+              strokeWidth={1.8}
+            />
           </div>
-
-          {/* ── Practical Section ── */}
-          <div className="rounded-3xl overflow-hidden shadow-card border-2 border-rcsi-navy/20">
-            <div className="px-6 py-4 flex items-center gap-3 bg-rcsi-navy/10">
-              <div className="h-10 w-10 rounded-2xl grid place-items-center bg-rcsi-navy">
-                <Stethoscope size={20} className="text-white" />
-              </div>
-              <div>
-                <div className="font-display font-bold text-rcsi-navy text-lg">
-                  Practical
-                </div>
-                <div className="text-xs text-muted-foreground">
-                  OSCE skills, flashcards & study
-                </div>
-              </div>
-            </div>
-
-            <div className="px-6 pb-5 pt-4 bg-card">
-              <Button
-                asChild
-                className="w-full h-13 rounded-2xl justify-between px-5 bg-rcsi-navy hover:bg-rcsi-navy/90"
-              >
-                <Link to={studyModuleRoute(topic.id)}>
-                  <span className="flex items-center gap-2 font-semibold">
-                    <Stethoscope size={17} /> Open Practical Module
-                  </span>
-                  <span className="text-xs opacity-70">Read & practise</span>
-                </Link>
-              </Button>
-            </div>
+          <div>
+            <p className="font-semibold text-gray-900 text-[15px]">Tool PDF</p>
+            <p className="text-gray-400 text-[11px] font-medium tracking-wider mt-0.5">
+              REFERENCE GUIDE • 1.2 MB
+            </p>
           </div>
         </div>
+        <Download className="w-5 h-5 text-gray-500" strokeWidth={1.8} />
+      </div>
 
-        <GlossarySection topicId={topic.id} accent={accent} />
+      {/* Clinical Chart Guide */}
+      <div className="bg-white rounded-2xl px-4 py-[14px] flex items-center justify-between mb-3">
+        <div className="flex items-center gap-4">
+          <div className="w-[46px] h-[46px] rounded-full bg-[#e5eaf4] flex items-center justify-center flex-shrink-0">
+            <LayoutGrid
+              className="w-[22px] h-[22px] text-[#3d5a99]"
+              strokeWidth={1.8}
+            />
+          </div>
+          <div>
+            <p className="font-semibold text-gray-900 text-[15px]">
+              Clinical Chart Guide
+            </p>
+            <p className="text-gray-400 text-[11px] font-medium tracking-wider mt-0.5">
+              INTERACTIVE SHEET • 0.8 MB
+            </p>
+          </div>
+        </div>
+        <Eye className="w-5 h-5 text-gray-500" strokeWidth={1.8} />
+      </div>
+
+      {/* Risk Assessment Video */}
+      <div className="bg-white rounded-2xl px-4 py-[14px] flex items-center justify-between mb-8">
+        <div className="flex items-center gap-4">
+          <div className="w-[46px] h-[46px] rounded-full bg-[#dcedf5] flex items-center justify-center flex-shrink-0">
+            <PlayCircle
+              className="w-[22px] h-[22px] text-[#2e7fa3]"
+              strokeWidth={1.8}
+            />
+          </div>
+          <div>
+            <p className="font-semibold text-gray-900 text-[15px]">
+              Risk Assessment Video
+            </p>
+            <p className="text-gray-400 text-[11px] font-medium tracking-wider mt-0.5">
+              CLINICAL DEMONSTRATION • 15:20 MIN
+            </p>
+          </div>
+        </div>
+        <Play className="w-4 h-4 text-gray-500 fill-gray-500" strokeWidth={0} />
+      </div>
+
+      {/* CTA Banner */}
+      <div className="rounded-[22px] p-6 overflow-hidden relative bg-[#3a3590]">
+        <div className="absolute w-[100px] h-[100px] rounded-full bg-white/[.07] -top-5 right-5" />
+        <div className="absolute w-[60px] h-[60px] rounded-full bg-white/[.07] bottom-2.5 right-[60px]" />
+        <div className="absolute w-[80px] h-[80px] rounded-full bg-white/[.05] -bottom-2.5 right-2.5" />
+        <h2 className="text-[21px] font-extrabold text-white relative z-10">
+          Ready to start?
+        </h2>
+        <p className="mt-2 text-[13px] text-white/75 leading-snug relative z-10">
+          Begin your journey into clinical precision with the Practical Prep
+          module.
+        </p>
       </div>
     </div>
   );

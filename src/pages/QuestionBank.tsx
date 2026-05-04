@@ -36,9 +36,9 @@ const QuestionBank = () => {
   const [topicId, setTopicId] = useState(ALL_TOPICS);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [headerSearchOpen, setHeaderSearchOpen] = useState(false);
-  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>(
-    {},
-  );
+  const [selectedAnswers, setSelectedAnswers] = useState<
+    Record<string, number>
+  >({});
 
   useEffect(() => {
     let active = true;
@@ -202,7 +202,10 @@ const QuestionBank = () => {
                       <MoreVertical size={20} />
                     </button>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end" className="w-64 max-h-96 overflow-y-auto">
+                  <DropdownMenuContent
+                    align="end"
+                    className="w-64 max-h-96 overflow-y-auto"
+                  >
                     <DropdownMenuLabel>Choose station</DropdownMenuLabel>
                     <DropdownMenuSeparator />
                     <DropdownMenuRadioGroup
@@ -227,11 +230,11 @@ const QuestionBank = () => {
       </div>
 
       <div className="mx-auto w-full max-w-5xl px-4 sm:px-5 py-6">
-        <div className="text-sm text-muted-foreground mb-4 px-1">
+        {/* <div className="text-sm text-muted-foreground mb-4 px-1">
           Showing <span className="font-bold text-foreground">{filtered.length}</span>{" "}
           of <span className="font-bold text-foreground">{questions.length}</span>{" "}
           questions
-        </div>
+        </div> */}
 
         {!currentQuestion ? (
           <div className="rounded-2xl bg-card border border-border p-8 text-center">
@@ -308,9 +311,11 @@ const QuestionBank = () => {
                       if (hasSelected && isCorrect) {
                         optionClass = "bg-rcsi-green text-white";
                       } else if (hasSelected && isSelected) {
-                        optionClass = "bg-destructive text-destructive-foreground";
+                        optionClass =
+                          "bg-destructive text-destructive-foreground";
                       } else if (hasSelected) {
-                        optionClass = "bg-white/80 dark:bg-card text-muted-foreground";
+                        optionClass =
+                          "bg-white/80 dark:bg-card text-muted-foreground";
                       }
 
                       return (

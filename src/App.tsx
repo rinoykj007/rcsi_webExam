@@ -16,7 +16,16 @@ import ResetPassword from "./pages/ResetPassword";
 import Home from "./pages/Home";
 import Progress from "./pages/Progress";
 import Schedule from "./pages/Schedule";
-import StationOverview from "./pages/StationOverview";
+import StationOverview from "./pages/station/StationOverview";
+import StationSteps from "./pages/station/StationSteps";
+import StationCards from "./pages/station/StationCards";
+import StationQuiz from "./pages/station/StationQuiz";
+import StationCompare from "./pages/station/StationCompare";
+import PracticalOverview from "./pages/practical/PracticalOverview";
+import PracticalSteps from "./pages/practical/PracticalSteps";
+import PracticalCards from "./pages/practical/PracticalCards";
+import PracticalQuiz from "./pages/practical/PracticalQuiz";
+import PracticalCompare from "./pages/practical/PracticalCompare";
 import Quiz from "./pages/Quiz";
 import QuestionBank from "./pages/QuestionBank";
 import InfectionControl from "./pages/modules/InfectionControl";
@@ -24,7 +33,6 @@ import AcuteManagement from "./pages/modules/AcuteManagement";
 import AcuteCondition from "./pages/modules/AcuteCondition";
 import FundamentalsOfNursing from "./pages/modules/FundamentalsOfNursing";
 import ISBARCommunication from "./pages/modules/ISBARCommunication";
-import ModulePlaceholder from "./pages/modules/ModulePlaceholder";
 import ImportData from "./pages/admin/ImportData";
 import NotFound from "./pages/NotFound";
 
@@ -65,6 +73,11 @@ const App = () => {
               <Route path="schedule" element={<Schedule />} />
             </Route>
 
+            <Route path="/station/:topicId/overview" element={<ProtectedRoute><StationOverview /></ProtectedRoute>} />
+            <Route path="/station/:topicId/steps" element={<ProtectedRoute><StationSteps /></ProtectedRoute>} />
+            <Route path="/station/:topicId/cards" element={<ProtectedRoute><StationCards /></ProtectedRoute>} />
+            <Route path="/station/:topicId/quiz" element={<ProtectedRoute><StationQuiz /></ProtectedRoute>} />
+            <Route path="/station/:topicId/compare" element={<ProtectedRoute><StationCompare /></ProtectedRoute>} />
             <Route path="/station/:topicId" element={<ProtectedRoute><StationOverview /></ProtectedRoute>} />
             <Route path="/question-bank" element={<ProtectedRoute><QuestionBank /></ProtectedRoute>} />
             <Route path="/quiz/mock" element={<ProtectedRoute><Quiz /></ProtectedRoute>} />
@@ -73,7 +86,12 @@ const App = () => {
             <Route path="/screens/infection-control" element={<ProtectedRoute><InfectionControl /></ProtectedRoute>} />
             <Route path="/screens/acuteManagement" element={<ProtectedRoute><AcuteManagement /></ProtectedRoute>} />
             <Route path="/screens/acuteManagement/:conditionId" element={<ProtectedRoute><AcuteCondition /></ProtectedRoute>} />
-            <Route path="/screens/practical/:topicId" element={<ProtectedRoute><ModulePlaceholder /></ProtectedRoute>} />
+            <Route path="/screens/practical/:topicId/overview" element={<ProtectedRoute><PracticalOverview /></ProtectedRoute>} />
+            <Route path="/screens/practical/:topicId/steps" element={<ProtectedRoute><PracticalSteps /></ProtectedRoute>} />
+            <Route path="/screens/practical/:topicId/cards" element={<ProtectedRoute><PracticalCards /></ProtectedRoute>} />
+            <Route path="/screens/practical/:topicId/quiz" element={<ProtectedRoute><PracticalQuiz /></ProtectedRoute>} />
+            <Route path="/screens/practical/:topicId/compare" element={<ProtectedRoute><PracticalCompare /></ProtectedRoute>} />
+            <Route path="/screens/practical/:topicId" element={<ProtectedRoute><PracticalOverview /></ProtectedRoute>} />
             <Route path="/screens/fon" element={<ProtectedRoute><FundamentalsOfNursing /></ProtectedRoute>} />
             <Route path="/screens/isbar" element={<ProtectedRoute><ISBARCommunication /></ProtectedRoute>} />
 
