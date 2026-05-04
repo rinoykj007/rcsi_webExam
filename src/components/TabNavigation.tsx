@@ -24,8 +24,8 @@ const TabNavigation = ({ tabs }: TabNavigationProps) => {
   };
 
   return (
-    <div className="sticky top-0 z-10 bg-gradient-to-b from-white via-white to-gray-50/50 border-b border-gray-200/80 shadow-md overflow-x-auto backdrop-blur-sm">
-      <div className="flex gap-0 min-w-min md:min-w-0 justify-around">
+    <div className="fixed bottom-4 left-0 right-0 z-10 flex justify-center px-4">
+      <div className="mx-auto max-w-lg bg-blue-50 rounded-full shadow-lg px-4 py-2.5 flex gap-1 overflow-x-auto justify-around border border-blue-200">
         {tabs.map((tab) => {
           const Icon = tab.icon;
           const isActive = isTabActive(tab.path);
@@ -34,47 +34,18 @@ const TabNavigation = ({ tabs }: TabNavigationProps) => {
             <button
               key={tab.id}
               onClick={() => navigate(tab.path)}
-              className={`flex flex-col items-center justify-around gap-2 md:gap-2.5 px-4 sm:px-5 md:px-8 py-4 md:py-6 transition-all duration-300 ease-out relative group flex-shrink-0 ${
-                isActive
-                  ? "text-[#4a47a3]"
-                  : "text-gray-600 hover:text-gray-900"
+              className={`flex flex-col items-center justify-center gap-0.5 px-2 sm:px-3 py-1.5 transition-all duration-300 ease-out relative group flex-shrink-0 ${
+                isActive ? "text-rcsi-navy" : "text-gray-500 hover:text-gray-700"
               }`}
             >
-              {/* Animated bottom border indicator */}
-              <div
-                className={`absolute bottom-0 left-0 right-0 h-[3px] transition-all duration-400 ease-out ${
-                  isActive
-                    ? "bg-gradient-to-r from-[#4a47a3] to-[#6b67d3] shadow-lg shadow-[#4a47a3]/30"
-                    : "bg-transparent group-hover:bg-gray-300/60"
+              <Icon size={18} strokeWidth={isActive ? 2.5 : 2} />
+              <span
+                className={`text-xs font-semibold whitespace-nowrap transition-all duration-300 ${
+                  isActive ? "font-bold text-rcsi-navy" : "text-gray-500"
                 }`}
-              />
-
-              {/* Background glow effect for active state */}
-              {isActive && (
-                <div className="absolute inset-0 bg-[#4a47a3]/8 rounded-lg pointer-events-none" />
-              )}
-
-              {/* Content wrapper */}
-              <div className="relative z-10 flex flex-col items-center gap-1.5 md:gap-2">
-                <div
-                  className={`transition-all duration-300 ease-out ${
-                    isActive ? "scale-120" : "scale-100 group-hover:scale-110"
-                  }`}
-                >
-                  <Icon
-                    size={22}
-                    className="md:w-7 md:h-7"
-                    strokeWidth={isActive ? 2.5 : 1.75}
-                  />
-                </div>
-                <span
-                  className={`text-[10px] md:text-xs font-semibold tracking-wide uppercase whitespace-nowrap transition-all duration-300 ${
-                    isActive ? "font-bold text-[#4a47a3]" : "text-gray-600"
-                  }`}
-                >
-                  {tab.label}
-                </span>
-              </div>
+              >
+                {tab.label}
+              </span>
             </button>
           );
         })}
