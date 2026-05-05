@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import TabNavigation from "@/components/TabNavigation";
 import { LayoutGrid, Zap, Brain, FileQuestion, GitCompare } from "lucide-react";
 import { fetchStationOverview } from "@/lib/data";
+import { PageEnter, StaggerContainer, StaggerItem, FadeIn, LoadingSpinner } from "@/components/animations";
 
 const StationOverview = () => {
   const { topicId = "" } = useParams();
@@ -51,7 +52,7 @@ const StationOverview = () => {
       <div className="min-h-screen bg-background">
         <TabNavigation tabs={tabs} />
         <div className="px-5 pt-6 pb-10 flex items-center justify-center h-96">
-          <div className="h-10 w-10 rounded-full border-2 border-blue-500 border-t-transparent animate-spin" />
+          <LoadingSpinner />
         </div>
       </div>
     );
@@ -137,7 +138,7 @@ const StationOverview = () => {
               </span>
             )}
           </div>
-          <div className="bg-red-50 rounded-lg sm:rounded-2xl p-3 sm:p-5 border border-red-200 shadow-soft">
+          <div className="bg-red-50 rounded-lg sm:rounded-2xl p-3 sm:p-4 border border-red-200 shadow-soft">
             <ul className="space-y-1.5 sm:space-y-2">
               {(content as any)?.items?.map((item: string, i: number) => (
                 <li
@@ -205,7 +206,7 @@ const StationOverview = () => {
         key={id}
         className="bg-card rounded-lg sm:rounded-2xl shadow-soft overflow-hidden"
       >
-        <div className="px-3 sm:px-5 py-3 sm:py-4 border-b border-border">
+        <div className="px-3 sm:px-5 py-2 sm:py-3 border-b border-border">
           <div className="flex items-center gap-2">
             <h2 className="font-display font-bold text-rcsi-navy text-sm sm:text-base">
               {title}
@@ -217,7 +218,7 @@ const StationOverview = () => {
             )}
           </div>
         </div>
-        <div className="px-3 sm:px-5 py-3 sm:py-4">
+        <div className="px-3 sm:px-5 py-2 sm:py-3">
           {typeof content === "string" ? (
             <p className="text-foreground text-xs sm:text-sm leading-relaxed">
               {content}
@@ -243,51 +244,61 @@ const StationOverview = () => {
   return (
     <div className="min-h-screen bg-background pb-20">
       <TabNavigation tabs={tabs} />
-      <div className="mx-auto w-full max-w-2xl px-3 sm:px-5 py-2 sm:py-4 md:py-6">
-        {/* Hero Section */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl sm:rounded-2xl p-4 sm:p-6 mb-3 sm:mb-4 shadow-lg">
-          <p className="text-blue-100 text-xs font-semibold tracking-widest mb-1 sm:mb-2 uppercase">
-            {overview.title}
-          </p>
-          <h1 className="font-display font-bold text-2xl sm:text-3xl mb-2 sm:mb-3 leading-tight">
-            {overview.description}
-          </h1>
-          <p className="text-blue-50 text-xs sm:text-sm leading-relaxed">
-            {overview.hero_description}
-          </p>
-        </div>
+      <PageEnter>
+        <div className="mx-auto w-full max-w-2xl px-3 sm:px-5 py-2 sm:py-4 md:py-6">
+          {/* Hero Section */}
+          <FadeIn direction="down" delay={0.1}>
+            <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl sm:rounded-2xl p-4 sm:p-6 mb-2 sm:mb-3 shadow-lg">
+              <p className="text-blue-100 text-xs font-semibold tracking-widest mb-1 sm:mb-2 uppercase">
+                {overview.title}
+              </p>
+              <h1 className="font-display font-bold text-2xl sm:text-3xl mb-2 sm:mb-3 leading-tight">
+                {overview.description}
+              </h1>
+              <p className="text-blue-50 text-xs sm:text-sm leading-relaxed">
+                {overview.hero_description}
+              </p>
+            </div>
+          </FadeIn>
 
-        {/* Sections */}
-        <div className="space-y-3 sm:space-y-4">
-          {(overview.sections as any[])?.map((section) =>
-            renderSection(section),
+          {/* Sections */}
+          <StaggerContainer staggerDelay={0.1} delay={0.2}>
+            <div className="space-y-2 sm:space-y-3">
+              {(overview.sections as any[])?.map((section) => (
+                <StaggerItem key={section.id}>
+                  {renderSection(section)}
+                </StaggerItem>
+              ))}
+            </div>
+          </StaggerContainer>
+
+          {/* Important Points */}
+          {(overview.important_points as string[])?.length > 0 && (
+            <FadeIn direction="up" delay={0.3}>
+              <div className="bg-card rounded-lg sm:rounded-2xl shadow-soft overflow-hidden mt-2 sm:mt-3">
+                <div className="px-3 sm:px-5 py-2 sm:py-3 border-b border-amber-200 bg-amber-50">
+                  <h2 className="font-display font-bold text-amber-900 text-sm sm:text-base">
+                    Important Points
+                  </h2>
+                </div>
+                <div className="px-3 sm:px-5 py-2 sm:py-3 bg-amber-50/50">
+                  <ul className="space-y-1.5 sm:space-y-2">
+                    {(overview.important_points as string[]).map((point, i) => (
+                      <li
+                        key={i}
+                        className="flex gap-2 text-amber-800 text-xs sm:text-sm"
+                      >
+                        <span className="font-bold flex-shrink-0">⚠️</span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </FadeIn>
           )}
         </div>
-
-        {/* Important Points */}
-        {(overview.important_points as string[])?.length > 0 && (
-          <div className="bg-card rounded-lg sm:rounded-2xl shadow-soft overflow-hidden mt-3 sm:mt-4">
-            <div className="px-3 sm:px-5 py-3 sm:py-4 border-b border-amber-200 bg-amber-50">
-              <h2 className="font-display font-bold text-amber-900 text-sm sm:text-base">
-                Important Points
-              </h2>
-            </div>
-            <div className="px-3 sm:px-5 py-3 sm:py-4 bg-amber-50/50">
-              <ul className="space-y-1.5 sm:space-y-2">
-                {(overview.important_points as string[]).map((point, i) => (
-                  <li
-                    key={i}
-                    className="flex gap-2 text-amber-800 text-xs sm:text-sm"
-                  >
-                    <span className="font-bold flex-shrink-0">⚠️</span>
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        )}
-      </div>
+      </PageEnter>
     </div>
   );
 };

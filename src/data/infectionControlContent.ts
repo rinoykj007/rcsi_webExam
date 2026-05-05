@@ -213,6 +213,109 @@ export const INFECTION_CONTROL_STEPS: StepItem[] = [
   },
 ];
 
+// ────── HAND HYGIENE STEPS ────────────────────────────────────────────────
+
+export const HAND_HYGIENE_SOAP_STEPS: StepItem[] = [
+  {
+    step: 1,
+    title: "Wet hands",
+    detail: "Under running water — not too hot or cold",
+  },
+  {
+    step: 2,
+    title: "Apply soap",
+    detail: "Enough to cover all hand surfaces",
+  },
+  {
+    step: 3,
+    title: "Palm to palm",
+    detail: "Rub palms together vigorously",
+  },
+  {
+    step: 4,
+    title: "Back of hands",
+    detail: "Right palm over left dorsum with interlaced fingers, vice versa",
+  },
+  {
+    step: 5,
+    title: "Interlace fingers",
+    detail: "Palm to palm with fingers interlaced",
+  },
+  {
+    step: 6,
+    title: "Backs of fingers",
+    detail: "Fingers interlocked, backs of fingers to opposing palms",
+  },
+  {
+    step: 7,
+    title: "Clean thumbs",
+    detail: "Rotational rubbing of each thumb clasped in opposite palm",
+  },
+  {
+    step: 8,
+    title: "Clean fingertips",
+    detail: "Rotational rubbing of fingertips in opposite palm",
+  },
+  {
+    step: 9,
+    title: "Rinse",
+    detail: "Rinse hands thoroughly under running water",
+  },
+  {
+    step: 10,
+    title: "Dry",
+    detail: "Dry thoroughly with a single-use towel",
+  },
+  {
+    step: 11,
+    title: "Turn off tap",
+    detail: "Use the towel to turn off tap — avoid recontamination",
+  },
+];
+
+export const HAND_HYGIENE_ALCOHOL_STEPS: StepItem[] = [
+  {
+    step: 1,
+    title: "Apply product",
+    detail: "Apply a palmful of alcohol rub to cupped hand",
+  },
+  {
+    step: 2,
+    title: "Palm to palm",
+    detail: "Rub palms together covering all surfaces",
+  },
+  {
+    step: 3,
+    title: "Back of hands",
+    detail: "Right palm over left dorsum with interlaced fingers, vice versa",
+  },
+  {
+    step: 4,
+    title: "Interlace fingers",
+    detail: "Palm to palm with fingers interlaced",
+  },
+  {
+    step: 5,
+    title: "Backs of fingers",
+    detail: "Fingers interlocked, backs of fingers to opposing palms",
+  },
+  {
+    step: 6,
+    title: "Clean thumbs",
+    detail: "Rotational rubbing of each thumb clasped in opposite palm",
+  },
+  {
+    step: 7,
+    title: "Clean fingertips",
+    detail: "Rotational rubbing of fingertips in opposite palm",
+  },
+  {
+    step: 8,
+    title: "Air dry",
+    detail: "Allow hands to dry completely — do not wipe",
+  },
+];
+
 // ────── FLASHCARDS TAB ────────────────────────────────────────────────────
 
 export const INFECTION_CONTROL_FLASHCARDS: FlashcardItem[] = [

@@ -1,0 +1,19 @@
+import { motion } from "framer-motion";
+import { ReactNode } from "react";
+
+interface ScaleInProps {
+  children: ReactNode;
+  delay?: number;
+  duration?: number;
+}
+
+export const ScaleIn = ({ children, delay = 0, duration = 0.4 }: ScaleInProps) => (
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration, delay, ease: "easeOut" }}
+    style={{ transformOrigin: "center" }}
+  >
+    {children}
+  </motion.div>
+);
