@@ -83,3 +83,6 @@ VITE_SUPABASE_URL
 VITE_SUPABASE_PROJECT_ID
 VITE_SUPABASE_PUBLISHABLE_KEY
 ```
+## Task Rules
+- **Do not modify existing files or codes** 
+

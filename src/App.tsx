@@ -34,6 +34,9 @@ import AcuteCondition from "./pages/modules/AcuteCondition";
 import FundamentalsOfNursing from "./pages/modules/FundamentalsOfNursing";
 import ISBARCommunication from "./pages/modules/ISBARCommunication";
 import ImportData from "./pages/admin/ImportData";
+import ExamResults from "./pages/exam/ExamResults";
+import ExamScoreBreakdown from "./pages/exam/ExamScoreBreakdown";
+import ExamAllQuestions from "./pages/exam/ExamAllQuestions";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -96,6 +99,10 @@ const App = () => {
             <Route path="/screens/isbar" element={<ProtectedRoute><ISBARCommunication /></ProtectedRoute>} />
 
             <Route path="/admin/import" element={<ProtectedRoute><ImportData /></ProtectedRoute>} />
+
+            <Route path="/exam-results" element={<ProtectedRoute><ExamResults /></ProtectedRoute>} />
+            <Route path="/exam-results/breakdown" element={<ProtectedRoute><ExamScoreBreakdown /></ProtectedRoute>} />
+            <Route path="/exam-results/questions" element={<ProtectedRoute><ExamAllQuestions /></ProtectedRoute>} />
 
             {/* Supabase PKCE OAuth internal route — let the client handle it */}
             <Route path="/~oauth/*" element={<div className="min-h-screen grid place-items-center"><div className="h-10 w-10 rounded-full border-2 border-accent border-t-transparent animate-spin" /></div>} />
