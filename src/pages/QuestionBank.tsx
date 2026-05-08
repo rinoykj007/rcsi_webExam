@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import {
   ArrowLeft,
   Brain,
-  Check,
   ChevronLeft,
   ChevronRight,
   MoreVertical,
@@ -303,27 +302,19 @@ const QuestionBank = () => {
                 <div className="flex justify-end">
                   <div className="w-full max-w-[88%] space-y-2">
                     {currentQuestion.options.map((opt, optionIndex) => {
-                      const isCorrect = optionIndex === currentQuestion.correct;
                       const isSelected = selected === optionIndex;
-                      let optionClass =
-                        "bg-[#2c5f2e] text-white hover:bg-[#244d26]";
+                      let optionClass = "bg-[#2c5f2e] text-white hover:bg-[#244d26]";
 
-                      if (hasSelected && isCorrect) {
-                        optionClass = "bg-rcsi-green text-white";
-                      } else if (hasSelected && isSelected) {
-                        optionClass =
-                          "bg-destructive text-destructive-foreground";
+                      if (hasSelected && isSelected) {
+                        optionClass = "bg-[#2c5f2e] text-white";
                       } else if (hasSelected) {
-                        optionClass =
-                          "bg-white/80 dark:bg-card text-muted-foreground";
+                        optionClass = "bg-white/80 dark:bg-card text-muted-foreground opacity-60";
                       }
 
                       return (
                         <button
                           key={opt.key}
-                          onClick={() =>
-                            selectAnswer(currentQuestion.id, optionIndex)
-                          }
+                          onClick={() => selectAnswer(currentQuestion.id, optionIndex)}
                           disabled={hasSelected}
                           className={`w-full rounded-[1.45rem] rounded-tr-md px-4 py-3 text-left text-sm font-semibold shadow-sm transition flex items-start gap-3 ${optionClass}`}
                         >
@@ -331,52 +322,12 @@ const QuestionBank = () => {
                             {opt.key}
                           </span>
                           <span className="flex-1">{opt.text}</span>
-                          {hasSelected && isCorrect && (
-                            <Check size={17} className="shrink-0" />
-                          )}
-                          {hasSelected && isSelected && !isCorrect && (
-                            <X size={17} className="shrink-0" />
-                          )}
                         </button>
                       );
                     })}
                   </div>
                 </div>
 
-                {hasSelected && (
-                  <div className="flex items-start gap-3">
-                    <div
-                      className={`h-9 w-9 rounded-full text-white grid place-items-center shrink-0 ${
-                        selected === currentQuestion.correct
-                          ? "bg-rcsi-green"
-                          : "bg-destructive"
-                      }`}
-                    >
-                      {selected === currentQuestion.correct ? (
-                        <Check size={17} />
-                      ) : (
-                        <X size={17} />
-                      )}
-                    </div>
-                    <div className="max-w-[88%] rounded-[1.7rem] rounded-tl-md bg-white dark:bg-card border border-border p-4 shadow-sm">
-                      <div className="text-xs font-bold uppercase tracking-wide text-muted-foreground mb-1">
-                        {selected === currentQuestion.correct
-                          ? "Correct"
-                          : "Not quite"}
-                      </div>
-                      <p className="text-sm font-semibold text-foreground">
-                        {correct
-                          ? `Answer: ${correct.key}. ${correct.text}`
-                          : "Answer unavailable"}
-                      </p>
-                      {currentQuestion.explanation && (
-                        <p className="text-sm text-foreground/75 mt-2">
-                          {currentQuestion.explanation}
-                        </p>
-                      )}
-                    </div>
-                  </div>
-                )}
               </div>
             </div>
 
