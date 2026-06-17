@@ -4,6 +4,7 @@ import TabNavigation from "@/components/TabNavigation";
 import { LayoutGrid, Zap, Brain, FileQuestion, GitCompare } from "lucide-react";
 import { fetchStationOverview } from "@/lib/data";
 import { PageEnter, StaggerContainer, StaggerItem, FadeIn, LoadingSpinner } from "@/components/animations";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
 const StationOverview = () => {
   const { topicId = "" } = useParams();
@@ -204,39 +205,43 @@ const StationOverview = () => {
     return (
       <div
         key={id}
-        className="bg-card rounded-lg sm:rounded-2xl shadow-soft overflow-hidden"
+        className="bg-card rounded-lg sm:rounded-2xl shadow-soft overflow-hidden px-3 sm:px-5"
       >
-        <div className="px-3 sm:px-5 py-2 sm:py-3 border-b border-border">
-          <div className="flex items-center gap-2">
-            <h2 className="font-display font-bold text-rcsi-navy text-sm sm:text-base">
-              {title}
-            </h2>
-            {badge && (
-              <span className="bg-yellow-100 text-yellow-800 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full text-xs font-bold">
-                {badge}
-              </span>
-            )}
-          </div>
-        </div>
-        <div className="px-3 sm:px-5 py-2 sm:py-3">
-          {typeof content === "string" ? (
-            <p className="text-foreground text-xs sm:text-sm leading-relaxed">
-              {content}
-            </p>
-          ) : (
-            <ul className="space-y-2">
-              {(content as any)?.items?.map((item: string, i: number) => (
-                <li
-                  key={i}
-                  className="flex gap-2 text-foreground text-xs sm:text-sm"
-                >
-                  <span className="flex-shrink-0">•</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
+        <Accordion type="single" collapsible className="w-full">
+          <AccordionItem value={`item-${id}`} className="border-none">
+            <AccordionTrigger className="py-2 sm:py-3 hover:no-underline">
+              <div className="flex items-center gap-2 text-left">
+                <h2 className="font-display font-bold text-rcsi-navy text-sm sm:text-base">
+                  {title}
+                </h2>
+                {badge && (
+                  <span className="bg-yellow-100 text-yellow-800 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full text-xs font-bold">
+                    {badge}
+                  </span>
+                )}
+              </div>
+            </AccordionTrigger>
+            <AccordionContent className="pb-3 pt-1">
+              {typeof content === "string" ? (
+                <p className="text-foreground text-xs sm:text-sm leading-relaxed">
+                  {content}
+                </p>
+              ) : (
+                <ul className="space-y-2">
+                  {(content as any)?.items?.map((item: string, i: number) => (
+                    <li
+                      key={i}
+                      className="flex gap-2 text-foreground text-xs sm:text-sm"
+                    >
+                      <span className="flex-shrink-0">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     );
   };
