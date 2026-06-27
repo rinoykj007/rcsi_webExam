@@ -33,6 +33,7 @@ import AcuteManagement from "./pages/modules/AcuteManagement";
 import AcuteCondition from "./pages/modules/AcuteCondition";
 import FundamentalsOfNursing from "./pages/modules/FundamentalsOfNursing";
 import ISBARCommunication from "./pages/modules/ISBARCommunication";
+import OSCEAnimation from "./pages/modules/OSCEAnimation";
 import ImportData from "./pages/admin/ImportData";
 import NotFound from "./pages/NotFound";
 
@@ -94,6 +95,7 @@ const App = () => {
             <Route path="/screens/practical/:topicId" element={<ProtectedRoute><PracticalOverview /></ProtectedRoute>} />
             <Route path="/screens/fon" element={<ProtectedRoute><FundamentalsOfNursing /></ProtectedRoute>} />
             <Route path="/screens/isbar" element={<ProtectedRoute><ISBARCommunication /></ProtectedRoute>} />
+            <Route path="/screens/osce-intro" element={<ProtectedRoute><OSCEAnimation /></ProtectedRoute>} />
 
             <Route path="/admin/import" element={<ProtectedRoute><ImportData /></ProtectedRoute>} />
 
