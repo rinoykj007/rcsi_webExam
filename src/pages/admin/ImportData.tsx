@@ -271,7 +271,7 @@ const ImportData = () => {
           </Button>
           <div>
             <Button asChild variant="ghost">
-              <Link to="/">Back home</Link>
+              <Link to="/dashboard">Back home</Link>
             </Button>
           </div>
         </div>

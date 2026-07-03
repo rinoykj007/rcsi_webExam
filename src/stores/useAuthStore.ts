@@ -13,6 +13,24 @@ interface AuthState {
   signOut: () => Promise<void>;
 }
 
+const clearAuthTokensFromUrl = () => {
+  if (typeof window === "undefined") return;
+
+  const hasTokenHash =
+    window.location.hash.includes("access_token=") ||
+    window.location.hash.includes("refresh_token=") ||
+    window.location.hash.includes("provider_token=");
+  const params = new URLSearchParams(window.location.search);
+  const hasAuthCode = params.has("code");
+
+  if (hasTokenHash || hasAuthCode) {
+    const nextPath = ["/", "/login", "/signup"].includes(window.location.pathname)
+      ? "/dashboard"
+      : window.location.pathname;
+    window.history.replaceState(null, document.title, nextPath);
+  }
+};
+
 export const useAuthStore = create<AuthState>((set, get) => ({
   user: null,
   session: null,
@@ -23,6 +41,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     const { data: sub } = supabase.auth.onAuthStateChange((event, session) => {
       set({ session, user: session?.user ?? null });
       if (session?.user) {
+        clearAuthTokensFromUrl();
         // defer to avoid deadlock with Supabase auth client
         setTimeout(async () => {
           const u = session.user;
@@ -59,6 +78,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     // 2. Then check existing session
     supabase.auth.getSession().then(({ data: { session } }) => {
       set({ session, user: session?.user ?? null, loading: false });
+      if (session?.user) clearAuthTokensFromUrl();
     });
     return () => sub.subscription.unsubscribe();
   },
@@ -67,7 +87,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     return { error: error?.message ?? null };
   },
   signUp: async (email, password, name) => {
-    const redirectUrl = `${window.location.origin}/`;
+    const redirectUrl = `${window.location.origin}/dashboard`;
     const { error } = await supabase.auth.signUp({
       email, password,
       options: { emailRedirectTo: redirectUrl, data: { name } },

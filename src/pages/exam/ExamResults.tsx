@@ -157,7 +157,7 @@ export default function ExamResults() {
           Review answers
         </button>
         <button
-          onClick={() => nav("/")}
+          onClick={() => nav("/dashboard")}
           className="flex-1 py-4 rounded-2xl bg-gray-900 text-base font-semibold text-white hover:bg-gray-800 transition-colors"
         >
           Done

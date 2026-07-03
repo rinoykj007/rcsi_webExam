@@ -3,9 +3,9 @@ import { Home, BarChart3, CalendarDays, LogOut, Settings } from "lucide-react";
 import { useAuthStore } from "@/stores/useAuthStore";
 
 const navItems = [
-  { to: "/", label: "Home", icon: Home, end: true },
-  { to: "/progress", label: "Progress", icon: BarChart3 },
-  { to: "/schedule", label: "Schedule", icon: CalendarDays },
+  { to: "/dashboard", label: "Home", icon: Home, end: true },
+  { to: "/dashboard/progress", label: "Progress", icon: BarChart3 },
+  { to: "/dashboard/schedule", label: "Schedule", icon: CalendarDays },
 ];
 
 export const Sidebar = () => {

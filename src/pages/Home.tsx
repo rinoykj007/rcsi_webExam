@@ -588,7 +588,7 @@ const Home = () => {
                 <Plus size={13} /> Add note
               </button>
               <Link
-                to="/schedule"
+                to="/dashboard/schedule"
                 className="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-xl bg-rcsi-navy text-white text-sm font-semibold hover:bg-rcsi-navy/90 transition"
               >
                 <Plus size={13} /> New event
@@ -603,7 +603,7 @@ const Home = () => {
                 Pending tasks
               </h3>
               <Link
-                to="/schedule"
+                to="/dashboard/schedule"
                 className="text-xs text-rcsi-purple font-semibold hover:underline"
               >
                 View all

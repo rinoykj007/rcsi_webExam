@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Splash = () => {
   const { user, loading } = useAuthStore();
   const nav = useNavigate();
-  useEffect(() => { if (!loading && user) nav("/", { replace: true }); }, [user, loading, nav]);
+  useEffect(() => { if (!loading && user) nav("/dashboard", { replace: true }); }, [user, loading, nav]);
 
   return (
     <div className="min-h-screen relative overflow-hidden bg-rcsi-navy text-primary-foreground grid place-items-center px-6">

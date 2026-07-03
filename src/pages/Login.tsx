@@ -22,7 +22,7 @@ const Login = () => {
     setLoading(false);
     if (error) { setErr(error); return; }
     toast.success("Welcome back!");
-    nav("/", { replace: true });
+    nav("/dashboard", { replace: true });
   };
 
   return (

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__mobile-mcp__mobile_take_screenshot"
+    ]
+  }
+}

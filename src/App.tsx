@@ -75,6 +75,11 @@ const App = () => {
               <Route path="progress" element={<Progress />} />
               <Route path="schedule" element={<Schedule />} />
             </Route>
+            <Route path="/dashboard" element={<RootGate />}>
+              <Route index element={<Home />} />
+              <Route path="progress" element={<Progress />} />
+              <Route path="schedule" element={<Schedule />} />
+            </Route>
 
             <Route path="/station/:topicId/overview" element={<ProtectedRoute><StationOverview /></ProtectedRoute>} />
             <Route path="/station/:topicId/steps" element={<ProtectedRoute><StationSteps /></ProtectedRoute>} />
