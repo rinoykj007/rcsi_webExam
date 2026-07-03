@@ -26,6 +26,7 @@ import PracticalSteps from "./pages/practical/PracticalSteps";
 import PracticalCards from "./pages/practical/PracticalCards";
 import PracticalQuiz from "./pages/practical/PracticalQuiz";
 import PracticalCompare from "./pages/practical/PracticalCompare";
+import PracticalSimulation from "./pages/practical/PracticalSimulation";
 import Quiz from "./pages/Quiz";
 import QuestionBank from "./pages/QuestionBank";
 import InfectionControl from "./pages/modules/InfectionControl";
@@ -99,6 +100,7 @@ const App = () => {
             <Route path="/screens/practical/:topicId/cards" element={<ProtectedRoute><PracticalCards /></ProtectedRoute>} />
             <Route path="/screens/practical/:topicId/quiz" element={<ProtectedRoute><PracticalQuiz /></ProtectedRoute>} />
             <Route path="/screens/practical/:topicId/compare" element={<ProtectedRoute><PracticalCompare /></ProtectedRoute>} />
+            <Route path="/screens/practical/:topicId/simulation" element={<ProtectedRoute><PracticalSimulation /></ProtectedRoute>} />
             <Route path="/screens/practical/:topicId" element={<ProtectedRoute><PracticalOverview /></ProtectedRoute>} />
             <Route path="/screens/fon" element={<ProtectedRoute><FundamentalsOfNursing /></ProtectedRoute>} />
             <Route path="/screens/isbar" element={<ProtectedRoute><ISBARCommunication /></ProtectedRoute>} />
