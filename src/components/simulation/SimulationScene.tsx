@@ -1,6 +1,12 @@
+import { useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { Group, MathUtils, Vector3 } from "three";
 import { RoomItem, SimulationScenario } from "@/data/simulationScenarios";
 import { ItemSprite } from "./ItemSprite";
+import { Item3D } from "./Item3D";
+import { PatientBed3D } from "./PatientBed3D";
+import { NurseCharacter3D, NursePose } from "./NurseCharacter3D";
 
 export type ScenePhase =
   | "intro"
@@ -32,12 +38,17 @@ interface SimulationSceneProps {
   onInjectDone: () => void;
 }
 
-const itemBoxSize = (item: RoomItem) => {
-  if (item.kind === "syringe")
-    return item.size === "lg" ? "w-[24%]" : item.size === "md" ? "w-[20%]" : "w-[16%]";
-  if (item.kind === "needle") return "w-[16%]";
-  return "w-[12%]";
-};
+// Map the scenario's 2D percentage positions onto trolley shelves.
+const SHELF_Y = [1.32, 0.99, 0.66, 0.33];
+const shelfRow = (y: number) => (y < 33 ? 0 : y < 47 ? 1 : y < 60 ? 2 : 3);
+const itemWorldPos = (p: { x: number; y: number }): [number, number, number] => [
+  0.35 + ((p.x - 50) / 40) * 1.35,
+  SHELF_Y[shelfRow(p.y)] + 0.12,
+  0.05,
+];
+
+const NURSE_STAND = new Vector3(-0.3, 0, 1.15);
+const NURSE_BEDSIDE = new Vector3(-0.75, 0, 0.85);
 
 const needleTint = (item: RoomItem) =>
   item.label.toLowerCase().includes("blue")
@@ -45,6 +56,104 @@ const needleTint = (item: RoomItem) =>
     : item.label.toLowerCase().includes("orange")
       ? "text-orange-500"
       : "text-slate-500";
+
+/** Owns the nurse's walk → inject → celebrate sequence, frame-driven. */
+const NurseRig = ({
+  phase,
+  holding,
+  onInjectDone,
+}: {
+  phase: ScenePhase;
+  holding: boolean;
+  onInjectDone: () => void;
+}) => {
+  const group = useRef<Group>(null);
+  const walk = useRef(0);
+  const armTime = useRef(0);
+  const fired = useRef(false);
+  const poseRef = useRef<NursePose>("idle");
+  const holdingRef = useRef(holding);
+  holdingRef.current = holding;
+
+  useFrame((_, delta) => {
+    const g = group.current;
+    if (!g) return;
+
+    if (phase === "injecting") {
+      if (walk.current < 1) {
+        walk.current = Math.min(1, walk.current + delta / 1.1);
+        const e = MathUtils.smoothstep(walk.current, 0, 1);
+        g.position.lerpVectors(NURSE_STAND, NURSE_BEDSIDE, e);
+        g.rotation.y = MathUtils.lerp(0.15, 0.9, e);
+        poseRef.current = "walking";
+      } else if (armTime.current < 0.9) {
+        armTime.current += delta;
+        poseRef.current = "injecting";
+      } else if (!fired.current) {
+        fired.current = true;
+        onInjectDone();
+      } else {
+        poseRef.current = "celebrating";
+      }
+    } else {
+      walk.current = 0;
+      armTime.current = 0;
+      fired.current = false;
+      g.position.copy(NURSE_STAND);
+      g.rotation.y = 0.15;
+      poseRef.current = phase === "complete" ? "celebrating" : "idle";
+    }
+  });
+
+  return (
+    <group ref={group} position={NURSE_STAND.toArray()} rotation={[0, 0.15, 0]}>
+      <NurseCharacter3D poseRef={poseRef} holdingRef={holdingRef} />
+    </group>
+  );
+};
+
+const Room = () => (
+  <group>
+    {/* floor */}
+    <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0.5]}>
+      <planeGeometry args={[9, 6]} />
+      <meshStandardMaterial color="#e7e2d9" />
+    </mesh>
+    {/* back wall */}
+    <mesh position={[0, 1.6, -1.3]}>
+      <planeGeometry args={[9, 3.6]} />
+      <meshStandardMaterial color="#d8ebe2" />
+    </mesh>
+    {/* window */}
+    <mesh position={[-1.6, 1.9, -1.28]}>
+      <planeGeometry args={[1.1, 0.85]} />
+      <meshStandardMaterial color="#bfe0f5" />
+    </mesh>
+    <mesh position={[-1.6, 1.9, -1.27]}>
+      <boxGeometry args={[1.2, 0.06, 0.02]} />
+      <meshStandardMaterial color="#ffffff" />
+    </mesh>
+  </group>
+);
+
+const Trolley = () => (
+  <group>
+    {SHELF_Y.map((y) => (
+      <mesh key={y} position={[1.05, y, 0]}>
+        <boxGeometry args={[1.75, 0.05, 0.6]} />
+        <meshStandardMaterial color="#b9c2cf" />
+      </mesh>
+    ))}
+    {[0.25, 1.85].map((x) =>
+      [-0.26, 0.26].map((z) => (
+        <mesh key={`${x}${z}`} position={[x, 0.7, z]}>
+          <cylinderGeometry args={[0.025, 0.025, 1.35, 10]} />
+          <meshStandardMaterial color="#8494a8" />
+        </mesh>
+      )),
+    )}
+  </group>
+);
 
 export const SimulationScene = ({
   scenario,
@@ -60,125 +169,40 @@ export const SimulationScene = ({
 }: SimulationSceneProps) => {
   const visibleItems = scenario.items.filter((i) => !pickedItemIds.includes(i.id));
   const pickedItems = scenario.items.filter((i) => pickedItemIds.includes(i.id));
-  const site = scenario.injectionSite;
+  const holdingSyringe = pickedItems.some((i) => i.kind === "syringe");
 
   return (
     <div>
-      <div className="relative w-full max-w-md mx-auto aspect-[4/5] rounded-3xl overflow-hidden border border-gray-200 dark:border-slate-700 shadow-sm select-none">
-        {/* Room */}
-        <div className="absolute inset-x-0 top-0 h-[55%] bg-rcsi-mint/30 dark:bg-slate-800" />
-        <div className="absolute inset-x-0 bottom-0 h-[45%] bg-[#e7e2d9] dark:bg-slate-900" />
-        {/* Window */}
-        <div className="absolute left-[8%] top-[6%] w-[22%] h-[18%] rounded-lg bg-sky-100 dark:bg-slate-700 border-4 border-white dark:border-slate-600">
-          <div className="absolute inset-y-0 left-1/2 w-1 -translate-x-1/2 bg-white dark:bg-slate-600" />
-        </div>
-        {/* Wall clock */}
-        <div className="absolute right-[10%] top-[7%] w-[9%] aspect-square rounded-full bg-white dark:bg-slate-700 border-2 border-gray-300 dark:border-slate-500">
-          <div className="absolute left-1/2 top-1/2 w-[2px] h-[30%] -translate-x-1/2 -translate-y-full bg-gray-500 origin-bottom" />
-          <div className="absolute left-1/2 top-1/2 h-[2px] w-[26%] -translate-y-1/2 bg-gray-400" />
-        </div>
-
-        {/* Patient on bed (left) */}
-        <svg viewBox="0 0 100 100" className="absolute left-[2%] top-[30%] w-[52%]" aria-label={`Patient ${scenario.patient.name} on a bed`}>
-          {/* bed frame */}
-          <rect x={4} y={52} width={92} height={16} rx={4} fill="#cbd5e1" />
-          <rect x={4} y={66} width={5} height={22} fill="#94a3b8" />
-          <rect x={91} y={66} width={5} height={22} fill="#94a3b8" />
-          <rect x={2} y={28} width={8} height={28} rx={3} fill="#94a3b8" />
-          {/* mattress + pillow */}
-          <rect x={8} y={44} width={88} height={12} rx={5} fill="#f8fafc" />
-          <rect x={10} y={40} width={20} height={10} rx={4} fill="#fff" stroke="#e2e8f0" />
-          {/* patient head */}
-          <circle cx={22} cy={38} r={7} fill="#f5c9a4" />
-          <path d="M15 35 a7 7 0 0 1 14 0 l-2 -1 -3 1 -4 -2 -3 2 Z" fill="#8d8d94" />
-          {/* torso under blanket */}
-          <path d="M30 44 Q52 34 92 44 L92 54 L30 54 Z" fill="#a7d3c0" />
-          {/* exposed arm toward the room */}
-          <path d="M30 42 Q42 36 54 40 L53 46 Q42 42 32 47 Z" fill="#f5c9a4" />
-        </svg>
-
-        {/* Treatment trolley (right): one shelf under each item row */}
-        <div className="absolute right-[2%] top-[30%] w-[52%] h-[58%]">
-          {[0, 24, 48, 72].map((top) => (
-            <div
-              key={top}
-              className="absolute inset-x-0 h-[4%] rounded bg-slate-300 dark:bg-slate-600"
-              style={{ top: `${top}%` }}
+      <div className="relative w-full max-w-md mx-auto aspect-[4/5] rounded-3xl overflow-hidden border border-gray-200 dark:border-slate-700 shadow-sm select-none bg-[#d8ebe2]">
+        <Canvas
+          dpr={[1, 2]}
+          camera={{ position: [0, 2.3, 5.3], fov: 44 }}
+          onCreated={({ camera }) => camera.lookAt(-0.25, 0.7, 0)}
+        >
+          <ambientLight intensity={0.85} />
+          <directionalLight position={[3, 5, 4]} intensity={1.1} />
+          <directionalLight position={[-3, 3, 2]} intensity={0.35} />
+          <Room />
+          <Trolley />
+          <PatientBed3D
+            showTarget={phase === "awaitingInject"}
+            siteLabel={scenario.injectionSite.label}
+            onInject={onInject}
+          />
+          {visibleItems.map((item) => (
+            <Item3D
+              key={item.id}
+              item={item}
+              position={itemWorldPos(item.position)}
+              highlighted={hintShown && phase === "awaitingPick" && correctItemIds.includes(item.id)}
+              shakeKey={shake?.itemId === item.id ? shake.key : null}
+              onPick={onPickItem}
             />
           ))}
-          <div className="absolute left-[5%] bottom-0 top-[2%] w-[3%] bg-slate-400 dark:bg-slate-500" />
-          <div className="absolute right-[5%] bottom-0 top-[2%] w-[3%] bg-slate-400 dark:bg-slate-500" />
-        </div>
+          <NurseRig phase={phase} holding={holdingSyringe} onInjectDone={onInjectDone} />
+        </Canvas>
 
-        {/* Clickable items */}
-        {visibleItems.map((item) => {
-          const isCorrect = correctItemIds.includes(item.id);
-          const highlighted = hintShown && isCorrect && phase === "awaitingPick";
-          const shaking = shake?.itemId === item.id;
-          return (
-            <motion.button
-              key={shaking ? `${item.id}-${shake?.key}` : item.id}
-              type="button"
-              aria-label={item.detail ? `${item.label} — ${item.detail}` : item.label}
-              onClick={() => onPickItem(item)}
-              className={`absolute -translate-x-1/2 -translate-y-1/2 ${itemBoxSize(item)} ${item.kind === "needle" ? needleTint(item) : ""}`}
-              style={{ left: `${item.position.x}%`, top: `${item.position.y}%` }}
-              whileTap={{ scale: 0.9 }}
-              animate={shaking ? { x: [0, -7, 7, -5, 5, 0] } : { x: 0 }}
-              transition={shaking ? { duration: 0.45 } : undefined}
-            >
-              {highlighted && (
-                <motion.span
-                  className="absolute -inset-2 rounded-full border-2 border-rcsi-green bg-rcsi-green/15"
-                  animate={{ scale: [1, 1.25, 1], opacity: [0.7, 0.2, 0.7] }}
-                  transition={{ repeat: Infinity, duration: 1.4 }}
-                />
-              )}
-              <div className="relative aspect-[2/1]">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <ItemSprite kind={item.kind} size={item.size} />
-                </div>
-              </div>
-              <span className="block mx-auto mt-0.5 w-fit whitespace-nowrap rounded-full bg-white/85 dark:bg-slate-800/85 px-1.5 text-[9px] font-semibold text-gray-700 dark:text-gray-200">
-                {item.label}
-              </span>
-            </motion.button>
-          );
-        })}
-
-        {/* Injection site target */}
-        <AnimatePresence>
-          {phase === "awaitingInject" && (
-            <motion.button
-              type="button"
-              aria-label={`Inject at ${site.label}`}
-              onClick={onInject}
-              className="absolute w-[13%] aspect-square -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-dashed border-rcsi-navy dark:border-rcsi-green"
-              style={{ left: `${site.x}%`, top: `${site.y}%` }}
-              initial={{ opacity: 0 }}
-              exit={{ opacity: 0 }}
-              animate={{ opacity: 1, scale: [1, 1.15, 1] }}
-              transition={{ scale: { repeat: Infinity, duration: 1.2 } }}
-            >
-              <span className="absolute inset-[28%] rounded-full bg-rcsi-green/40" />
-            </motion.button>
-          )}
-        </AnimatePresence>
-
-        {/* Flying syringe while injecting */}
-        {phase === "injecting" && (
-          <motion.div
-            className="absolute w-[16%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-            initial={{ left: "72%", top: "70%", rotate: 0 }}
-            animate={{ left: `${site.x + 4}%`, top: `${site.y - 2}%`, rotate: -35 }}
-            transition={{ duration: 0.9, ease: "easeInOut" }}
-            onAnimationComplete={onInjectDone}
-          >
-            <ItemSprite kind="syringe" size="sm" />
-          </motion.div>
-        )}
-
-        {/* Floating points */}
+        {/* Floating points overlay */}
         <AnimatePresence>
           {floatingPoints && (
             <motion.div
