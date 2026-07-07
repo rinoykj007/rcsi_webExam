@@ -368,12 +368,13 @@ const Home = () => {
                   >
                     <Brain size={14} /> MCQ
                   </Link>
-                  <a
-                    href="#stations"
+              
+                  <Link
+                    to="/osce"
                     className="inline-flex items-center gap-1.5 bg-white/20 text-white border border-white/40 rounded-full px-4 py-2 text-sm font-bold hover:bg-white/30 transition"
                   >
-                    <Stethoscope size={14} /> Practical
-                  </a>
+                    <Stethoscope size={14} /> OSCE 500
+                  </Link>
                 </div>
               </div>
               <img

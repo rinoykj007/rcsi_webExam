@@ -1,0 +1,6102 @@
+[
+ {
+  "id": "osce-004",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 4",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 32,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-004-s0",
+    "stationId": "osce-004",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-004-s1",
+    "stationId": "osce-004",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 4. Assess the wound. Patient Sarah, age 32. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-004-s2",
+    "stationId": "osce-004",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-004-s3",
+    "stationId": "osce-004",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-004-s4",
+    "stationId": "osce-004",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-004-s5",
+    "stationId": "osce-004",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-004-s6",
+    "stationId": "osce-004",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-014",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 14",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 62,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-014-s0",
+    "stationId": "osce-014",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-014-s1",
+    "stationId": "osce-014",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 14. Assess the wound. Patient Sarah, age 62. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-014-s2",
+    "stationId": "osce-014",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-014-s3",
+    "stationId": "osce-014",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-014-s4",
+    "stationId": "osce-014",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-014-s5",
+    "stationId": "osce-014",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-014-s6",
+    "stationId": "osce-014",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-024",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 24",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 31,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-024-s0",
+    "stationId": "osce-024",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-024-s1",
+    "stationId": "osce-024",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 24. Assess the wound. Patient Sarah, age 31. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-024-s2",
+    "stationId": "osce-024",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-024-s3",
+    "stationId": "osce-024",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-024-s4",
+    "stationId": "osce-024",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-024-s5",
+    "stationId": "osce-024",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-024-s6",
+    "stationId": "osce-024",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-034",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 34",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 61,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-034-s0",
+    "stationId": "osce-034",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-034-s1",
+    "stationId": "osce-034",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 34. Assess the wound. Patient Sarah, age 61. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-034-s2",
+    "stationId": "osce-034",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-034-s3",
+    "stationId": "osce-034",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-034-s4",
+    "stationId": "osce-034",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-034-s5",
+    "stationId": "osce-034",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-034-s6",
+    "stationId": "osce-034",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-044",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 44",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 30,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-044-s0",
+    "stationId": "osce-044",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-044-s1",
+    "stationId": "osce-044",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 44. Assess the wound. Patient Sarah, age 30. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-044-s2",
+    "stationId": "osce-044",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-044-s3",
+    "stationId": "osce-044",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-044-s4",
+    "stationId": "osce-044",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-044-s5",
+    "stationId": "osce-044",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-044-s6",
+    "stationId": "osce-044",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-054",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 54",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 60,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-054-s0",
+    "stationId": "osce-054",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-054-s1",
+    "stationId": "osce-054",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 54. Assess the wound. Patient Sarah, age 60. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-054-s2",
+    "stationId": "osce-054",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-054-s3",
+    "stationId": "osce-054",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-054-s4",
+    "stationId": "osce-054",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-054-s5",
+    "stationId": "osce-054",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-054-s6",
+    "stationId": "osce-054",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-064",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 64",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 29,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-064-s0",
+    "stationId": "osce-064",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-064-s1",
+    "stationId": "osce-064",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 64. Assess the wound. Patient Sarah, age 29. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-064-s2",
+    "stationId": "osce-064",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-064-s3",
+    "stationId": "osce-064",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-064-s4",
+    "stationId": "osce-064",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-064-s5",
+    "stationId": "osce-064",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-064-s6",
+    "stationId": "osce-064",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-074",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 74",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 59,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-074-s0",
+    "stationId": "osce-074",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-074-s1",
+    "stationId": "osce-074",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 74. Assess the wound. Patient Sarah, age 59. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-074-s2",
+    "stationId": "osce-074",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-074-s3",
+    "stationId": "osce-074",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-074-s4",
+    "stationId": "osce-074",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-074-s5",
+    "stationId": "osce-074",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-074-s6",
+    "stationId": "osce-074",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-084",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 84",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 28,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-084-s0",
+    "stationId": "osce-084",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-084-s1",
+    "stationId": "osce-084",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 84. Assess the wound. Patient Sarah, age 28. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-084-s2",
+    "stationId": "osce-084",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-084-s3",
+    "stationId": "osce-084",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-084-s4",
+    "stationId": "osce-084",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-084-s5",
+    "stationId": "osce-084",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-084-s6",
+    "stationId": "osce-084",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-094",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 94",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 58,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-094-s0",
+    "stationId": "osce-094",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-094-s1",
+    "stationId": "osce-094",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 94. Assess the wound. Patient Sarah, age 58. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-094-s2",
+    "stationId": "osce-094",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-094-s3",
+    "stationId": "osce-094",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-094-s4",
+    "stationId": "osce-094",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-094-s5",
+    "stationId": "osce-094",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-094-s6",
+    "stationId": "osce-094",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-104",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 104",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 27,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-104-s0",
+    "stationId": "osce-104",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-104-s1",
+    "stationId": "osce-104",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 104. Assess the wound. Patient Sarah, age 27. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-104-s2",
+    "stationId": "osce-104",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-104-s3",
+    "stationId": "osce-104",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-104-s4",
+    "stationId": "osce-104",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-104-s5",
+    "stationId": "osce-104",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-104-s6",
+    "stationId": "osce-104",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-114",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 114",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 57,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-114-s0",
+    "stationId": "osce-114",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-114-s1",
+    "stationId": "osce-114",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 114. Assess the wound. Patient Sarah, age 57. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-114-s2",
+    "stationId": "osce-114",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-114-s3",
+    "stationId": "osce-114",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-114-s4",
+    "stationId": "osce-114",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-114-s5",
+    "stationId": "osce-114",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-114-s6",
+    "stationId": "osce-114",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-124",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 124",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 26,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-124-s0",
+    "stationId": "osce-124",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-124-s1",
+    "stationId": "osce-124",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 124. Assess the wound. Patient Sarah, age 26. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-124-s2",
+    "stationId": "osce-124",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-124-s3",
+    "stationId": "osce-124",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-124-s4",
+    "stationId": "osce-124",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-124-s5",
+    "stationId": "osce-124",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-124-s6",
+    "stationId": "osce-124",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-134",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 134",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 56,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-134-s0",
+    "stationId": "osce-134",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-134-s1",
+    "stationId": "osce-134",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 134. Assess the wound. Patient Sarah, age 56. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-134-s2",
+    "stationId": "osce-134",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-134-s3",
+    "stationId": "osce-134",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-134-s4",
+    "stationId": "osce-134",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-134-s5",
+    "stationId": "osce-134",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-134-s6",
+    "stationId": "osce-134",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-144",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 144",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 25,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-144-s0",
+    "stationId": "osce-144",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-144-s1",
+    "stationId": "osce-144",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 144. Assess the wound. Patient Sarah, age 25. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-144-s2",
+    "stationId": "osce-144",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-144-s3",
+    "stationId": "osce-144",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-144-s4",
+    "stationId": "osce-144",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-144-s5",
+    "stationId": "osce-144",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-144-s6",
+    "stationId": "osce-144",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-154",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 154",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 55,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-154-s0",
+    "stationId": "osce-154",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-154-s1",
+    "stationId": "osce-154",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 154. Assess the wound. Patient Sarah, age 55. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-154-s2",
+    "stationId": "osce-154",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-154-s3",
+    "stationId": "osce-154",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-154-s4",
+    "stationId": "osce-154",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-154-s5",
+    "stationId": "osce-154",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-154-s6",
+    "stationId": "osce-154",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-164",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 164",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 24,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-164-s0",
+    "stationId": "osce-164",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-164-s1",
+    "stationId": "osce-164",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 164. Assess the wound. Patient Sarah, age 24. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-164-s2",
+    "stationId": "osce-164",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-164-s3",
+    "stationId": "osce-164",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-164-s4",
+    "stationId": "osce-164",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-164-s5",
+    "stationId": "osce-164",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-164-s6",
+    "stationId": "osce-164",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-174",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 174",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 54,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-174-s0",
+    "stationId": "osce-174",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-174-s1",
+    "stationId": "osce-174",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 174. Assess the wound. Patient Sarah, age 54. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-174-s2",
+    "stationId": "osce-174",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-174-s3",
+    "stationId": "osce-174",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-174-s4",
+    "stationId": "osce-174",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-174-s5",
+    "stationId": "osce-174",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-174-s6",
+    "stationId": "osce-174",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-184",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 184",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 23,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-184-s0",
+    "stationId": "osce-184",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-184-s1",
+    "stationId": "osce-184",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 184. Assess the wound. Patient Sarah, age 23. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-184-s2",
+    "stationId": "osce-184",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-184-s3",
+    "stationId": "osce-184",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-184-s4",
+    "stationId": "osce-184",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-184-s5",
+    "stationId": "osce-184",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-184-s6",
+    "stationId": "osce-184",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-194",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 194",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 53,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-194-s0",
+    "stationId": "osce-194",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-194-s1",
+    "stationId": "osce-194",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 194. Assess the wound. Patient Sarah, age 53. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-194-s2",
+    "stationId": "osce-194",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-194-s3",
+    "stationId": "osce-194",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-194-s4",
+    "stationId": "osce-194",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-194-s5",
+    "stationId": "osce-194",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-194-s6",
+    "stationId": "osce-194",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-204",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 204",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 22,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-204-s0",
+    "stationId": "osce-204",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-204-s1",
+    "stationId": "osce-204",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 204. Assess the wound. Patient Sarah, age 22. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-204-s2",
+    "stationId": "osce-204",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-204-s3",
+    "stationId": "osce-204",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-204-s4",
+    "stationId": "osce-204",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-204-s5",
+    "stationId": "osce-204",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-204-s6",
+    "stationId": "osce-204",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-214",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 214",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 52,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-214-s0",
+    "stationId": "osce-214",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-214-s1",
+    "stationId": "osce-214",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 214. Assess the wound. Patient Sarah, age 52. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-214-s2",
+    "stationId": "osce-214",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-214-s3",
+    "stationId": "osce-214",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-214-s4",
+    "stationId": "osce-214",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-214-s5",
+    "stationId": "osce-214",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-214-s6",
+    "stationId": "osce-214",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-224",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 224",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 21,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-224-s0",
+    "stationId": "osce-224",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-224-s1",
+    "stationId": "osce-224",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 224. Assess the wound. Patient Sarah, age 21. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-224-s2",
+    "stationId": "osce-224",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-224-s3",
+    "stationId": "osce-224",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-224-s4",
+    "stationId": "osce-224",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-224-s5",
+    "stationId": "osce-224",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-224-s6",
+    "stationId": "osce-224",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-234",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 234",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 51,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-234-s0",
+    "stationId": "osce-234",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-234-s1",
+    "stationId": "osce-234",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 234. Assess the wound. Patient Sarah, age 51. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-234-s2",
+    "stationId": "osce-234",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-234-s3",
+    "stationId": "osce-234",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-234-s4",
+    "stationId": "osce-234",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-234-s5",
+    "stationId": "osce-234",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-234-s6",
+    "stationId": "osce-234",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-244",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 244",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 20,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-244-s0",
+    "stationId": "osce-244",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-244-s1",
+    "stationId": "osce-244",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 244. Assess the wound. Patient Sarah, age 20. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-244-s2",
+    "stationId": "osce-244",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-244-s3",
+    "stationId": "osce-244",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-244-s4",
+    "stationId": "osce-244",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-244-s5",
+    "stationId": "osce-244",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-244-s6",
+    "stationId": "osce-244",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-254",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 254",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 50,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-254-s0",
+    "stationId": "osce-254",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-254-s1",
+    "stationId": "osce-254",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 254. Assess the wound. Patient Sarah, age 50. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-254-s2",
+    "stationId": "osce-254",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-254-s3",
+    "stationId": "osce-254",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-254-s4",
+    "stationId": "osce-254",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-254-s5",
+    "stationId": "osce-254",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-254-s6",
+    "stationId": "osce-254",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-264",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 264",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 80,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-264-s0",
+    "stationId": "osce-264",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-264-s1",
+    "stationId": "osce-264",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 264. Assess the wound. Patient Sarah, age 80. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-264-s2",
+    "stationId": "osce-264",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-264-s3",
+    "stationId": "osce-264",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-264-s4",
+    "stationId": "osce-264",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-264-s5",
+    "stationId": "osce-264",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-264-s6",
+    "stationId": "osce-264",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-274",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 274",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 49,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-274-s0",
+    "stationId": "osce-274",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-274-s1",
+    "stationId": "osce-274",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 274. Assess the wound. Patient Sarah, age 49. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-274-s2",
+    "stationId": "osce-274",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-274-s3",
+    "stationId": "osce-274",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-274-s4",
+    "stationId": "osce-274",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-274-s5",
+    "stationId": "osce-274",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-274-s6",
+    "stationId": "osce-274",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-284",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 284",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 79,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-284-s0",
+    "stationId": "osce-284",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-284-s1",
+    "stationId": "osce-284",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 284. Assess the wound. Patient Sarah, age 79. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-284-s2",
+    "stationId": "osce-284",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-284-s3",
+    "stationId": "osce-284",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-284-s4",
+    "stationId": "osce-284",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-284-s5",
+    "stationId": "osce-284",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-284-s6",
+    "stationId": "osce-284",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-294",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 294",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 48,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-294-s0",
+    "stationId": "osce-294",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-294-s1",
+    "stationId": "osce-294",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 294. Assess the wound. Patient Sarah, age 48. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-294-s2",
+    "stationId": "osce-294",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-294-s3",
+    "stationId": "osce-294",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-294-s4",
+    "stationId": "osce-294",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-294-s5",
+    "stationId": "osce-294",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-294-s6",
+    "stationId": "osce-294",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-304",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 304",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 78,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-304-s0",
+    "stationId": "osce-304",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-304-s1",
+    "stationId": "osce-304",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 304. Assess the wound. Patient Sarah, age 78. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-304-s2",
+    "stationId": "osce-304",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-304-s3",
+    "stationId": "osce-304",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-304-s4",
+    "stationId": "osce-304",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-304-s5",
+    "stationId": "osce-304",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-304-s6",
+    "stationId": "osce-304",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-314",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 314",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 47,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-314-s0",
+    "stationId": "osce-314",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-314-s1",
+    "stationId": "osce-314",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 314. Assess the wound. Patient Sarah, age 47. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-314-s2",
+    "stationId": "osce-314",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-314-s3",
+    "stationId": "osce-314",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-314-s4",
+    "stationId": "osce-314",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-314-s5",
+    "stationId": "osce-314",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-314-s6",
+    "stationId": "osce-314",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-324",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 324",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 77,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-324-s0",
+    "stationId": "osce-324",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-324-s1",
+    "stationId": "osce-324",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 324. Assess the wound. Patient Sarah, age 77. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-324-s2",
+    "stationId": "osce-324",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-324-s3",
+    "stationId": "osce-324",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-324-s4",
+    "stationId": "osce-324",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-324-s5",
+    "stationId": "osce-324",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-324-s6",
+    "stationId": "osce-324",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-334",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 334",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 46,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-334-s0",
+    "stationId": "osce-334",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-334-s1",
+    "stationId": "osce-334",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 334. Assess the wound. Patient Sarah, age 46. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-334-s2",
+    "stationId": "osce-334",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-334-s3",
+    "stationId": "osce-334",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-334-s4",
+    "stationId": "osce-334",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-334-s5",
+    "stationId": "osce-334",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-334-s6",
+    "stationId": "osce-334",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-344",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 344",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 76,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-344-s0",
+    "stationId": "osce-344",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-344-s1",
+    "stationId": "osce-344",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 344. Assess the wound. Patient Sarah, age 76. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-344-s2",
+    "stationId": "osce-344",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-344-s3",
+    "stationId": "osce-344",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-344-s4",
+    "stationId": "osce-344",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-344-s5",
+    "stationId": "osce-344",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-344-s6",
+    "stationId": "osce-344",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-354",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 354",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 45,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-354-s0",
+    "stationId": "osce-354",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-354-s1",
+    "stationId": "osce-354",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 354. Assess the wound. Patient Sarah, age 45. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-354-s2",
+    "stationId": "osce-354",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-354-s3",
+    "stationId": "osce-354",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-354-s4",
+    "stationId": "osce-354",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-354-s5",
+    "stationId": "osce-354",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-354-s6",
+    "stationId": "osce-354",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-364",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 364",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 75,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-364-s0",
+    "stationId": "osce-364",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-364-s1",
+    "stationId": "osce-364",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 364. Assess the wound. Patient Sarah, age 75. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-364-s2",
+    "stationId": "osce-364",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-364-s3",
+    "stationId": "osce-364",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-364-s4",
+    "stationId": "osce-364",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-364-s5",
+    "stationId": "osce-364",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-364-s6",
+    "stationId": "osce-364",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-374",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 374",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 44,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-374-s0",
+    "stationId": "osce-374",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-374-s1",
+    "stationId": "osce-374",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 374. Assess the wound. Patient Sarah, age 44. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-374-s2",
+    "stationId": "osce-374",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-374-s3",
+    "stationId": "osce-374",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-374-s4",
+    "stationId": "osce-374",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-374-s5",
+    "stationId": "osce-374",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-374-s6",
+    "stationId": "osce-374",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-384",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 384",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 74,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-384-s0",
+    "stationId": "osce-384",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-384-s1",
+    "stationId": "osce-384",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 384. Assess the wound. Patient Sarah, age 74. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-384-s2",
+    "stationId": "osce-384",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-384-s3",
+    "stationId": "osce-384",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-384-s4",
+    "stationId": "osce-384",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-384-s5",
+    "stationId": "osce-384",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-384-s6",
+    "stationId": "osce-384",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-394",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 394",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 43,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-394-s0",
+    "stationId": "osce-394",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-394-s1",
+    "stationId": "osce-394",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 394. Assess the wound. Patient Sarah, age 43. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-394-s2",
+    "stationId": "osce-394",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-394-s3",
+    "stationId": "osce-394",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-394-s4",
+    "stationId": "osce-394",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-394-s5",
+    "stationId": "osce-394",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-394-s6",
+    "stationId": "osce-394",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-404",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 404",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 73,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-404-s0",
+    "stationId": "osce-404",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-404-s1",
+    "stationId": "osce-404",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 404. Assess the wound. Patient Sarah, age 73. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-404-s2",
+    "stationId": "osce-404",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-404-s3",
+    "stationId": "osce-404",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-404-s4",
+    "stationId": "osce-404",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-404-s5",
+    "stationId": "osce-404",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-404-s6",
+    "stationId": "osce-404",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-414",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 414",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 42,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-414-s0",
+    "stationId": "osce-414",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-414-s1",
+    "stationId": "osce-414",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 414. Assess the wound. Patient Sarah, age 42. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-414-s2",
+    "stationId": "osce-414",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-414-s3",
+    "stationId": "osce-414",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-414-s4",
+    "stationId": "osce-414",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-414-s5",
+    "stationId": "osce-414",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-414-s6",
+    "stationId": "osce-414",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-424",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 424",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 72,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-424-s0",
+    "stationId": "osce-424",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-424-s1",
+    "stationId": "osce-424",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 424. Assess the wound. Patient Sarah, age 72. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-424-s2",
+    "stationId": "osce-424",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-424-s3",
+    "stationId": "osce-424",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-424-s4",
+    "stationId": "osce-424",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-424-s5",
+    "stationId": "osce-424",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-424-s6",
+    "stationId": "osce-424",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-434",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 434",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 41,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-434-s0",
+    "stationId": "osce-434",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-434-s1",
+    "stationId": "osce-434",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 434. Assess the wound. Patient Sarah, age 41. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-434-s2",
+    "stationId": "osce-434",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-434-s3",
+    "stationId": "osce-434",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-434-s4",
+    "stationId": "osce-434",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-434-s5",
+    "stationId": "osce-434",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-434-s6",
+    "stationId": "osce-434",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-444",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 444",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 71,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-444-s0",
+    "stationId": "osce-444",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-444-s1",
+    "stationId": "osce-444",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 444. Assess the wound. Patient Sarah, age 71. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-444-s2",
+    "stationId": "osce-444",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-444-s3",
+    "stationId": "osce-444",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-444-s4",
+    "stationId": "osce-444",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-444-s5",
+    "stationId": "osce-444",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-444-s6",
+    "stationId": "osce-444",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-454",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 454",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 40,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-454-s0",
+    "stationId": "osce-454",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-454-s1",
+    "stationId": "osce-454",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 454. Assess the wound. Patient Sarah, age 40. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-454-s2",
+    "stationId": "osce-454",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-454-s3",
+    "stationId": "osce-454",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-454-s4",
+    "stationId": "osce-454",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-454-s5",
+    "stationId": "osce-454",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-454-s6",
+    "stationId": "osce-454",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-464",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 464",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 70,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-464-s0",
+    "stationId": "osce-464",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-464-s1",
+    "stationId": "osce-464",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 464. Assess the wound. Patient Sarah, age 70. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-464-s2",
+    "stationId": "osce-464",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-464-s3",
+    "stationId": "osce-464",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-464-s4",
+    "stationId": "osce-464",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-464-s5",
+    "stationId": "osce-464",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-464-s6",
+    "stationId": "osce-464",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-474",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 474",
+  "task": "Assess the wound.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sarah",
+   "age": 39,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-474-s0",
+    "stationId": "osce-474",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-474-s1",
+    "stationId": "osce-474",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 474. Assess the wound. Patient Sarah, age 39. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-474-s2",
+    "stationId": "osce-474",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-474-s3",
+    "stationId": "osce-474",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-474-s4",
+    "stationId": "osce-474",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should wound assessment be documented?",
+     "options": [
+      "Only when the wound deteriorates",
+      "At every dressing change, using a structured wound assessment chart",
+      "Once weekly",
+      "Only on admission"
+     ],
+     "correctIndex": 1,
+     "explanation": "Structured documentation at each dressing change tracks healing and detects deterioration early."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-474-s5",
+    "stationId": "osce-474",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-474-s6",
+    "stationId": "osce-474",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-484",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 484",
+  "task": "Assess the wound.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sarah",
+   "age": 69,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-484-s0",
+    "stationId": "osce-484",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-484-s1",
+    "stationId": "osce-484",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 484. Assess the wound. Patient Sarah, age 69. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-484-s2",
+    "stationId": "osce-484",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-484-s3",
+    "stationId": "osce-484",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-484-s4",
+    "stationId": "osce-484",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When redressing Sarah's wound, which technique prevents contamination of key parts and key sites?",
+     "options": [
+      "Clean technique with regular gloves throughout",
+      "Aseptic non-touch technique (ANTT)",
+      "Washing the wound with tap water only",
+      "Re-using the outer dressing if it looks clean"
+     ],
+     "correctIndex": 1,
+     "explanation": "ANTT protects key parts and key sites from contamination during wound care."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-484-s5",
+    "stationId": "osce-484",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-484-s6",
+    "stationId": "osce-484",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-494",
+  "category": "wound-dressing",
+  "title": "Wound Dressing Station 494",
+  "task": "Assess the wound.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sarah",
+   "age": 38,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-494-s0",
+    "stationId": "osce-494",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-494-s1",
+    "stationId": "osce-494",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 494. Assess the wound. Patient Sarah, age 38. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-494-s2",
+    "stationId": "osce-494",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-494-s3",
+    "stationId": "osce-494",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess the wound.",
+     "options": [
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-494-s4",
+    "stationId": "osce-494",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You notice increased redness, warmth and purulent exudate in Sarah's wound. What do you do?",
+     "options": [
+      "Apply the new dressing and document nothing",
+      "Document the findings, obtain a swab if indicated and report signs of infection",
+      "Wash the wound with antiseptic and ignore it",
+      "Leave the wound open to the air"
+     ],
+     "correctIndex": 1,
+     "explanation": "Signs of infection must be assessed, documented and escalated so treatment can start promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-494-s5",
+    "stationId": "osce-494",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Apply a sterile dressing. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-494-s6",
+    "stationId": "osce-494",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ }
+]

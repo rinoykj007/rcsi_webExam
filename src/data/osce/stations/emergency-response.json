@@ -1,0 +1,6102 @@
+[
+ {
+  "id": "osce-009",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 9",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 47,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-009-s0",
+    "stationId": "osce-009",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-009-s1",
+    "stationId": "osce-009",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 9. Assess responsiveness. Patient Daniel, age 47. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-009-s2",
+    "stationId": "osce-009",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-009-s3",
+    "stationId": "osce-009",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-009-s4",
+    "stationId": "osce-009",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-009-s5",
+    "stationId": "osce-009",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-009-s6",
+    "stationId": "osce-009",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-019",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 19",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 77,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-019-s0",
+    "stationId": "osce-019",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-019-s1",
+    "stationId": "osce-019",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 19. Assess responsiveness. Patient Daniel, age 77. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-019-s2",
+    "stationId": "osce-019",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-019-s3",
+    "stationId": "osce-019",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-019-s4",
+    "stationId": "osce-019",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-019-s5",
+    "stationId": "osce-019",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-019-s6",
+    "stationId": "osce-019",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-029",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 29",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 46,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-029-s0",
+    "stationId": "osce-029",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-029-s1",
+    "stationId": "osce-029",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 29. Assess responsiveness. Patient Daniel, age 46. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-029-s2",
+    "stationId": "osce-029",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-029-s3",
+    "stationId": "osce-029",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-029-s4",
+    "stationId": "osce-029",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-029-s5",
+    "stationId": "osce-029",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-029-s6",
+    "stationId": "osce-029",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-039",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 39",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 76,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-039-s0",
+    "stationId": "osce-039",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-039-s1",
+    "stationId": "osce-039",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 39. Assess responsiveness. Patient Daniel, age 76. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-039-s2",
+    "stationId": "osce-039",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-039-s3",
+    "stationId": "osce-039",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-039-s4",
+    "stationId": "osce-039",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-039-s5",
+    "stationId": "osce-039",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-039-s6",
+    "stationId": "osce-039",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-049",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 49",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 45,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-049-s0",
+    "stationId": "osce-049",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-049-s1",
+    "stationId": "osce-049",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 49. Assess responsiveness. Patient Daniel, age 45. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-049-s2",
+    "stationId": "osce-049",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-049-s3",
+    "stationId": "osce-049",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-049-s4",
+    "stationId": "osce-049",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-049-s5",
+    "stationId": "osce-049",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-049-s6",
+    "stationId": "osce-049",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-059",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 59",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 75,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-059-s0",
+    "stationId": "osce-059",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-059-s1",
+    "stationId": "osce-059",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 59. Assess responsiveness. Patient Daniel, age 75. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-059-s2",
+    "stationId": "osce-059",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-059-s3",
+    "stationId": "osce-059",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-059-s4",
+    "stationId": "osce-059",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-059-s5",
+    "stationId": "osce-059",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-059-s6",
+    "stationId": "osce-059",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-069",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 69",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 44,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-069-s0",
+    "stationId": "osce-069",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-069-s1",
+    "stationId": "osce-069",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 69. Assess responsiveness. Patient Daniel, age 44. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-069-s2",
+    "stationId": "osce-069",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-069-s3",
+    "stationId": "osce-069",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-069-s4",
+    "stationId": "osce-069",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-069-s5",
+    "stationId": "osce-069",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-069-s6",
+    "stationId": "osce-069",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-079",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 79",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 74,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-079-s0",
+    "stationId": "osce-079",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-079-s1",
+    "stationId": "osce-079",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 79. Assess responsiveness. Patient Daniel, age 74. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-079-s2",
+    "stationId": "osce-079",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-079-s3",
+    "stationId": "osce-079",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-079-s4",
+    "stationId": "osce-079",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-079-s5",
+    "stationId": "osce-079",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-079-s6",
+    "stationId": "osce-079",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-089",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 89",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 43,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-089-s0",
+    "stationId": "osce-089",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-089-s1",
+    "stationId": "osce-089",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 89. Assess responsiveness. Patient Daniel, age 43. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-089-s2",
+    "stationId": "osce-089",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-089-s3",
+    "stationId": "osce-089",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-089-s4",
+    "stationId": "osce-089",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-089-s5",
+    "stationId": "osce-089",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-089-s6",
+    "stationId": "osce-089",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-099",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 99",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 73,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-099-s0",
+    "stationId": "osce-099",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-099-s1",
+    "stationId": "osce-099",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 99. Assess responsiveness. Patient Daniel, age 73. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-099-s2",
+    "stationId": "osce-099",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-099-s3",
+    "stationId": "osce-099",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-099-s4",
+    "stationId": "osce-099",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-099-s5",
+    "stationId": "osce-099",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-099-s6",
+    "stationId": "osce-099",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-109",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 109",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 42,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-109-s0",
+    "stationId": "osce-109",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-109-s1",
+    "stationId": "osce-109",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 109. Assess responsiveness. Patient Daniel, age 42. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-109-s2",
+    "stationId": "osce-109",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-109-s3",
+    "stationId": "osce-109",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-109-s4",
+    "stationId": "osce-109",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-109-s5",
+    "stationId": "osce-109",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-109-s6",
+    "stationId": "osce-109",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-119",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 119",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 72,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-119-s0",
+    "stationId": "osce-119",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-119-s1",
+    "stationId": "osce-119",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 119. Assess responsiveness. Patient Daniel, age 72. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-119-s2",
+    "stationId": "osce-119",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-119-s3",
+    "stationId": "osce-119",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-119-s4",
+    "stationId": "osce-119",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-119-s5",
+    "stationId": "osce-119",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-119-s6",
+    "stationId": "osce-119",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-129",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 129",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 41,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-129-s0",
+    "stationId": "osce-129",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-129-s1",
+    "stationId": "osce-129",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 129. Assess responsiveness. Patient Daniel, age 41. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-129-s2",
+    "stationId": "osce-129",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-129-s3",
+    "stationId": "osce-129",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-129-s4",
+    "stationId": "osce-129",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-129-s5",
+    "stationId": "osce-129",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-129-s6",
+    "stationId": "osce-129",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-139",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 139",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 71,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-139-s0",
+    "stationId": "osce-139",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-139-s1",
+    "stationId": "osce-139",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 139. Assess responsiveness. Patient Daniel, age 71. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-139-s2",
+    "stationId": "osce-139",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-139-s3",
+    "stationId": "osce-139",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-139-s4",
+    "stationId": "osce-139",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-139-s5",
+    "stationId": "osce-139",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-139-s6",
+    "stationId": "osce-139",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-149",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 149",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 40,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-149-s0",
+    "stationId": "osce-149",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-149-s1",
+    "stationId": "osce-149",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 149. Assess responsiveness. Patient Daniel, age 40. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-149-s2",
+    "stationId": "osce-149",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-149-s3",
+    "stationId": "osce-149",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-149-s4",
+    "stationId": "osce-149",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-149-s5",
+    "stationId": "osce-149",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-149-s6",
+    "stationId": "osce-149",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-159",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 159",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 70,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-159-s0",
+    "stationId": "osce-159",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-159-s1",
+    "stationId": "osce-159",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 159. Assess responsiveness. Patient Daniel, age 70. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-159-s2",
+    "stationId": "osce-159",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-159-s3",
+    "stationId": "osce-159",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-159-s4",
+    "stationId": "osce-159",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-159-s5",
+    "stationId": "osce-159",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-159-s6",
+    "stationId": "osce-159",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-169",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 169",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 39,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-169-s0",
+    "stationId": "osce-169",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-169-s1",
+    "stationId": "osce-169",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 169. Assess responsiveness. Patient Daniel, age 39. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-169-s2",
+    "stationId": "osce-169",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-169-s3",
+    "stationId": "osce-169",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-169-s4",
+    "stationId": "osce-169",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-169-s5",
+    "stationId": "osce-169",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-169-s6",
+    "stationId": "osce-169",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-179",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 179",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 69,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-179-s0",
+    "stationId": "osce-179",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-179-s1",
+    "stationId": "osce-179",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 179. Assess responsiveness. Patient Daniel, age 69. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-179-s2",
+    "stationId": "osce-179",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-179-s3",
+    "stationId": "osce-179",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-179-s4",
+    "stationId": "osce-179",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-179-s5",
+    "stationId": "osce-179",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-179-s6",
+    "stationId": "osce-179",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-189",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 189",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 38,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-189-s0",
+    "stationId": "osce-189",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-189-s1",
+    "stationId": "osce-189",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 189. Assess responsiveness. Patient Daniel, age 38. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-189-s2",
+    "stationId": "osce-189",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-189-s3",
+    "stationId": "osce-189",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-189-s4",
+    "stationId": "osce-189",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-189-s5",
+    "stationId": "osce-189",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-189-s6",
+    "stationId": "osce-189",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-199",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 199",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 68,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-199-s0",
+    "stationId": "osce-199",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-199-s1",
+    "stationId": "osce-199",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 199. Assess responsiveness. Patient Daniel, age 68. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-199-s2",
+    "stationId": "osce-199",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-199-s3",
+    "stationId": "osce-199",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-199-s4",
+    "stationId": "osce-199",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-199-s5",
+    "stationId": "osce-199",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-199-s6",
+    "stationId": "osce-199",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-209",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 209",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 37,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-209-s0",
+    "stationId": "osce-209",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-209-s1",
+    "stationId": "osce-209",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 209. Assess responsiveness. Patient Daniel, age 37. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-209-s2",
+    "stationId": "osce-209",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-209-s3",
+    "stationId": "osce-209",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-209-s4",
+    "stationId": "osce-209",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-209-s5",
+    "stationId": "osce-209",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-209-s6",
+    "stationId": "osce-209",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-219",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 219",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 67,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-219-s0",
+    "stationId": "osce-219",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-219-s1",
+    "stationId": "osce-219",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 219. Assess responsiveness. Patient Daniel, age 67. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-219-s2",
+    "stationId": "osce-219",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-219-s3",
+    "stationId": "osce-219",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-219-s4",
+    "stationId": "osce-219",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-219-s5",
+    "stationId": "osce-219",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-219-s6",
+    "stationId": "osce-219",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-229",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 229",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 36,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-229-s0",
+    "stationId": "osce-229",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-229-s1",
+    "stationId": "osce-229",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 229. Assess responsiveness. Patient Daniel, age 36. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-229-s2",
+    "stationId": "osce-229",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-229-s3",
+    "stationId": "osce-229",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-229-s4",
+    "stationId": "osce-229",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-229-s5",
+    "stationId": "osce-229",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-229-s6",
+    "stationId": "osce-229",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-239",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 239",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 66,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-239-s0",
+    "stationId": "osce-239",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-239-s1",
+    "stationId": "osce-239",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 239. Assess responsiveness. Patient Daniel, age 66. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-239-s2",
+    "stationId": "osce-239",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-239-s3",
+    "stationId": "osce-239",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-239-s4",
+    "stationId": "osce-239",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-239-s5",
+    "stationId": "osce-239",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-239-s6",
+    "stationId": "osce-239",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-249",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 249",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 35,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-249-s0",
+    "stationId": "osce-249",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-249-s1",
+    "stationId": "osce-249",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 249. Assess responsiveness. Patient Daniel, age 35. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-249-s2",
+    "stationId": "osce-249",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-249-s3",
+    "stationId": "osce-249",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-249-s4",
+    "stationId": "osce-249",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-249-s5",
+    "stationId": "osce-249",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-249-s6",
+    "stationId": "osce-249",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-259",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 259",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 65,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-259-s0",
+    "stationId": "osce-259",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-259-s1",
+    "stationId": "osce-259",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 259. Assess responsiveness. Patient Daniel, age 65. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-259-s2",
+    "stationId": "osce-259",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-259-s3",
+    "stationId": "osce-259",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-259-s4",
+    "stationId": "osce-259",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-259-s5",
+    "stationId": "osce-259",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-259-s6",
+    "stationId": "osce-259",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-269",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 269",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 34,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-269-s0",
+    "stationId": "osce-269",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-269-s1",
+    "stationId": "osce-269",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 269. Assess responsiveness. Patient Daniel, age 34. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-269-s2",
+    "stationId": "osce-269",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-269-s3",
+    "stationId": "osce-269",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-269-s4",
+    "stationId": "osce-269",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-269-s5",
+    "stationId": "osce-269",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-269-s6",
+    "stationId": "osce-269",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-279",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 279",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 64,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-279-s0",
+    "stationId": "osce-279",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-279-s1",
+    "stationId": "osce-279",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 279. Assess responsiveness. Patient Daniel, age 64. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-279-s2",
+    "stationId": "osce-279",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-279-s3",
+    "stationId": "osce-279",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-279-s4",
+    "stationId": "osce-279",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-279-s5",
+    "stationId": "osce-279",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-279-s6",
+    "stationId": "osce-279",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-289",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 289",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 33,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-289-s0",
+    "stationId": "osce-289",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-289-s1",
+    "stationId": "osce-289",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 289. Assess responsiveness. Patient Daniel, age 33. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-289-s2",
+    "stationId": "osce-289",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-289-s3",
+    "stationId": "osce-289",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-289-s4",
+    "stationId": "osce-289",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-289-s5",
+    "stationId": "osce-289",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-289-s6",
+    "stationId": "osce-289",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-299",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 299",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 63,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-299-s0",
+    "stationId": "osce-299",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-299-s1",
+    "stationId": "osce-299",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 299. Assess responsiveness. Patient Daniel, age 63. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-299-s2",
+    "stationId": "osce-299",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-299-s3",
+    "stationId": "osce-299",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-299-s4",
+    "stationId": "osce-299",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-299-s5",
+    "stationId": "osce-299",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-299-s6",
+    "stationId": "osce-299",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-309",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 309",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 32,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-309-s0",
+    "stationId": "osce-309",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-309-s1",
+    "stationId": "osce-309",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 309. Assess responsiveness. Patient Daniel, age 32. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-309-s2",
+    "stationId": "osce-309",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-309-s3",
+    "stationId": "osce-309",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-309-s4",
+    "stationId": "osce-309",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-309-s5",
+    "stationId": "osce-309",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-309-s6",
+    "stationId": "osce-309",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-319",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 319",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 62,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-319-s0",
+    "stationId": "osce-319",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-319-s1",
+    "stationId": "osce-319",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 319. Assess responsiveness. Patient Daniel, age 62. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-319-s2",
+    "stationId": "osce-319",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-319-s3",
+    "stationId": "osce-319",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-319-s4",
+    "stationId": "osce-319",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-319-s5",
+    "stationId": "osce-319",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-319-s6",
+    "stationId": "osce-319",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-329",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 329",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 31,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-329-s0",
+    "stationId": "osce-329",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-329-s1",
+    "stationId": "osce-329",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 329. Assess responsiveness. Patient Daniel, age 31. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-329-s2",
+    "stationId": "osce-329",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-329-s3",
+    "stationId": "osce-329",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-329-s4",
+    "stationId": "osce-329",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-329-s5",
+    "stationId": "osce-329",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-329-s6",
+    "stationId": "osce-329",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-339",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 339",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 61,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-339-s0",
+    "stationId": "osce-339",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-339-s1",
+    "stationId": "osce-339",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 339. Assess responsiveness. Patient Daniel, age 61. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-339-s2",
+    "stationId": "osce-339",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-339-s3",
+    "stationId": "osce-339",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-339-s4",
+    "stationId": "osce-339",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-339-s5",
+    "stationId": "osce-339",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-339-s6",
+    "stationId": "osce-339",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-349",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 349",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 30,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-349-s0",
+    "stationId": "osce-349",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-349-s1",
+    "stationId": "osce-349",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 349. Assess responsiveness. Patient Daniel, age 30. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-349-s2",
+    "stationId": "osce-349",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-349-s3",
+    "stationId": "osce-349",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-349-s4",
+    "stationId": "osce-349",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-349-s5",
+    "stationId": "osce-349",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-349-s6",
+    "stationId": "osce-349",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-359",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 359",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 60,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-359-s0",
+    "stationId": "osce-359",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-359-s1",
+    "stationId": "osce-359",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 359. Assess responsiveness. Patient Daniel, age 60. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-359-s2",
+    "stationId": "osce-359",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-359-s3",
+    "stationId": "osce-359",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-359-s4",
+    "stationId": "osce-359",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-359-s5",
+    "stationId": "osce-359",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-359-s6",
+    "stationId": "osce-359",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-369",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 369",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 29,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-369-s0",
+    "stationId": "osce-369",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-369-s1",
+    "stationId": "osce-369",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 369. Assess responsiveness. Patient Daniel, age 29. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-369-s2",
+    "stationId": "osce-369",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-369-s3",
+    "stationId": "osce-369",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-369-s4",
+    "stationId": "osce-369",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-369-s5",
+    "stationId": "osce-369",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-369-s6",
+    "stationId": "osce-369",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-379",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 379",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 59,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-379-s0",
+    "stationId": "osce-379",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-379-s1",
+    "stationId": "osce-379",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 379. Assess responsiveness. Patient Daniel, age 59. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-379-s2",
+    "stationId": "osce-379",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-379-s3",
+    "stationId": "osce-379",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-379-s4",
+    "stationId": "osce-379",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-379-s5",
+    "stationId": "osce-379",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-379-s6",
+    "stationId": "osce-379",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-389",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 389",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 28,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-389-s0",
+    "stationId": "osce-389",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-389-s1",
+    "stationId": "osce-389",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 389. Assess responsiveness. Patient Daniel, age 28. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-389-s2",
+    "stationId": "osce-389",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-389-s3",
+    "stationId": "osce-389",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-389-s4",
+    "stationId": "osce-389",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-389-s5",
+    "stationId": "osce-389",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-389-s6",
+    "stationId": "osce-389",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-399",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 399",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 58,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-399-s0",
+    "stationId": "osce-399",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-399-s1",
+    "stationId": "osce-399",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 399. Assess responsiveness. Patient Daniel, age 58. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-399-s2",
+    "stationId": "osce-399",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-399-s3",
+    "stationId": "osce-399",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-399-s4",
+    "stationId": "osce-399",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-399-s5",
+    "stationId": "osce-399",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-399-s6",
+    "stationId": "osce-399",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-409",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 409",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 27,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-409-s0",
+    "stationId": "osce-409",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-409-s1",
+    "stationId": "osce-409",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 409. Assess responsiveness. Patient Daniel, age 27. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-409-s2",
+    "stationId": "osce-409",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-409-s3",
+    "stationId": "osce-409",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-409-s4",
+    "stationId": "osce-409",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-409-s5",
+    "stationId": "osce-409",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-409-s6",
+    "stationId": "osce-409",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-419",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 419",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 57,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-419-s0",
+    "stationId": "osce-419",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-419-s1",
+    "stationId": "osce-419",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 419. Assess responsiveness. Patient Daniel, age 57. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-419-s2",
+    "stationId": "osce-419",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-419-s3",
+    "stationId": "osce-419",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-419-s4",
+    "stationId": "osce-419",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-419-s5",
+    "stationId": "osce-419",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-419-s6",
+    "stationId": "osce-419",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-429",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 429",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 26,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-429-s0",
+    "stationId": "osce-429",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-429-s1",
+    "stationId": "osce-429",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 429. Assess responsiveness. Patient Daniel, age 26. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-429-s2",
+    "stationId": "osce-429",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-429-s3",
+    "stationId": "osce-429",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-429-s4",
+    "stationId": "osce-429",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-429-s5",
+    "stationId": "osce-429",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-429-s6",
+    "stationId": "osce-429",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-439",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 439",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 56,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-439-s0",
+    "stationId": "osce-439",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-439-s1",
+    "stationId": "osce-439",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 439. Assess responsiveness. Patient Daniel, age 56. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-439-s2",
+    "stationId": "osce-439",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-439-s3",
+    "stationId": "osce-439",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-439-s4",
+    "stationId": "osce-439",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-439-s5",
+    "stationId": "osce-439",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-439-s6",
+    "stationId": "osce-439",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-449",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 449",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 25,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-449-s0",
+    "stationId": "osce-449",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-449-s1",
+    "stationId": "osce-449",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 449. Assess responsiveness. Patient Daniel, age 25. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-449-s2",
+    "stationId": "osce-449",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-449-s3",
+    "stationId": "osce-449",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-449-s4",
+    "stationId": "osce-449",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-449-s5",
+    "stationId": "osce-449",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-449-s6",
+    "stationId": "osce-449",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-459",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 459",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 55,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-459-s0",
+    "stationId": "osce-459",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-459-s1",
+    "stationId": "osce-459",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 459. Assess responsiveness. Patient Daniel, age 55. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-459-s2",
+    "stationId": "osce-459",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-459-s3",
+    "stationId": "osce-459",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-459-s4",
+    "stationId": "osce-459",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-459-s5",
+    "stationId": "osce-459",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-459-s6",
+    "stationId": "osce-459",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-469",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 469",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 24,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-469-s0",
+    "stationId": "osce-469",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-469-s1",
+    "stationId": "osce-469",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 469. Assess responsiveness. Patient Daniel, age 24. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-469-s2",
+    "stationId": "osce-469",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-469-s3",
+    "stationId": "osce-469",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-469-s4",
+    "stationId": "osce-469",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-469-s5",
+    "stationId": "osce-469",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-469-s6",
+    "stationId": "osce-469",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-479",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 479",
+  "task": "Assess responsiveness.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Daniel",
+   "age": 54,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-479-s0",
+    "stationId": "osce-479",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-479-s1",
+    "stationId": "osce-479",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 479. Assess responsiveness. Patient Daniel, age 54. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-479-s2",
+    "stationId": "osce-479",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-479-s3",
+    "stationId": "osce-479",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-479-s4",
+    "stationId": "osce-479",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Once the AED arrives during CPR on Daniel, you should:",
+     "options": [
+      "Finish the current 2-minute cycle before attaching it",
+      "Attach the pads immediately and follow the voice prompts, minimising pauses in compressions",
+      "Wait for the doctor to attach it",
+      "Use it only if the patient is breathing"
+     ],
+     "correctIndex": 1,
+     "explanation": "Early defibrillation saves lives — attach the AED as soon as it arrives and follow its prompts."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-479-s5",
+    "stationId": "osce-479",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-479-s6",
+    "stationId": "osce-479",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-489",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 489",
+  "task": "Assess responsiveness.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Daniel",
+   "age": 23,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-489-s0",
+    "stationId": "osce-489",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-489-s1",
+    "stationId": "osce-489",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 489. Assess responsiveness. Patient Daniel, age 23. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-489-s2",
+    "stationId": "osce-489",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-489-s3",
+    "stationId": "osce-489",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-489-s4",
+    "stationId": "osce-489",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You confirm Daniel is unresponsive and not breathing normally. What is the correct compression technique?",
+     "options": [
+      "60 compressions per minute, 3 cm deep",
+      "100–120 compressions per minute, 5–6 cm deep, centre of the chest",
+      "140 compressions per minute as deep as possible",
+      "Compressions only after 5 rescue breaths in adults"
+     ],
+     "correctIndex": 1,
+     "explanation": "Adult BLS: 100–120/min at 5–6 cm depth with full recoil, minimising interruptions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-489-s5",
+    "stationId": "osce-489",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-489-s6",
+    "stationId": "osce-489",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-499",
+  "category": "emergency-response",
+  "title": "Emergency Response (BLS/CPR) Station 499",
+  "task": "Assess responsiveness.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Daniel",
+   "age": 53,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-499-s0",
+    "stationId": "osce-499",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-499-s1",
+    "stationId": "osce-499",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 499. Assess responsiveness. Patient Daniel, age 53. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-499-s2",
+    "stationId": "osce-499",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-499-s3",
+    "stationId": "osce-499",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Assess responsiveness.",
+     "options": [
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": true
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-499-s4",
+    "stationId": "osce-499",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which sequence is correct when you find a collapsed patient?",
+     "options": [
+      "Airway, Breathing, Circulation, Danger, Response",
+      "Danger, Response, Shout for help, Airway, Breathing, Circulation/Compressions",
+      "Compressions first, then check for danger",
+      "Response, Compressions, Airway"
+     ],
+     "correctIndex": 1,
+     "explanation": "DRS ABC: check danger and response, shout for help, then airway, breathing and compressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-499-s5",
+    "stationId": "osce-499",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Begin CPR if indicated. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-499-s6",
+    "stationId": "osce-499",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ }
+]

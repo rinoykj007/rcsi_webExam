@@ -1,0 +1,6102 @@
+[
+ {
+  "id": "osce-002",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 2",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 26,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-002-s0",
+    "stationId": "osce-002",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-002-s1",
+    "stationId": "osce-002",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 2. Measure and record vital signs. Patient Mary, age 26. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-002-s2",
+    "stationId": "osce-002",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-002-s3",
+    "stationId": "osce-002",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-002-s4",
+    "stationId": "osce-002",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-002-s5",
+    "stationId": "osce-002",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-002-s6",
+    "stationId": "osce-002",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-012",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 12",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 56,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-012-s0",
+    "stationId": "osce-012",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-012-s1",
+    "stationId": "osce-012",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 12. Measure and record vital signs. Patient Mary, age 56. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-012-s2",
+    "stationId": "osce-012",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-012-s3",
+    "stationId": "osce-012",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-012-s4",
+    "stationId": "osce-012",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-012-s5",
+    "stationId": "osce-012",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-012-s6",
+    "stationId": "osce-012",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-022",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 22",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 25,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-022-s0",
+    "stationId": "osce-022",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-022-s1",
+    "stationId": "osce-022",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 22. Measure and record vital signs. Patient Mary, age 25. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-022-s2",
+    "stationId": "osce-022",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-022-s3",
+    "stationId": "osce-022",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-022-s4",
+    "stationId": "osce-022",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-022-s5",
+    "stationId": "osce-022",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-022-s6",
+    "stationId": "osce-022",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-032",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 32",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 55,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-032-s0",
+    "stationId": "osce-032",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-032-s1",
+    "stationId": "osce-032",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 32. Measure and record vital signs. Patient Mary, age 55. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-032-s2",
+    "stationId": "osce-032",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-032-s3",
+    "stationId": "osce-032",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-032-s4",
+    "stationId": "osce-032",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-032-s5",
+    "stationId": "osce-032",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-032-s6",
+    "stationId": "osce-032",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-042",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 42",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 24,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-042-s0",
+    "stationId": "osce-042",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-042-s1",
+    "stationId": "osce-042",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 42. Measure and record vital signs. Patient Mary, age 24. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-042-s2",
+    "stationId": "osce-042",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-042-s3",
+    "stationId": "osce-042",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-042-s4",
+    "stationId": "osce-042",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-042-s5",
+    "stationId": "osce-042",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-042-s6",
+    "stationId": "osce-042",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-052",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 52",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 54,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-052-s0",
+    "stationId": "osce-052",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-052-s1",
+    "stationId": "osce-052",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 52. Measure and record vital signs. Patient Mary, age 54. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-052-s2",
+    "stationId": "osce-052",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-052-s3",
+    "stationId": "osce-052",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-052-s4",
+    "stationId": "osce-052",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-052-s5",
+    "stationId": "osce-052",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-052-s6",
+    "stationId": "osce-052",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-062",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 62",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 23,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-062-s0",
+    "stationId": "osce-062",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-062-s1",
+    "stationId": "osce-062",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 62. Measure and record vital signs. Patient Mary, age 23. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-062-s2",
+    "stationId": "osce-062",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-062-s3",
+    "stationId": "osce-062",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-062-s4",
+    "stationId": "osce-062",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-062-s5",
+    "stationId": "osce-062",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-062-s6",
+    "stationId": "osce-062",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-072",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 72",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 53,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-072-s0",
+    "stationId": "osce-072",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-072-s1",
+    "stationId": "osce-072",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 72. Measure and record vital signs. Patient Mary, age 53. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-072-s2",
+    "stationId": "osce-072",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-072-s3",
+    "stationId": "osce-072",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-072-s4",
+    "stationId": "osce-072",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-072-s5",
+    "stationId": "osce-072",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-072-s6",
+    "stationId": "osce-072",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-082",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 82",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 22,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-082-s0",
+    "stationId": "osce-082",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-082-s1",
+    "stationId": "osce-082",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 82. Measure and record vital signs. Patient Mary, age 22. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-082-s2",
+    "stationId": "osce-082",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-082-s3",
+    "stationId": "osce-082",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-082-s4",
+    "stationId": "osce-082",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-082-s5",
+    "stationId": "osce-082",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-082-s6",
+    "stationId": "osce-082",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-092",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 92",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 52,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-092-s0",
+    "stationId": "osce-092",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-092-s1",
+    "stationId": "osce-092",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 92. Measure and record vital signs. Patient Mary, age 52. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-092-s2",
+    "stationId": "osce-092",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-092-s3",
+    "stationId": "osce-092",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-092-s4",
+    "stationId": "osce-092",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-092-s5",
+    "stationId": "osce-092",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-092-s6",
+    "stationId": "osce-092",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-102",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 102",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 21,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-102-s0",
+    "stationId": "osce-102",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-102-s1",
+    "stationId": "osce-102",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 102. Measure and record vital signs. Patient Mary, age 21. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-102-s2",
+    "stationId": "osce-102",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-102-s3",
+    "stationId": "osce-102",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-102-s4",
+    "stationId": "osce-102",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-102-s5",
+    "stationId": "osce-102",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-102-s6",
+    "stationId": "osce-102",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-112",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 112",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 51,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-112-s0",
+    "stationId": "osce-112",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-112-s1",
+    "stationId": "osce-112",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 112. Measure and record vital signs. Patient Mary, age 51. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-112-s2",
+    "stationId": "osce-112",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-112-s3",
+    "stationId": "osce-112",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-112-s4",
+    "stationId": "osce-112",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-112-s5",
+    "stationId": "osce-112",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-112-s6",
+    "stationId": "osce-112",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-122",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 122",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 20,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-122-s0",
+    "stationId": "osce-122",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-122-s1",
+    "stationId": "osce-122",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 122. Measure and record vital signs. Patient Mary, age 20. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-122-s2",
+    "stationId": "osce-122",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-122-s3",
+    "stationId": "osce-122",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-122-s4",
+    "stationId": "osce-122",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-122-s5",
+    "stationId": "osce-122",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-122-s6",
+    "stationId": "osce-122",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-132",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 132",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 50,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-132-s0",
+    "stationId": "osce-132",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-132-s1",
+    "stationId": "osce-132",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 132. Measure and record vital signs. Patient Mary, age 50. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-132-s2",
+    "stationId": "osce-132",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-132-s3",
+    "stationId": "osce-132",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-132-s4",
+    "stationId": "osce-132",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-132-s5",
+    "stationId": "osce-132",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-132-s6",
+    "stationId": "osce-132",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-142",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 142",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 80,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-142-s0",
+    "stationId": "osce-142",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-142-s1",
+    "stationId": "osce-142",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 142. Measure and record vital signs. Patient Mary, age 80. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-142-s2",
+    "stationId": "osce-142",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-142-s3",
+    "stationId": "osce-142",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-142-s4",
+    "stationId": "osce-142",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-142-s5",
+    "stationId": "osce-142",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-142-s6",
+    "stationId": "osce-142",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-152",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 152",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 49,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-152-s0",
+    "stationId": "osce-152",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-152-s1",
+    "stationId": "osce-152",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 152. Measure and record vital signs. Patient Mary, age 49. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-152-s2",
+    "stationId": "osce-152",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-152-s3",
+    "stationId": "osce-152",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-152-s4",
+    "stationId": "osce-152",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-152-s5",
+    "stationId": "osce-152",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-152-s6",
+    "stationId": "osce-152",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-162",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 162",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 79,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-162-s0",
+    "stationId": "osce-162",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-162-s1",
+    "stationId": "osce-162",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 162. Measure and record vital signs. Patient Mary, age 79. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-162-s2",
+    "stationId": "osce-162",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-162-s3",
+    "stationId": "osce-162",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-162-s4",
+    "stationId": "osce-162",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-162-s5",
+    "stationId": "osce-162",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-162-s6",
+    "stationId": "osce-162",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-172",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 172",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 48,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-172-s0",
+    "stationId": "osce-172",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-172-s1",
+    "stationId": "osce-172",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 172. Measure and record vital signs. Patient Mary, age 48. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-172-s2",
+    "stationId": "osce-172",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-172-s3",
+    "stationId": "osce-172",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-172-s4",
+    "stationId": "osce-172",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-172-s5",
+    "stationId": "osce-172",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-172-s6",
+    "stationId": "osce-172",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-182",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 182",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 78,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-182-s0",
+    "stationId": "osce-182",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-182-s1",
+    "stationId": "osce-182",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 182. Measure and record vital signs. Patient Mary, age 78. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-182-s2",
+    "stationId": "osce-182",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-182-s3",
+    "stationId": "osce-182",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-182-s4",
+    "stationId": "osce-182",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-182-s5",
+    "stationId": "osce-182",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-182-s6",
+    "stationId": "osce-182",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-192",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 192",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 47,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-192-s0",
+    "stationId": "osce-192",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-192-s1",
+    "stationId": "osce-192",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 192. Measure and record vital signs. Patient Mary, age 47. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-192-s2",
+    "stationId": "osce-192",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-192-s3",
+    "stationId": "osce-192",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-192-s4",
+    "stationId": "osce-192",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-192-s5",
+    "stationId": "osce-192",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-192-s6",
+    "stationId": "osce-192",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-202",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 202",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 77,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-202-s0",
+    "stationId": "osce-202",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-202-s1",
+    "stationId": "osce-202",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 202. Measure and record vital signs. Patient Mary, age 77. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-202-s2",
+    "stationId": "osce-202",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-202-s3",
+    "stationId": "osce-202",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-202-s4",
+    "stationId": "osce-202",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-202-s5",
+    "stationId": "osce-202",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-202-s6",
+    "stationId": "osce-202",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-212",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 212",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 46,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-212-s0",
+    "stationId": "osce-212",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-212-s1",
+    "stationId": "osce-212",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 212. Measure and record vital signs. Patient Mary, age 46. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-212-s2",
+    "stationId": "osce-212",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-212-s3",
+    "stationId": "osce-212",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-212-s4",
+    "stationId": "osce-212",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-212-s5",
+    "stationId": "osce-212",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-212-s6",
+    "stationId": "osce-212",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-222",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 222",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 76,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-222-s0",
+    "stationId": "osce-222",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-222-s1",
+    "stationId": "osce-222",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 222. Measure and record vital signs. Patient Mary, age 76. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-222-s2",
+    "stationId": "osce-222",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-222-s3",
+    "stationId": "osce-222",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-222-s4",
+    "stationId": "osce-222",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-222-s5",
+    "stationId": "osce-222",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-222-s6",
+    "stationId": "osce-222",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-232",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 232",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 45,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-232-s0",
+    "stationId": "osce-232",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-232-s1",
+    "stationId": "osce-232",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 232. Measure and record vital signs. Patient Mary, age 45. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-232-s2",
+    "stationId": "osce-232",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-232-s3",
+    "stationId": "osce-232",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-232-s4",
+    "stationId": "osce-232",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-232-s5",
+    "stationId": "osce-232",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-232-s6",
+    "stationId": "osce-232",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-242",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 242",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 75,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-242-s0",
+    "stationId": "osce-242",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-242-s1",
+    "stationId": "osce-242",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 242. Measure and record vital signs. Patient Mary, age 75. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-242-s2",
+    "stationId": "osce-242",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-242-s3",
+    "stationId": "osce-242",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-242-s4",
+    "stationId": "osce-242",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-242-s5",
+    "stationId": "osce-242",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-242-s6",
+    "stationId": "osce-242",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-252",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 252",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 44,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-252-s0",
+    "stationId": "osce-252",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-252-s1",
+    "stationId": "osce-252",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 252. Measure and record vital signs. Patient Mary, age 44. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-252-s2",
+    "stationId": "osce-252",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-252-s3",
+    "stationId": "osce-252",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-252-s4",
+    "stationId": "osce-252",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-252-s5",
+    "stationId": "osce-252",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-252-s6",
+    "stationId": "osce-252",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-262",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 262",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 74,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-262-s0",
+    "stationId": "osce-262",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-262-s1",
+    "stationId": "osce-262",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 262. Measure and record vital signs. Patient Mary, age 74. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-262-s2",
+    "stationId": "osce-262",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-262-s3",
+    "stationId": "osce-262",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-262-s4",
+    "stationId": "osce-262",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-262-s5",
+    "stationId": "osce-262",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-262-s6",
+    "stationId": "osce-262",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-272",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 272",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 43,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-272-s0",
+    "stationId": "osce-272",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-272-s1",
+    "stationId": "osce-272",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 272. Measure and record vital signs. Patient Mary, age 43. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-272-s2",
+    "stationId": "osce-272",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-272-s3",
+    "stationId": "osce-272",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-272-s4",
+    "stationId": "osce-272",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-272-s5",
+    "stationId": "osce-272",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-272-s6",
+    "stationId": "osce-272",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-282",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 282",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 73,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-282-s0",
+    "stationId": "osce-282",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-282-s1",
+    "stationId": "osce-282",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 282. Measure and record vital signs. Patient Mary, age 73. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-282-s2",
+    "stationId": "osce-282",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-282-s3",
+    "stationId": "osce-282",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-282-s4",
+    "stationId": "osce-282",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-282-s5",
+    "stationId": "osce-282",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-282-s6",
+    "stationId": "osce-282",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-292",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 292",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 42,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-292-s0",
+    "stationId": "osce-292",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-292-s1",
+    "stationId": "osce-292",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 292. Measure and record vital signs. Patient Mary, age 42. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-292-s2",
+    "stationId": "osce-292",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-292-s3",
+    "stationId": "osce-292",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-292-s4",
+    "stationId": "osce-292",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-292-s5",
+    "stationId": "osce-292",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-292-s6",
+    "stationId": "osce-292",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-302",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 302",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 72,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-302-s0",
+    "stationId": "osce-302",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-302-s1",
+    "stationId": "osce-302",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 302. Measure and record vital signs. Patient Mary, age 72. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-302-s2",
+    "stationId": "osce-302",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-302-s3",
+    "stationId": "osce-302",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-302-s4",
+    "stationId": "osce-302",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-302-s5",
+    "stationId": "osce-302",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-302-s6",
+    "stationId": "osce-302",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-312",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 312",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 41,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-312-s0",
+    "stationId": "osce-312",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-312-s1",
+    "stationId": "osce-312",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 312. Measure and record vital signs. Patient Mary, age 41. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-312-s2",
+    "stationId": "osce-312",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-312-s3",
+    "stationId": "osce-312",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-312-s4",
+    "stationId": "osce-312",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-312-s5",
+    "stationId": "osce-312",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-312-s6",
+    "stationId": "osce-312",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-322",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 322",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 71,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-322-s0",
+    "stationId": "osce-322",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-322-s1",
+    "stationId": "osce-322",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 322. Measure and record vital signs. Patient Mary, age 71. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-322-s2",
+    "stationId": "osce-322",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-322-s3",
+    "stationId": "osce-322",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-322-s4",
+    "stationId": "osce-322",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-322-s5",
+    "stationId": "osce-322",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-322-s6",
+    "stationId": "osce-322",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-332",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 332",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 40,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-332-s0",
+    "stationId": "osce-332",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-332-s1",
+    "stationId": "osce-332",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 332. Measure and record vital signs. Patient Mary, age 40. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-332-s2",
+    "stationId": "osce-332",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-332-s3",
+    "stationId": "osce-332",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-332-s4",
+    "stationId": "osce-332",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-332-s5",
+    "stationId": "osce-332",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-332-s6",
+    "stationId": "osce-332",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-342",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 342",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 70,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-342-s0",
+    "stationId": "osce-342",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-342-s1",
+    "stationId": "osce-342",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 342. Measure and record vital signs. Patient Mary, age 70. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-342-s2",
+    "stationId": "osce-342",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-342-s3",
+    "stationId": "osce-342",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-342-s4",
+    "stationId": "osce-342",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-342-s5",
+    "stationId": "osce-342",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-342-s6",
+    "stationId": "osce-342",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-352",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 352",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 39,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-352-s0",
+    "stationId": "osce-352",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-352-s1",
+    "stationId": "osce-352",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 352. Measure and record vital signs. Patient Mary, age 39. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-352-s2",
+    "stationId": "osce-352",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-352-s3",
+    "stationId": "osce-352",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-352-s4",
+    "stationId": "osce-352",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-352-s5",
+    "stationId": "osce-352",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-352-s6",
+    "stationId": "osce-352",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-362",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 362",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 69,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-362-s0",
+    "stationId": "osce-362",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-362-s1",
+    "stationId": "osce-362",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 362. Measure and record vital signs. Patient Mary, age 69. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-362-s2",
+    "stationId": "osce-362",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-362-s3",
+    "stationId": "osce-362",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-362-s4",
+    "stationId": "osce-362",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-362-s5",
+    "stationId": "osce-362",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-362-s6",
+    "stationId": "osce-362",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-372",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 372",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 38,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-372-s0",
+    "stationId": "osce-372",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-372-s1",
+    "stationId": "osce-372",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 372. Measure and record vital signs. Patient Mary, age 38. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-372-s2",
+    "stationId": "osce-372",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-372-s3",
+    "stationId": "osce-372",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-372-s4",
+    "stationId": "osce-372",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-372-s5",
+    "stationId": "osce-372",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-372-s6",
+    "stationId": "osce-372",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-382",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 382",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 68,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-382-s0",
+    "stationId": "osce-382",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-382-s1",
+    "stationId": "osce-382",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 382. Measure and record vital signs. Patient Mary, age 68. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-382-s2",
+    "stationId": "osce-382",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-382-s3",
+    "stationId": "osce-382",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-382-s4",
+    "stationId": "osce-382",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-382-s5",
+    "stationId": "osce-382",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-382-s6",
+    "stationId": "osce-382",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-392",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 392",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 37,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-392-s0",
+    "stationId": "osce-392",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-392-s1",
+    "stationId": "osce-392",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 392. Measure and record vital signs. Patient Mary, age 37. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-392-s2",
+    "stationId": "osce-392",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-392-s3",
+    "stationId": "osce-392",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-392-s4",
+    "stationId": "osce-392",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-392-s5",
+    "stationId": "osce-392",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-392-s6",
+    "stationId": "osce-392",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-402",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 402",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 67,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-402-s0",
+    "stationId": "osce-402",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-402-s1",
+    "stationId": "osce-402",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 402. Measure and record vital signs. Patient Mary, age 67. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-402-s2",
+    "stationId": "osce-402",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-402-s3",
+    "stationId": "osce-402",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-402-s4",
+    "stationId": "osce-402",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-402-s5",
+    "stationId": "osce-402",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-402-s6",
+    "stationId": "osce-402",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-412",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 412",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 36,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-412-s0",
+    "stationId": "osce-412",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-412-s1",
+    "stationId": "osce-412",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 412. Measure and record vital signs. Patient Mary, age 36. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-412-s2",
+    "stationId": "osce-412",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-412-s3",
+    "stationId": "osce-412",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-412-s4",
+    "stationId": "osce-412",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-412-s5",
+    "stationId": "osce-412",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-412-s6",
+    "stationId": "osce-412",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-422",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 422",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 66,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-422-s0",
+    "stationId": "osce-422",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-422-s1",
+    "stationId": "osce-422",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 422. Measure and record vital signs. Patient Mary, age 66. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-422-s2",
+    "stationId": "osce-422",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-422-s3",
+    "stationId": "osce-422",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-422-s4",
+    "stationId": "osce-422",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-422-s5",
+    "stationId": "osce-422",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-422-s6",
+    "stationId": "osce-422",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-432",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 432",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 35,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-432-s0",
+    "stationId": "osce-432",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-432-s1",
+    "stationId": "osce-432",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 432. Measure and record vital signs. Patient Mary, age 35. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-432-s2",
+    "stationId": "osce-432",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-432-s3",
+    "stationId": "osce-432",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-432-s4",
+    "stationId": "osce-432",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-432-s5",
+    "stationId": "osce-432",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-432-s6",
+    "stationId": "osce-432",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-442",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 442",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 65,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-442-s0",
+    "stationId": "osce-442",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-442-s1",
+    "stationId": "osce-442",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 442. Measure and record vital signs. Patient Mary, age 65. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-442-s2",
+    "stationId": "osce-442",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-442-s3",
+    "stationId": "osce-442",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-442-s4",
+    "stationId": "osce-442",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-442-s5",
+    "stationId": "osce-442",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-442-s6",
+    "stationId": "osce-442",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-452",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 452",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 34,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-452-s0",
+    "stationId": "osce-452",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-452-s1",
+    "stationId": "osce-452",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 452. Measure and record vital signs. Patient Mary, age 34. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-452-s2",
+    "stationId": "osce-452",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-452-s3",
+    "stationId": "osce-452",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-452-s4",
+    "stationId": "osce-452",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-452-s5",
+    "stationId": "osce-452",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-452-s6",
+    "stationId": "osce-452",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-462",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 462",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 64,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-462-s0",
+    "stationId": "osce-462",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-462-s1",
+    "stationId": "osce-462",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 462. Measure and record vital signs. Patient Mary, age 64. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-462-s2",
+    "stationId": "osce-462",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-462-s3",
+    "stationId": "osce-462",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-462-s4",
+    "stationId": "osce-462",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-462-s5",
+    "stationId": "osce-462",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-462-s6",
+    "stationId": "osce-462",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-472",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 472",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Mary",
+   "age": 33,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-472-s0",
+    "stationId": "osce-472",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-472-s1",
+    "stationId": "osce-472",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 472. Measure and record vital signs. Patient Mary, age 33. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-472-s2",
+    "stationId": "osce-472",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-472-s3",
+    "stationId": "osce-472",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-472-s4",
+    "stationId": "osce-472",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which set of observations forms a complete standard vital signs assessment?",
+     "options": [
+      "Blood pressure and pulse only",
+      "Temperature, pulse, respirations, blood pressure, oxygen saturation and level of consciousness",
+      "Temperature and blood pressure",
+      "Pulse, weight and height"
+     ],
+     "correctIndex": 1,
+     "explanation": "A full set of vital signs includes TPR, BP, SpO2 and conscious level (AVPU), which feed the early warning score."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-472-s5",
+    "stationId": "osce-472",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-472-s6",
+    "stationId": "osce-472",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-482",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 482",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Mary",
+   "age": 63,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-482-s0",
+    "stationId": "osce-482",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-482-s1",
+    "stationId": "osce-482",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 482. Measure and record vital signs. Patient Mary, age 63. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-482-s2",
+    "stationId": "osce-482",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-482-s3",
+    "stationId": "osce-482",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-482-s4",
+    "stationId": "osce-482",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "While recording Mary's blood pressure, the cuff bladder covers less than 80% of the arm circumference. What should you do?",
+     "options": [
+      "Continue — cuff size does not affect the reading",
+      "Select a correctly sized cuff before measuring",
+      "Record the reading and note the cuff size",
+      "Measure on the leg instead"
+     ],
+     "correctIndex": 1,
+     "explanation": "An undersized cuff overestimates blood pressure; a correctly sized cuff must cover at least 80% of the arm circumference."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-482-s5",
+    "stationId": "osce-482",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-482-s6",
+    "stationId": "osce-482",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-492",
+  "category": "vital-signs",
+  "title": "Vital Signs Station 492",
+  "task": "Measure and record vital signs.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Mary",
+   "age": 32,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-492-s0",
+    "stationId": "osce-492",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-492-s1",
+    "stationId": "osce-492",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 492. Measure and record vital signs. Patient Mary, age 32. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-492-s2",
+    "stationId": "osce-492",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-492-s3",
+    "stationId": "osce-492",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Measure and record vital signs.",
+     "options": [
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-492-s4",
+    "stationId": "osce-492",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You find Mary's respiratory rate is 26 breaths per minute. What is your first action?",
+     "options": [
+      "Record it and continue the round",
+      "Reassess in one hour",
+      "Report the abnormal finding and escalate using the early warning score protocol",
+      "Give oxygen immediately without further assessment"
+     ],
+     "correctIndex": 2,
+     "explanation": "A respiratory rate above 25 is a red flag on NEWS/INEWS scoring and must be escalated promptly."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-492-s5",
+    "stationId": "osce-492",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Report abnormal findings. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-492-s6",
+    "stationId": "osce-492",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ }
+]

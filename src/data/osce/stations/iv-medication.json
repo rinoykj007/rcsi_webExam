@@ -1,0 +1,6202 @@
+[
+ {
+  "id": "osce-007",
+  "category": "iv-medication",
+  "title": "IV Medication Station 7",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 41,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-007-s0",
+    "stationId": "osce-007",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-007-s1",
+    "stationId": "osce-007",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 7. Prepare IV medication. Patient Michael, age 41. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-007-s2",
+    "stationId": "osce-007",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-007-s3",
+    "stationId": "osce-007",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-007-s4",
+    "stationId": "osce-007",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-007-s5",
+    "stationId": "osce-007",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-007-s6",
+    "stationId": "osce-007",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-017",
+  "category": "iv-medication",
+  "title": "IV Medication Station 17",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 71,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-017-s0",
+    "stationId": "osce-017",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-017-s1",
+    "stationId": "osce-017",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 17. Prepare IV medication. Patient Michael, age 71. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-017-s2",
+    "stationId": "osce-017",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-017-s3",
+    "stationId": "osce-017",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-017-s4",
+    "stationId": "osce-017",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-017-s5",
+    "stationId": "osce-017",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-017-s6",
+    "stationId": "osce-017",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-027",
+  "category": "iv-medication",
+  "title": "IV Medication Station 27",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 40,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-027-s0",
+    "stationId": "osce-027",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-027-s1",
+    "stationId": "osce-027",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 27. Prepare IV medication. Patient Michael, age 40. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-027-s2",
+    "stationId": "osce-027",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-027-s3",
+    "stationId": "osce-027",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-027-s4",
+    "stationId": "osce-027",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-027-s5",
+    "stationId": "osce-027",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-027-s6",
+    "stationId": "osce-027",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-037",
+  "category": "iv-medication",
+  "title": "IV Medication Station 37",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 70,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-037-s0",
+    "stationId": "osce-037",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-037-s1",
+    "stationId": "osce-037",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 37. Prepare IV medication. Patient Michael, age 70. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-037-s2",
+    "stationId": "osce-037",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-037-s3",
+    "stationId": "osce-037",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-037-s4",
+    "stationId": "osce-037",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-037-s5",
+    "stationId": "osce-037",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-037-s6",
+    "stationId": "osce-037",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-047",
+  "category": "iv-medication",
+  "title": "IV Medication Station 47",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 39,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-047-s0",
+    "stationId": "osce-047",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-047-s1",
+    "stationId": "osce-047",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 47. Prepare IV medication. Patient Michael, age 39. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-047-s2",
+    "stationId": "osce-047",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-047-s3",
+    "stationId": "osce-047",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-047-s4",
+    "stationId": "osce-047",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-047-s5",
+    "stationId": "osce-047",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-047-s6",
+    "stationId": "osce-047",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-057",
+  "category": "iv-medication",
+  "title": "IV Medication Station 57",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 69,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-057-s0",
+    "stationId": "osce-057",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-057-s1",
+    "stationId": "osce-057",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 57. Prepare IV medication. Patient Michael, age 69. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-057-s2",
+    "stationId": "osce-057",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-057-s3",
+    "stationId": "osce-057",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-057-s4",
+    "stationId": "osce-057",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-057-s5",
+    "stationId": "osce-057",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-057-s6",
+    "stationId": "osce-057",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-067",
+  "category": "iv-medication",
+  "title": "IV Medication Station 67",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 38,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-067-s0",
+    "stationId": "osce-067",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-067-s1",
+    "stationId": "osce-067",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 67. Prepare IV medication. Patient Michael, age 38. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-067-s2",
+    "stationId": "osce-067",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-067-s3",
+    "stationId": "osce-067",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-067-s4",
+    "stationId": "osce-067",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-067-s5",
+    "stationId": "osce-067",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-067-s6",
+    "stationId": "osce-067",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-077",
+  "category": "iv-medication",
+  "title": "IV Medication Station 77",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 68,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-077-s0",
+    "stationId": "osce-077",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-077-s1",
+    "stationId": "osce-077",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 77. Prepare IV medication. Patient Michael, age 68. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-077-s2",
+    "stationId": "osce-077",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-077-s3",
+    "stationId": "osce-077",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-077-s4",
+    "stationId": "osce-077",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-077-s5",
+    "stationId": "osce-077",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-077-s6",
+    "stationId": "osce-077",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-087",
+  "category": "iv-medication",
+  "title": "IV Medication Station 87",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 37,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-087-s0",
+    "stationId": "osce-087",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-087-s1",
+    "stationId": "osce-087",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 87. Prepare IV medication. Patient Michael, age 37. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-087-s2",
+    "stationId": "osce-087",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-087-s3",
+    "stationId": "osce-087",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-087-s4",
+    "stationId": "osce-087",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-087-s5",
+    "stationId": "osce-087",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-087-s6",
+    "stationId": "osce-087",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-097",
+  "category": "iv-medication",
+  "title": "IV Medication Station 97",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 67,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-097-s0",
+    "stationId": "osce-097",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-097-s1",
+    "stationId": "osce-097",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 97. Prepare IV medication. Patient Michael, age 67. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-097-s2",
+    "stationId": "osce-097",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-097-s3",
+    "stationId": "osce-097",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-097-s4",
+    "stationId": "osce-097",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-097-s5",
+    "stationId": "osce-097",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-097-s6",
+    "stationId": "osce-097",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-107",
+  "category": "iv-medication",
+  "title": "IV Medication Station 107",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 36,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-107-s0",
+    "stationId": "osce-107",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-107-s1",
+    "stationId": "osce-107",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 107. Prepare IV medication. Patient Michael, age 36. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-107-s2",
+    "stationId": "osce-107",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-107-s3",
+    "stationId": "osce-107",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-107-s4",
+    "stationId": "osce-107",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-107-s5",
+    "stationId": "osce-107",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-107-s6",
+    "stationId": "osce-107",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-117",
+  "category": "iv-medication",
+  "title": "IV Medication Station 117",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 66,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-117-s0",
+    "stationId": "osce-117",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-117-s1",
+    "stationId": "osce-117",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 117. Prepare IV medication. Patient Michael, age 66. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-117-s2",
+    "stationId": "osce-117",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-117-s3",
+    "stationId": "osce-117",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-117-s4",
+    "stationId": "osce-117",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-117-s5",
+    "stationId": "osce-117",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-117-s6",
+    "stationId": "osce-117",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-127",
+  "category": "iv-medication",
+  "title": "IV Medication Station 127",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 35,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-127-s0",
+    "stationId": "osce-127",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-127-s1",
+    "stationId": "osce-127",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 127. Prepare IV medication. Patient Michael, age 35. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-127-s2",
+    "stationId": "osce-127",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-127-s3",
+    "stationId": "osce-127",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-127-s4",
+    "stationId": "osce-127",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-127-s5",
+    "stationId": "osce-127",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-127-s6",
+    "stationId": "osce-127",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-137",
+  "category": "iv-medication",
+  "title": "IV Medication Station 137",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 65,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-137-s0",
+    "stationId": "osce-137",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-137-s1",
+    "stationId": "osce-137",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 137. Prepare IV medication. Patient Michael, age 65. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-137-s2",
+    "stationId": "osce-137",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-137-s3",
+    "stationId": "osce-137",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-137-s4",
+    "stationId": "osce-137",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-137-s5",
+    "stationId": "osce-137",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-137-s6",
+    "stationId": "osce-137",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-147",
+  "category": "iv-medication",
+  "title": "IV Medication Station 147",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 34,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-147-s0",
+    "stationId": "osce-147",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-147-s1",
+    "stationId": "osce-147",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 147. Prepare IV medication. Patient Michael, age 34. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-147-s2",
+    "stationId": "osce-147",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-147-s3",
+    "stationId": "osce-147",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-147-s4",
+    "stationId": "osce-147",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-147-s5",
+    "stationId": "osce-147",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-147-s6",
+    "stationId": "osce-147",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-157",
+  "category": "iv-medication",
+  "title": "IV Medication Station 157",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 64,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-157-s0",
+    "stationId": "osce-157",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-157-s1",
+    "stationId": "osce-157",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 157. Prepare IV medication. Patient Michael, age 64. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-157-s2",
+    "stationId": "osce-157",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-157-s3",
+    "stationId": "osce-157",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-157-s4",
+    "stationId": "osce-157",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-157-s5",
+    "stationId": "osce-157",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-157-s6",
+    "stationId": "osce-157",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-167",
+  "category": "iv-medication",
+  "title": "IV Medication Station 167",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 33,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-167-s0",
+    "stationId": "osce-167",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-167-s1",
+    "stationId": "osce-167",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 167. Prepare IV medication. Patient Michael, age 33. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-167-s2",
+    "stationId": "osce-167",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-167-s3",
+    "stationId": "osce-167",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-167-s4",
+    "stationId": "osce-167",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-167-s5",
+    "stationId": "osce-167",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-167-s6",
+    "stationId": "osce-167",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-177",
+  "category": "iv-medication",
+  "title": "IV Medication Station 177",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 63,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-177-s0",
+    "stationId": "osce-177",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-177-s1",
+    "stationId": "osce-177",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 177. Prepare IV medication. Patient Michael, age 63. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-177-s2",
+    "stationId": "osce-177",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-177-s3",
+    "stationId": "osce-177",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-177-s4",
+    "stationId": "osce-177",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-177-s5",
+    "stationId": "osce-177",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-177-s6",
+    "stationId": "osce-177",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-187",
+  "category": "iv-medication",
+  "title": "IV Medication Station 187",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 32,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-187-s0",
+    "stationId": "osce-187",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-187-s1",
+    "stationId": "osce-187",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 187. Prepare IV medication. Patient Michael, age 32. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-187-s2",
+    "stationId": "osce-187",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-187-s3",
+    "stationId": "osce-187",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-187-s4",
+    "stationId": "osce-187",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-187-s5",
+    "stationId": "osce-187",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-187-s6",
+    "stationId": "osce-187",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-197",
+  "category": "iv-medication",
+  "title": "IV Medication Station 197",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 62,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-197-s0",
+    "stationId": "osce-197",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-197-s1",
+    "stationId": "osce-197",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 197. Prepare IV medication. Patient Michael, age 62. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-197-s2",
+    "stationId": "osce-197",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-197-s3",
+    "stationId": "osce-197",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-197-s4",
+    "stationId": "osce-197",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-197-s5",
+    "stationId": "osce-197",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-197-s6",
+    "stationId": "osce-197",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-207",
+  "category": "iv-medication",
+  "title": "IV Medication Station 207",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 31,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-207-s0",
+    "stationId": "osce-207",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-207-s1",
+    "stationId": "osce-207",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 207. Prepare IV medication. Patient Michael, age 31. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-207-s2",
+    "stationId": "osce-207",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-207-s3",
+    "stationId": "osce-207",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-207-s4",
+    "stationId": "osce-207",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-207-s5",
+    "stationId": "osce-207",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-207-s6",
+    "stationId": "osce-207",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-217",
+  "category": "iv-medication",
+  "title": "IV Medication Station 217",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 61,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-217-s0",
+    "stationId": "osce-217",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-217-s1",
+    "stationId": "osce-217",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 217. Prepare IV medication. Patient Michael, age 61. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-217-s2",
+    "stationId": "osce-217",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-217-s3",
+    "stationId": "osce-217",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-217-s4",
+    "stationId": "osce-217",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-217-s5",
+    "stationId": "osce-217",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-217-s6",
+    "stationId": "osce-217",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-227",
+  "category": "iv-medication",
+  "title": "IV Medication Station 227",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 30,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-227-s0",
+    "stationId": "osce-227",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-227-s1",
+    "stationId": "osce-227",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 227. Prepare IV medication. Patient Michael, age 30. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-227-s2",
+    "stationId": "osce-227",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-227-s3",
+    "stationId": "osce-227",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-227-s4",
+    "stationId": "osce-227",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-227-s5",
+    "stationId": "osce-227",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-227-s6",
+    "stationId": "osce-227",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-237",
+  "category": "iv-medication",
+  "title": "IV Medication Station 237",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 60,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-237-s0",
+    "stationId": "osce-237",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-237-s1",
+    "stationId": "osce-237",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 237. Prepare IV medication. Patient Michael, age 60. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-237-s2",
+    "stationId": "osce-237",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-237-s3",
+    "stationId": "osce-237",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-237-s4",
+    "stationId": "osce-237",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-237-s5",
+    "stationId": "osce-237",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-237-s6",
+    "stationId": "osce-237",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-247",
+  "category": "iv-medication",
+  "title": "IV Medication Station 247",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 29,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-247-s0",
+    "stationId": "osce-247",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-247-s1",
+    "stationId": "osce-247",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 247. Prepare IV medication. Patient Michael, age 29. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-247-s2",
+    "stationId": "osce-247",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-247-s3",
+    "stationId": "osce-247",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-247-s4",
+    "stationId": "osce-247",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-247-s5",
+    "stationId": "osce-247",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-247-s6",
+    "stationId": "osce-247",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-257",
+  "category": "iv-medication",
+  "title": "IV Medication Station 257",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 59,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-257-s0",
+    "stationId": "osce-257",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-257-s1",
+    "stationId": "osce-257",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 257. Prepare IV medication. Patient Michael, age 59. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-257-s2",
+    "stationId": "osce-257",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-257-s3",
+    "stationId": "osce-257",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-257-s4",
+    "stationId": "osce-257",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-257-s5",
+    "stationId": "osce-257",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-257-s6",
+    "stationId": "osce-257",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-267",
+  "category": "iv-medication",
+  "title": "IV Medication Station 267",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 28,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-267-s0",
+    "stationId": "osce-267",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-267-s1",
+    "stationId": "osce-267",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 267. Prepare IV medication. Patient Michael, age 28. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-267-s2",
+    "stationId": "osce-267",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-267-s3",
+    "stationId": "osce-267",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-267-s4",
+    "stationId": "osce-267",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-267-s5",
+    "stationId": "osce-267",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-267-s6",
+    "stationId": "osce-267",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-277",
+  "category": "iv-medication",
+  "title": "IV Medication Station 277",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 58,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-277-s0",
+    "stationId": "osce-277",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-277-s1",
+    "stationId": "osce-277",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 277. Prepare IV medication. Patient Michael, age 58. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-277-s2",
+    "stationId": "osce-277",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-277-s3",
+    "stationId": "osce-277",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-277-s4",
+    "stationId": "osce-277",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-277-s5",
+    "stationId": "osce-277",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-277-s6",
+    "stationId": "osce-277",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-287",
+  "category": "iv-medication",
+  "title": "IV Medication Station 287",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 27,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-287-s0",
+    "stationId": "osce-287",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-287-s1",
+    "stationId": "osce-287",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 287. Prepare IV medication. Patient Michael, age 27. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-287-s2",
+    "stationId": "osce-287",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-287-s3",
+    "stationId": "osce-287",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-287-s4",
+    "stationId": "osce-287",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-287-s5",
+    "stationId": "osce-287",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-287-s6",
+    "stationId": "osce-287",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-297",
+  "category": "iv-medication",
+  "title": "IV Medication Station 297",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 57,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-297-s0",
+    "stationId": "osce-297",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-297-s1",
+    "stationId": "osce-297",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 297. Prepare IV medication. Patient Michael, age 57. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-297-s2",
+    "stationId": "osce-297",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-297-s3",
+    "stationId": "osce-297",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-297-s4",
+    "stationId": "osce-297",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-297-s5",
+    "stationId": "osce-297",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-297-s6",
+    "stationId": "osce-297",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-307",
+  "category": "iv-medication",
+  "title": "IV Medication Station 307",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 26,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-307-s0",
+    "stationId": "osce-307",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-307-s1",
+    "stationId": "osce-307",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 307. Prepare IV medication. Patient Michael, age 26. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-307-s2",
+    "stationId": "osce-307",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-307-s3",
+    "stationId": "osce-307",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-307-s4",
+    "stationId": "osce-307",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-307-s5",
+    "stationId": "osce-307",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-307-s6",
+    "stationId": "osce-307",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-317",
+  "category": "iv-medication",
+  "title": "IV Medication Station 317",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 56,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-317-s0",
+    "stationId": "osce-317",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-317-s1",
+    "stationId": "osce-317",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 317. Prepare IV medication. Patient Michael, age 56. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-317-s2",
+    "stationId": "osce-317",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-317-s3",
+    "stationId": "osce-317",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-317-s4",
+    "stationId": "osce-317",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-317-s5",
+    "stationId": "osce-317",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-317-s6",
+    "stationId": "osce-317",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-327",
+  "category": "iv-medication",
+  "title": "IV Medication Station 327",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 25,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-327-s0",
+    "stationId": "osce-327",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-327-s1",
+    "stationId": "osce-327",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 327. Prepare IV medication. Patient Michael, age 25. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-327-s2",
+    "stationId": "osce-327",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-327-s3",
+    "stationId": "osce-327",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-327-s4",
+    "stationId": "osce-327",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-327-s5",
+    "stationId": "osce-327",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-327-s6",
+    "stationId": "osce-327",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-337",
+  "category": "iv-medication",
+  "title": "IV Medication Station 337",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 55,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-337-s0",
+    "stationId": "osce-337",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-337-s1",
+    "stationId": "osce-337",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 337. Prepare IV medication. Patient Michael, age 55. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-337-s2",
+    "stationId": "osce-337",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-337-s3",
+    "stationId": "osce-337",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-337-s4",
+    "stationId": "osce-337",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-337-s5",
+    "stationId": "osce-337",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-337-s6",
+    "stationId": "osce-337",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-347",
+  "category": "iv-medication",
+  "title": "IV Medication Station 347",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 24,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-347-s0",
+    "stationId": "osce-347",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-347-s1",
+    "stationId": "osce-347",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 347. Prepare IV medication. Patient Michael, age 24. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-347-s2",
+    "stationId": "osce-347",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-347-s3",
+    "stationId": "osce-347",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-347-s4",
+    "stationId": "osce-347",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-347-s5",
+    "stationId": "osce-347",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-347-s6",
+    "stationId": "osce-347",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-357",
+  "category": "iv-medication",
+  "title": "IV Medication Station 357",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 54,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-357-s0",
+    "stationId": "osce-357",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-357-s1",
+    "stationId": "osce-357",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 357. Prepare IV medication. Patient Michael, age 54. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-357-s2",
+    "stationId": "osce-357",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-357-s3",
+    "stationId": "osce-357",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-357-s4",
+    "stationId": "osce-357",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-357-s5",
+    "stationId": "osce-357",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-357-s6",
+    "stationId": "osce-357",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-367",
+  "category": "iv-medication",
+  "title": "IV Medication Station 367",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 23,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-367-s0",
+    "stationId": "osce-367",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-367-s1",
+    "stationId": "osce-367",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 367. Prepare IV medication. Patient Michael, age 23. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-367-s2",
+    "stationId": "osce-367",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-367-s3",
+    "stationId": "osce-367",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-367-s4",
+    "stationId": "osce-367",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-367-s5",
+    "stationId": "osce-367",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-367-s6",
+    "stationId": "osce-367",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-377",
+  "category": "iv-medication",
+  "title": "IV Medication Station 377",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 53,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-377-s0",
+    "stationId": "osce-377",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-377-s1",
+    "stationId": "osce-377",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 377. Prepare IV medication. Patient Michael, age 53. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-377-s2",
+    "stationId": "osce-377",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-377-s3",
+    "stationId": "osce-377",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-377-s4",
+    "stationId": "osce-377",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-377-s5",
+    "stationId": "osce-377",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-377-s6",
+    "stationId": "osce-377",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-387",
+  "category": "iv-medication",
+  "title": "IV Medication Station 387",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 22,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-387-s0",
+    "stationId": "osce-387",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-387-s1",
+    "stationId": "osce-387",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 387. Prepare IV medication. Patient Michael, age 22. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-387-s2",
+    "stationId": "osce-387",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-387-s3",
+    "stationId": "osce-387",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-387-s4",
+    "stationId": "osce-387",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-387-s5",
+    "stationId": "osce-387",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-387-s6",
+    "stationId": "osce-387",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-397",
+  "category": "iv-medication",
+  "title": "IV Medication Station 397",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 52,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-397-s0",
+    "stationId": "osce-397",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-397-s1",
+    "stationId": "osce-397",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 397. Prepare IV medication. Patient Michael, age 52. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-397-s2",
+    "stationId": "osce-397",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-397-s3",
+    "stationId": "osce-397",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-397-s4",
+    "stationId": "osce-397",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-397-s5",
+    "stationId": "osce-397",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-397-s6",
+    "stationId": "osce-397",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-407",
+  "category": "iv-medication",
+  "title": "IV Medication Station 407",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 21,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-407-s0",
+    "stationId": "osce-407",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-407-s1",
+    "stationId": "osce-407",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 407. Prepare IV medication. Patient Michael, age 21. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-407-s2",
+    "stationId": "osce-407",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-407-s3",
+    "stationId": "osce-407",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-407-s4",
+    "stationId": "osce-407",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-407-s5",
+    "stationId": "osce-407",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-407-s6",
+    "stationId": "osce-407",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-417",
+  "category": "iv-medication",
+  "title": "IV Medication Station 417",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 51,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-417-s0",
+    "stationId": "osce-417",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-417-s1",
+    "stationId": "osce-417",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 417. Prepare IV medication. Patient Michael, age 51. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-417-s2",
+    "stationId": "osce-417",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-417-s3",
+    "stationId": "osce-417",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-417-s4",
+    "stationId": "osce-417",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-417-s5",
+    "stationId": "osce-417",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-417-s6",
+    "stationId": "osce-417",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-427",
+  "category": "iv-medication",
+  "title": "IV Medication Station 427",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 20,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-427-s0",
+    "stationId": "osce-427",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-427-s1",
+    "stationId": "osce-427",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 427. Prepare IV medication. Patient Michael, age 20. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-427-s2",
+    "stationId": "osce-427",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-427-s3",
+    "stationId": "osce-427",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-427-s4",
+    "stationId": "osce-427",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-427-s5",
+    "stationId": "osce-427",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-427-s6",
+    "stationId": "osce-427",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-437",
+  "category": "iv-medication",
+  "title": "IV Medication Station 437",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 50,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-437-s0",
+    "stationId": "osce-437",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-437-s1",
+    "stationId": "osce-437",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 437. Prepare IV medication. Patient Michael, age 50. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-437-s2",
+    "stationId": "osce-437",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-437-s3",
+    "stationId": "osce-437",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-437-s4",
+    "stationId": "osce-437",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-437-s5",
+    "stationId": "osce-437",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-437-s6",
+    "stationId": "osce-437",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-447",
+  "category": "iv-medication",
+  "title": "IV Medication Station 447",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 80,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-447-s0",
+    "stationId": "osce-447",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-447-s1",
+    "stationId": "osce-447",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 447. Prepare IV medication. Patient Michael, age 80. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-447-s2",
+    "stationId": "osce-447",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-447-s3",
+    "stationId": "osce-447",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-447-s4",
+    "stationId": "osce-447",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-447-s5",
+    "stationId": "osce-447",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-447-s6",
+    "stationId": "osce-447",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-457",
+  "category": "iv-medication",
+  "title": "IV Medication Station 457",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 49,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-457-s0",
+    "stationId": "osce-457",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-457-s1",
+    "stationId": "osce-457",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 457. Prepare IV medication. Patient Michael, age 49. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-457-s2",
+    "stationId": "osce-457",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-457-s3",
+    "stationId": "osce-457",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-457-s4",
+    "stationId": "osce-457",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-457-s5",
+    "stationId": "osce-457",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-457-s6",
+    "stationId": "osce-457",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-467",
+  "category": "iv-medication",
+  "title": "IV Medication Station 467",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 79,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-467-s0",
+    "stationId": "osce-467",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-467-s1",
+    "stationId": "osce-467",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 467. Prepare IV medication. Patient Michael, age 79. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-467-s2",
+    "stationId": "osce-467",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-467-s3",
+    "stationId": "osce-467",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-467-s4",
+    "stationId": "osce-467",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-467-s5",
+    "stationId": "osce-467",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-467-s6",
+    "stationId": "osce-467",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-477",
+  "category": "iv-medication",
+  "title": "IV Medication Station 477",
+  "task": "Prepare IV medication.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Michael",
+   "age": 48,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-477-s0",
+    "stationId": "osce-477",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-477-s1",
+    "stationId": "osce-477",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 477. Prepare IV medication. Patient Michael, age 48. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-477-s2",
+    "stationId": "osce-477",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-477-s3",
+    "stationId": "osce-477",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-477-s4",
+    "stationId": "osce-477",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Michael reports pain and you see swelling at the cannula site during the infusion. What do you do?",
+     "options": [
+      "Continue at a slower rate",
+      "Stop the infusion — suspected extravasation/infiltration — and assess the site",
+      "Apply a bandage over the site",
+      "Increase the rate to finish sooner"
+     ],
+     "correctIndex": 1,
+     "explanation": "Pain and swelling suggest the infusion is entering tissue, not vein; stop immediately and assess."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-477-s5",
+    "stationId": "osce-477",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-477-s6",
+    "stationId": "osce-477",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-487",
+  "category": "iv-medication",
+  "title": "IV Medication Station 487",
+  "task": "Prepare IV medication.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Michael",
+   "age": 78,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-487-s0",
+    "stationId": "osce-487",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-487-s1",
+    "stationId": "osce-487",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 487. Prepare IV medication. Patient Michael, age 78. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-487-s2",
+    "stationId": "osce-487",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-487-s3",
+    "stationId": "osce-487",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-487-s4",
+    "stationId": "osce-487",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before administering IV medication to Michael, which checks are essential?",
+     "options": [
+      "Right drug and right patient only",
+      "The rights of medication administration: patient, drug, dose, route, time — plus allergies and prescription validity",
+      "That the previous nurse gave the same drug",
+      "Only the expiry date"
+     ],
+     "correctIndex": 1,
+     "explanation": "All rights of medication administration plus allergy status must be verified before every IV dose."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-487-s5",
+    "stationId": "osce-487",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-487-s6",
+    "stationId": "osce-487",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-497",
+  "category": "iv-medication",
+  "title": "IV Medication Station 497",
+  "task": "Prepare IV medication.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Michael",
+   "age": 47,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-497-s0",
+    "stationId": "osce-497",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-497-s1",
+    "stationId": "osce-497",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 497. Prepare IV medication. Patient Michael, age 47. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-497-s2",
+    "stationId": "osce-497",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-497-s3",
+    "stationId": "osce-497",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare IV medication.",
+     "options": [
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a blood giving set is for transfusion only — IV medication requires a standard IV infusion set."
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-497-s4",
+    "stationId": "osce-497",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before and after IV medication administration, the cannula should be:",
+     "options": [
+      "Left untouched",
+      "Flushed with 0.9% sodium chloride to confirm patency",
+      "Removed and resited",
+      "Flushed with sterile water"
+     ],
+     "correctIndex": 1,
+     "explanation": "A saline flush confirms patency before the drug and clears the line afterwards."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-497-s5",
+    "stationId": "osce-497",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Administer at the correct rate. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-497-s6",
+    "stationId": "osce-497",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ }
+]

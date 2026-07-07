@@ -1,0 +1,5402 @@
+[
+ {
+  "id": "osce-008",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 8",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 44,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-008-s0",
+    "stationId": "osce-008",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-008-s1",
+    "stationId": "osce-008",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 8. Explain the procedure. Patient Olivia, age 44. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-008-s2",
+    "stationId": "osce-008",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-008-s3",
+    "stationId": "osce-008",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-008-s4",
+    "stationId": "osce-008",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-008-s5",
+    "stationId": "osce-008",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-008-s6",
+    "stationId": "osce-008",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-018",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 18",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 74,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-018-s0",
+    "stationId": "osce-018",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-018-s1",
+    "stationId": "osce-018",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 18. Explain the procedure. Patient Olivia, age 74. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-018-s2",
+    "stationId": "osce-018",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-018-s3",
+    "stationId": "osce-018",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-018-s4",
+    "stationId": "osce-018",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-018-s5",
+    "stationId": "osce-018",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-018-s6",
+    "stationId": "osce-018",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-028",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 28",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 43,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-028-s0",
+    "stationId": "osce-028",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-028-s1",
+    "stationId": "osce-028",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 28. Explain the procedure. Patient Olivia, age 43. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-028-s2",
+    "stationId": "osce-028",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-028-s3",
+    "stationId": "osce-028",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-028-s4",
+    "stationId": "osce-028",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-028-s5",
+    "stationId": "osce-028",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-028-s6",
+    "stationId": "osce-028",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-038",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 38",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 73,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-038-s0",
+    "stationId": "osce-038",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-038-s1",
+    "stationId": "osce-038",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 38. Explain the procedure. Patient Olivia, age 73. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-038-s2",
+    "stationId": "osce-038",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-038-s3",
+    "stationId": "osce-038",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-038-s4",
+    "stationId": "osce-038",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-038-s5",
+    "stationId": "osce-038",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-038-s6",
+    "stationId": "osce-038",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-048",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 48",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 42,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-048-s0",
+    "stationId": "osce-048",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-048-s1",
+    "stationId": "osce-048",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 48. Explain the procedure. Patient Olivia, age 42. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-048-s2",
+    "stationId": "osce-048",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-048-s3",
+    "stationId": "osce-048",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-048-s4",
+    "stationId": "osce-048",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-048-s5",
+    "stationId": "osce-048",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-048-s6",
+    "stationId": "osce-048",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-058",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 58",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 72,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-058-s0",
+    "stationId": "osce-058",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-058-s1",
+    "stationId": "osce-058",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 58. Explain the procedure. Patient Olivia, age 72. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-058-s2",
+    "stationId": "osce-058",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-058-s3",
+    "stationId": "osce-058",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-058-s4",
+    "stationId": "osce-058",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-058-s5",
+    "stationId": "osce-058",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-058-s6",
+    "stationId": "osce-058",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-068",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 68",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 41,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-068-s0",
+    "stationId": "osce-068",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-068-s1",
+    "stationId": "osce-068",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 68. Explain the procedure. Patient Olivia, age 41. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-068-s2",
+    "stationId": "osce-068",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-068-s3",
+    "stationId": "osce-068",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-068-s4",
+    "stationId": "osce-068",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-068-s5",
+    "stationId": "osce-068",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-068-s6",
+    "stationId": "osce-068",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-078",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 78",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 71,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-078-s0",
+    "stationId": "osce-078",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-078-s1",
+    "stationId": "osce-078",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 78. Explain the procedure. Patient Olivia, age 71. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-078-s2",
+    "stationId": "osce-078",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-078-s3",
+    "stationId": "osce-078",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-078-s4",
+    "stationId": "osce-078",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-078-s5",
+    "stationId": "osce-078",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-078-s6",
+    "stationId": "osce-078",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-088",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 88",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 40,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-088-s0",
+    "stationId": "osce-088",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-088-s1",
+    "stationId": "osce-088",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 88. Explain the procedure. Patient Olivia, age 40. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-088-s2",
+    "stationId": "osce-088",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-088-s3",
+    "stationId": "osce-088",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-088-s4",
+    "stationId": "osce-088",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-088-s5",
+    "stationId": "osce-088",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-088-s6",
+    "stationId": "osce-088",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-098",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 98",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 70,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-098-s0",
+    "stationId": "osce-098",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-098-s1",
+    "stationId": "osce-098",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 98. Explain the procedure. Patient Olivia, age 70. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-098-s2",
+    "stationId": "osce-098",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-098-s3",
+    "stationId": "osce-098",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-098-s4",
+    "stationId": "osce-098",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-098-s5",
+    "stationId": "osce-098",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-098-s6",
+    "stationId": "osce-098",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-108",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 108",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 39,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-108-s0",
+    "stationId": "osce-108",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-108-s1",
+    "stationId": "osce-108",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 108. Explain the procedure. Patient Olivia, age 39. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-108-s2",
+    "stationId": "osce-108",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-108-s3",
+    "stationId": "osce-108",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-108-s4",
+    "stationId": "osce-108",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-108-s5",
+    "stationId": "osce-108",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-108-s6",
+    "stationId": "osce-108",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-118",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 118",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 69,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-118-s0",
+    "stationId": "osce-118",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-118-s1",
+    "stationId": "osce-118",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 118. Explain the procedure. Patient Olivia, age 69. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-118-s2",
+    "stationId": "osce-118",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-118-s3",
+    "stationId": "osce-118",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-118-s4",
+    "stationId": "osce-118",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-118-s5",
+    "stationId": "osce-118",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-118-s6",
+    "stationId": "osce-118",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-128",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 128",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 38,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-128-s0",
+    "stationId": "osce-128",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-128-s1",
+    "stationId": "osce-128",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 128. Explain the procedure. Patient Olivia, age 38. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-128-s2",
+    "stationId": "osce-128",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-128-s3",
+    "stationId": "osce-128",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-128-s4",
+    "stationId": "osce-128",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-128-s5",
+    "stationId": "osce-128",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-128-s6",
+    "stationId": "osce-128",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-138",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 138",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 68,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-138-s0",
+    "stationId": "osce-138",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-138-s1",
+    "stationId": "osce-138",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 138. Explain the procedure. Patient Olivia, age 68. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-138-s2",
+    "stationId": "osce-138",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-138-s3",
+    "stationId": "osce-138",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-138-s4",
+    "stationId": "osce-138",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-138-s5",
+    "stationId": "osce-138",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-138-s6",
+    "stationId": "osce-138",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-148",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 148",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 37,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-148-s0",
+    "stationId": "osce-148",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-148-s1",
+    "stationId": "osce-148",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 148. Explain the procedure. Patient Olivia, age 37. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-148-s2",
+    "stationId": "osce-148",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-148-s3",
+    "stationId": "osce-148",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-148-s4",
+    "stationId": "osce-148",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-148-s5",
+    "stationId": "osce-148",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-148-s6",
+    "stationId": "osce-148",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-158",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 158",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 67,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-158-s0",
+    "stationId": "osce-158",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-158-s1",
+    "stationId": "osce-158",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 158. Explain the procedure. Patient Olivia, age 67. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-158-s2",
+    "stationId": "osce-158",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-158-s3",
+    "stationId": "osce-158",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-158-s4",
+    "stationId": "osce-158",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-158-s5",
+    "stationId": "osce-158",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-158-s6",
+    "stationId": "osce-158",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-168",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 168",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 36,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-168-s0",
+    "stationId": "osce-168",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-168-s1",
+    "stationId": "osce-168",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 168. Explain the procedure. Patient Olivia, age 36. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-168-s2",
+    "stationId": "osce-168",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-168-s3",
+    "stationId": "osce-168",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-168-s4",
+    "stationId": "osce-168",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-168-s5",
+    "stationId": "osce-168",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-168-s6",
+    "stationId": "osce-168",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-178",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 178",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 66,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-178-s0",
+    "stationId": "osce-178",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-178-s1",
+    "stationId": "osce-178",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 178. Explain the procedure. Patient Olivia, age 66. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-178-s2",
+    "stationId": "osce-178",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-178-s3",
+    "stationId": "osce-178",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-178-s4",
+    "stationId": "osce-178",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-178-s5",
+    "stationId": "osce-178",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-178-s6",
+    "stationId": "osce-178",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-188",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 188",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 35,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-188-s0",
+    "stationId": "osce-188",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-188-s1",
+    "stationId": "osce-188",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 188. Explain the procedure. Patient Olivia, age 35. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-188-s2",
+    "stationId": "osce-188",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-188-s3",
+    "stationId": "osce-188",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-188-s4",
+    "stationId": "osce-188",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-188-s5",
+    "stationId": "osce-188",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-188-s6",
+    "stationId": "osce-188",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-198",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 198",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 65,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-198-s0",
+    "stationId": "osce-198",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-198-s1",
+    "stationId": "osce-198",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 198. Explain the procedure. Patient Olivia, age 65. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-198-s2",
+    "stationId": "osce-198",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-198-s3",
+    "stationId": "osce-198",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-198-s4",
+    "stationId": "osce-198",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-198-s5",
+    "stationId": "osce-198",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-198-s6",
+    "stationId": "osce-198",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-208",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 208",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 34,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-208-s0",
+    "stationId": "osce-208",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-208-s1",
+    "stationId": "osce-208",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 208. Explain the procedure. Patient Olivia, age 34. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-208-s2",
+    "stationId": "osce-208",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-208-s3",
+    "stationId": "osce-208",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-208-s4",
+    "stationId": "osce-208",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-208-s5",
+    "stationId": "osce-208",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-208-s6",
+    "stationId": "osce-208",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-218",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 218",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 64,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-218-s0",
+    "stationId": "osce-218",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-218-s1",
+    "stationId": "osce-218",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 218. Explain the procedure. Patient Olivia, age 64. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-218-s2",
+    "stationId": "osce-218",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-218-s3",
+    "stationId": "osce-218",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-218-s4",
+    "stationId": "osce-218",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-218-s5",
+    "stationId": "osce-218",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-218-s6",
+    "stationId": "osce-218",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-228",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 228",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 33,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-228-s0",
+    "stationId": "osce-228",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-228-s1",
+    "stationId": "osce-228",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 228. Explain the procedure. Patient Olivia, age 33. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-228-s2",
+    "stationId": "osce-228",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-228-s3",
+    "stationId": "osce-228",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-228-s4",
+    "stationId": "osce-228",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-228-s5",
+    "stationId": "osce-228",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-228-s6",
+    "stationId": "osce-228",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-238",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 238",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 63,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-238-s0",
+    "stationId": "osce-238",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-238-s1",
+    "stationId": "osce-238",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 238. Explain the procedure. Patient Olivia, age 63. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-238-s2",
+    "stationId": "osce-238",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-238-s3",
+    "stationId": "osce-238",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-238-s4",
+    "stationId": "osce-238",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-238-s5",
+    "stationId": "osce-238",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-238-s6",
+    "stationId": "osce-238",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-248",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 248",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 32,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-248-s0",
+    "stationId": "osce-248",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-248-s1",
+    "stationId": "osce-248",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 248. Explain the procedure. Patient Olivia, age 32. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-248-s2",
+    "stationId": "osce-248",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-248-s3",
+    "stationId": "osce-248",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-248-s4",
+    "stationId": "osce-248",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-248-s5",
+    "stationId": "osce-248",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-248-s6",
+    "stationId": "osce-248",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-258",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 258",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 62,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-258-s0",
+    "stationId": "osce-258",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-258-s1",
+    "stationId": "osce-258",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 258. Explain the procedure. Patient Olivia, age 62. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-258-s2",
+    "stationId": "osce-258",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-258-s3",
+    "stationId": "osce-258",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-258-s4",
+    "stationId": "osce-258",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-258-s5",
+    "stationId": "osce-258",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-258-s6",
+    "stationId": "osce-258",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-268",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 268",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 31,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-268-s0",
+    "stationId": "osce-268",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-268-s1",
+    "stationId": "osce-268",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 268. Explain the procedure. Patient Olivia, age 31. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-268-s2",
+    "stationId": "osce-268",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-268-s3",
+    "stationId": "osce-268",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-268-s4",
+    "stationId": "osce-268",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-268-s5",
+    "stationId": "osce-268",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-268-s6",
+    "stationId": "osce-268",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-278",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 278",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 61,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-278-s0",
+    "stationId": "osce-278",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-278-s1",
+    "stationId": "osce-278",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 278. Explain the procedure. Patient Olivia, age 61. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-278-s2",
+    "stationId": "osce-278",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-278-s3",
+    "stationId": "osce-278",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-278-s4",
+    "stationId": "osce-278",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-278-s5",
+    "stationId": "osce-278",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-278-s6",
+    "stationId": "osce-278",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-288",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 288",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 30,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-288-s0",
+    "stationId": "osce-288",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-288-s1",
+    "stationId": "osce-288",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 288. Explain the procedure. Patient Olivia, age 30. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-288-s2",
+    "stationId": "osce-288",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-288-s3",
+    "stationId": "osce-288",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-288-s4",
+    "stationId": "osce-288",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-288-s5",
+    "stationId": "osce-288",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-288-s6",
+    "stationId": "osce-288",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-298",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 298",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 60,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-298-s0",
+    "stationId": "osce-298",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-298-s1",
+    "stationId": "osce-298",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 298. Explain the procedure. Patient Olivia, age 60. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-298-s2",
+    "stationId": "osce-298",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-298-s3",
+    "stationId": "osce-298",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-298-s4",
+    "stationId": "osce-298",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-298-s5",
+    "stationId": "osce-298",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-298-s6",
+    "stationId": "osce-298",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-308",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 308",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 29,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-308-s0",
+    "stationId": "osce-308",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-308-s1",
+    "stationId": "osce-308",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 308. Explain the procedure. Patient Olivia, age 29. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-308-s2",
+    "stationId": "osce-308",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-308-s3",
+    "stationId": "osce-308",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-308-s4",
+    "stationId": "osce-308",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-308-s5",
+    "stationId": "osce-308",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-308-s6",
+    "stationId": "osce-308",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-318",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 318",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 59,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-318-s0",
+    "stationId": "osce-318",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-318-s1",
+    "stationId": "osce-318",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 318. Explain the procedure. Patient Olivia, age 59. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-318-s2",
+    "stationId": "osce-318",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-318-s3",
+    "stationId": "osce-318",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-318-s4",
+    "stationId": "osce-318",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-318-s5",
+    "stationId": "osce-318",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-318-s6",
+    "stationId": "osce-318",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-328",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 328",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 28,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-328-s0",
+    "stationId": "osce-328",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-328-s1",
+    "stationId": "osce-328",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 328. Explain the procedure. Patient Olivia, age 28. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-328-s2",
+    "stationId": "osce-328",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-328-s3",
+    "stationId": "osce-328",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-328-s4",
+    "stationId": "osce-328",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-328-s5",
+    "stationId": "osce-328",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-328-s6",
+    "stationId": "osce-328",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-338",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 338",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 58,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-338-s0",
+    "stationId": "osce-338",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-338-s1",
+    "stationId": "osce-338",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 338. Explain the procedure. Patient Olivia, age 58. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-338-s2",
+    "stationId": "osce-338",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-338-s3",
+    "stationId": "osce-338",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-338-s4",
+    "stationId": "osce-338",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-338-s5",
+    "stationId": "osce-338",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-338-s6",
+    "stationId": "osce-338",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-348",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 348",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 27,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-348-s0",
+    "stationId": "osce-348",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-348-s1",
+    "stationId": "osce-348",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 348. Explain the procedure. Patient Olivia, age 27. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-348-s2",
+    "stationId": "osce-348",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-348-s3",
+    "stationId": "osce-348",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-348-s4",
+    "stationId": "osce-348",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-348-s5",
+    "stationId": "osce-348",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-348-s6",
+    "stationId": "osce-348",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-358",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 358",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 57,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-358-s0",
+    "stationId": "osce-358",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-358-s1",
+    "stationId": "osce-358",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 358. Explain the procedure. Patient Olivia, age 57. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-358-s2",
+    "stationId": "osce-358",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-358-s3",
+    "stationId": "osce-358",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-358-s4",
+    "stationId": "osce-358",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-358-s5",
+    "stationId": "osce-358",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-358-s6",
+    "stationId": "osce-358",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-368",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 368",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 26,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-368-s0",
+    "stationId": "osce-368",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-368-s1",
+    "stationId": "osce-368",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 368. Explain the procedure. Patient Olivia, age 26. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-368-s2",
+    "stationId": "osce-368",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-368-s3",
+    "stationId": "osce-368",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-368-s4",
+    "stationId": "osce-368",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-368-s5",
+    "stationId": "osce-368",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-368-s6",
+    "stationId": "osce-368",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-378",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 378",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 56,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-378-s0",
+    "stationId": "osce-378",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-378-s1",
+    "stationId": "osce-378",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 378. Explain the procedure. Patient Olivia, age 56. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-378-s2",
+    "stationId": "osce-378",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-378-s3",
+    "stationId": "osce-378",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-378-s4",
+    "stationId": "osce-378",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-378-s5",
+    "stationId": "osce-378",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-378-s6",
+    "stationId": "osce-378",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-388",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 388",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 25,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-388-s0",
+    "stationId": "osce-388",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-388-s1",
+    "stationId": "osce-388",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 388. Explain the procedure. Patient Olivia, age 25. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-388-s2",
+    "stationId": "osce-388",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-388-s3",
+    "stationId": "osce-388",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-388-s4",
+    "stationId": "osce-388",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-388-s5",
+    "stationId": "osce-388",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-388-s6",
+    "stationId": "osce-388",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-398",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 398",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 55,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-398-s0",
+    "stationId": "osce-398",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-398-s1",
+    "stationId": "osce-398",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 398. Explain the procedure. Patient Olivia, age 55. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-398-s2",
+    "stationId": "osce-398",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-398-s3",
+    "stationId": "osce-398",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-398-s4",
+    "stationId": "osce-398",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-398-s5",
+    "stationId": "osce-398",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-398-s6",
+    "stationId": "osce-398",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-408",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 408",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 24,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-408-s0",
+    "stationId": "osce-408",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-408-s1",
+    "stationId": "osce-408",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 408. Explain the procedure. Patient Olivia, age 24. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-408-s2",
+    "stationId": "osce-408",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-408-s3",
+    "stationId": "osce-408",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-408-s4",
+    "stationId": "osce-408",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-408-s5",
+    "stationId": "osce-408",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-408-s6",
+    "stationId": "osce-408",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-418",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 418",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 54,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-418-s0",
+    "stationId": "osce-418",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-418-s1",
+    "stationId": "osce-418",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 418. Explain the procedure. Patient Olivia, age 54. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-418-s2",
+    "stationId": "osce-418",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-418-s3",
+    "stationId": "osce-418",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-418-s4",
+    "stationId": "osce-418",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-418-s5",
+    "stationId": "osce-418",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-418-s6",
+    "stationId": "osce-418",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-428",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 428",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 23,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-428-s0",
+    "stationId": "osce-428",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-428-s1",
+    "stationId": "osce-428",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 428. Explain the procedure. Patient Olivia, age 23. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-428-s2",
+    "stationId": "osce-428",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-428-s3",
+    "stationId": "osce-428",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-428-s4",
+    "stationId": "osce-428",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-428-s5",
+    "stationId": "osce-428",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-428-s6",
+    "stationId": "osce-428",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-438",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 438",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 53,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-438-s0",
+    "stationId": "osce-438",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-438-s1",
+    "stationId": "osce-438",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 438. Explain the procedure. Patient Olivia, age 53. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-438-s2",
+    "stationId": "osce-438",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-438-s3",
+    "stationId": "osce-438",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-438-s4",
+    "stationId": "osce-438",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-438-s5",
+    "stationId": "osce-438",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-438-s6",
+    "stationId": "osce-438",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-448",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 448",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 22,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-448-s0",
+    "stationId": "osce-448",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-448-s1",
+    "stationId": "osce-448",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 448. Explain the procedure. Patient Olivia, age 22. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-448-s2",
+    "stationId": "osce-448",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-448-s3",
+    "stationId": "osce-448",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-448-s4",
+    "stationId": "osce-448",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-448-s5",
+    "stationId": "osce-448",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-448-s6",
+    "stationId": "osce-448",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-458",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 458",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 52,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-458-s0",
+    "stationId": "osce-458",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-458-s1",
+    "stationId": "osce-458",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 458. Explain the procedure. Patient Olivia, age 52. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-458-s2",
+    "stationId": "osce-458",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-458-s3",
+    "stationId": "osce-458",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-458-s4",
+    "stationId": "osce-458",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-458-s5",
+    "stationId": "osce-458",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-458-s6",
+    "stationId": "osce-458",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-468",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 468",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 21,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-468-s0",
+    "stationId": "osce-468",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-468-s1",
+    "stationId": "osce-468",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 468. Explain the procedure. Patient Olivia, age 21. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-468-s2",
+    "stationId": "osce-468",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-468-s3",
+    "stationId": "osce-468",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-468-s4",
+    "stationId": "osce-468",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-468-s5",
+    "stationId": "osce-468",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-468-s6",
+    "stationId": "osce-468",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-478",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 478",
+  "task": "Explain the procedure.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Olivia",
+   "age": 51,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-478-s0",
+    "stationId": "osce-478",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-478-s1",
+    "stationId": "osce-478",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 478. Explain the procedure. Patient Olivia, age 51. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-478-s2",
+    "stationId": "osce-478",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-478-s3",
+    "stationId": "osce-478",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When handing over concerns about Olivia to the doctor, which structure should you use?",
+     "options": [
+      "A casual chat covering what you remember",
+      "ISBAR: Identify, Situation, Background, Assessment, Recommendation",
+      "Only the vital signs",
+      "A written note left on the desk"
+     ],
+     "correctIndex": 1,
+     "explanation": "ISBAR structures clinical communication so critical information is never omitted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-478-s4",
+    "stationId": "osce-478",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-478-s5",
+    "stationId": "osce-478",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-478-s6",
+    "stationId": "osce-478",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-488",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 488",
+  "task": "Explain the procedure.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Olivia",
+   "age": 20,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-488-s0",
+    "stationId": "osce-488",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-488-s1",
+    "stationId": "osce-488",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 488. Explain the procedure. Patient Olivia, age 20. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-488-s2",
+    "stationId": "osce-488",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-488-s3",
+    "stationId": "osce-488",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "At the start of your conversation with Olivia, what should you do first?",
+     "options": [
+      "Begin discussing the care plan straight away",
+      "Introduce yourself, confirm the patient's identity and gain consent to proceed",
+      "Read the chart aloud",
+      "Ask a relative to explain the situation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Introduction, positive identification and consent are the foundation of safe, respectful communication."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-488-s4",
+    "stationId": "osce-488",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-488-s5",
+    "stationId": "osce-488",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-488-s6",
+    "stationId": "osce-488",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-498",
+  "category": "patient-communication",
+  "title": "Patient Communication Station 498",
+  "task": "Explain the procedure.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Olivia",
+   "age": 50,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-498-s0",
+    "stationId": "osce-498",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-498-s1",
+    "stationId": "osce-498",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 498. Explain the procedure. Patient Olivia, age 50. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-498-s2",
+    "stationId": "osce-498",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-498-s3",
+    "stationId": "osce-498",
+    "orderIndex": 3,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which question style best encourages Olivia to share concerns?",
+     "options": [
+      "Closed questions requiring yes/no answers",
+      "Leading questions",
+      "Open-ended questions with active listening",
+      "Multiple rapid-fire questions"
+     ],
+     "correctIndex": 2,
+     "explanation": "Open questions and active listening elicit the patient's own concerns and build trust."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-498-s4",
+    "stationId": "osce-498",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Olivia becomes tearful and anxious during the discussion. The best response is to:",
+     "options": [
+      "Change the subject quickly",
+      "Acknowledge the emotion, allow silence and offer support before continuing",
+      "Continue with the planned information",
+      "Leave the room until they settle"
+     ],
+     "correctIndex": 1,
+     "explanation": "Acknowledging emotion and pausing shows empathy and keeps communication patient-centred."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-498-s5",
+    "stationId": "osce-498",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Answer the patient's questions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-498-s6",
+    "stationId": "osce-498",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ }
+]

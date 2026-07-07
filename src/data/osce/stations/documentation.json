@@ -1,0 +1,6102 @@
+[
+ {
+  "id": "osce-010",
+  "category": "documentation",
+  "title": "Documentation Station 10",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 50,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-010-s0",
+    "stationId": "osce-010",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-010-s1",
+    "stationId": "osce-010",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 10. Document the intervention. Patient Sophia, age 50. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-010-s2",
+    "stationId": "osce-010",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-010-s3",
+    "stationId": "osce-010",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-010-s4",
+    "stationId": "osce-010",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-010-s5",
+    "stationId": "osce-010",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-010-s6",
+    "stationId": "osce-010",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-020",
+  "category": "documentation",
+  "title": "Documentation Station 20",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 80,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-020-s0",
+    "stationId": "osce-020",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-020-s1",
+    "stationId": "osce-020",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 20. Document the intervention. Patient Sophia, age 80. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-020-s2",
+    "stationId": "osce-020",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-020-s3",
+    "stationId": "osce-020",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-020-s4",
+    "stationId": "osce-020",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-020-s5",
+    "stationId": "osce-020",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-020-s6",
+    "stationId": "osce-020",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-030",
+  "category": "documentation",
+  "title": "Documentation Station 30",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 49,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-030-s0",
+    "stationId": "osce-030",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-030-s1",
+    "stationId": "osce-030",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 30. Document the intervention. Patient Sophia, age 49. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-030-s2",
+    "stationId": "osce-030",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-030-s3",
+    "stationId": "osce-030",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-030-s4",
+    "stationId": "osce-030",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-030-s5",
+    "stationId": "osce-030",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-030-s6",
+    "stationId": "osce-030",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-040",
+  "category": "documentation",
+  "title": "Documentation Station 40",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 79,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-040-s0",
+    "stationId": "osce-040",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-040-s1",
+    "stationId": "osce-040",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 40. Document the intervention. Patient Sophia, age 79. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-040-s2",
+    "stationId": "osce-040",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-040-s3",
+    "stationId": "osce-040",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-040-s4",
+    "stationId": "osce-040",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-040-s5",
+    "stationId": "osce-040",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-040-s6",
+    "stationId": "osce-040",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-050",
+  "category": "documentation",
+  "title": "Documentation Station 50",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 48,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-050-s0",
+    "stationId": "osce-050",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-050-s1",
+    "stationId": "osce-050",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 50. Document the intervention. Patient Sophia, age 48. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-050-s2",
+    "stationId": "osce-050",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-050-s3",
+    "stationId": "osce-050",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-050-s4",
+    "stationId": "osce-050",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-050-s5",
+    "stationId": "osce-050",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-050-s6",
+    "stationId": "osce-050",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-060",
+  "category": "documentation",
+  "title": "Documentation Station 60",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 78,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-060-s0",
+    "stationId": "osce-060",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-060-s1",
+    "stationId": "osce-060",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 60. Document the intervention. Patient Sophia, age 78. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-060-s2",
+    "stationId": "osce-060",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-060-s3",
+    "stationId": "osce-060",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-060-s4",
+    "stationId": "osce-060",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-060-s5",
+    "stationId": "osce-060",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-060-s6",
+    "stationId": "osce-060",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-070",
+  "category": "documentation",
+  "title": "Documentation Station 70",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 47,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-070-s0",
+    "stationId": "osce-070",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-070-s1",
+    "stationId": "osce-070",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 70. Document the intervention. Patient Sophia, age 47. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-070-s2",
+    "stationId": "osce-070",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-070-s3",
+    "stationId": "osce-070",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-070-s4",
+    "stationId": "osce-070",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-070-s5",
+    "stationId": "osce-070",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-070-s6",
+    "stationId": "osce-070",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-080",
+  "category": "documentation",
+  "title": "Documentation Station 80",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 77,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-080-s0",
+    "stationId": "osce-080",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-080-s1",
+    "stationId": "osce-080",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 80. Document the intervention. Patient Sophia, age 77. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-080-s2",
+    "stationId": "osce-080",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-080-s3",
+    "stationId": "osce-080",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-080-s4",
+    "stationId": "osce-080",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-080-s5",
+    "stationId": "osce-080",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-080-s6",
+    "stationId": "osce-080",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-090",
+  "category": "documentation",
+  "title": "Documentation Station 90",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 46,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-090-s0",
+    "stationId": "osce-090",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-090-s1",
+    "stationId": "osce-090",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 90. Document the intervention. Patient Sophia, age 46. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-090-s2",
+    "stationId": "osce-090",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-090-s3",
+    "stationId": "osce-090",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-090-s4",
+    "stationId": "osce-090",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-090-s5",
+    "stationId": "osce-090",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-090-s6",
+    "stationId": "osce-090",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-100",
+  "category": "documentation",
+  "title": "Documentation Station 100",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 76,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-100-s0",
+    "stationId": "osce-100",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-100-s1",
+    "stationId": "osce-100",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 100. Document the intervention. Patient Sophia, age 76. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-100-s2",
+    "stationId": "osce-100",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-100-s3",
+    "stationId": "osce-100",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-100-s4",
+    "stationId": "osce-100",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-100-s5",
+    "stationId": "osce-100",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-100-s6",
+    "stationId": "osce-100",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-110",
+  "category": "documentation",
+  "title": "Documentation Station 110",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 45,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-110-s0",
+    "stationId": "osce-110",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-110-s1",
+    "stationId": "osce-110",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 110. Document the intervention. Patient Sophia, age 45. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-110-s2",
+    "stationId": "osce-110",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-110-s3",
+    "stationId": "osce-110",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-110-s4",
+    "stationId": "osce-110",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-110-s5",
+    "stationId": "osce-110",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-110-s6",
+    "stationId": "osce-110",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-120",
+  "category": "documentation",
+  "title": "Documentation Station 120",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 75,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-120-s0",
+    "stationId": "osce-120",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-120-s1",
+    "stationId": "osce-120",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 120. Document the intervention. Patient Sophia, age 75. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-120-s2",
+    "stationId": "osce-120",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-120-s3",
+    "stationId": "osce-120",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-120-s4",
+    "stationId": "osce-120",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-120-s5",
+    "stationId": "osce-120",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-120-s6",
+    "stationId": "osce-120",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-130",
+  "category": "documentation",
+  "title": "Documentation Station 130",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 44,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-130-s0",
+    "stationId": "osce-130",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-130-s1",
+    "stationId": "osce-130",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 130. Document the intervention. Patient Sophia, age 44. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-130-s2",
+    "stationId": "osce-130",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-130-s3",
+    "stationId": "osce-130",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-130-s4",
+    "stationId": "osce-130",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-130-s5",
+    "stationId": "osce-130",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-130-s6",
+    "stationId": "osce-130",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-140",
+  "category": "documentation",
+  "title": "Documentation Station 140",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 74,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-140-s0",
+    "stationId": "osce-140",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-140-s1",
+    "stationId": "osce-140",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 140. Document the intervention. Patient Sophia, age 74. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-140-s2",
+    "stationId": "osce-140",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-140-s3",
+    "stationId": "osce-140",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-140-s4",
+    "stationId": "osce-140",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-140-s5",
+    "stationId": "osce-140",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-140-s6",
+    "stationId": "osce-140",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-150",
+  "category": "documentation",
+  "title": "Documentation Station 150",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 43,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-150-s0",
+    "stationId": "osce-150",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-150-s1",
+    "stationId": "osce-150",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 150. Document the intervention. Patient Sophia, age 43. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-150-s2",
+    "stationId": "osce-150",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-150-s3",
+    "stationId": "osce-150",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-150-s4",
+    "stationId": "osce-150",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-150-s5",
+    "stationId": "osce-150",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-150-s6",
+    "stationId": "osce-150",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-160",
+  "category": "documentation",
+  "title": "Documentation Station 160",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 73,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-160-s0",
+    "stationId": "osce-160",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-160-s1",
+    "stationId": "osce-160",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 160. Document the intervention. Patient Sophia, age 73. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-160-s2",
+    "stationId": "osce-160",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-160-s3",
+    "stationId": "osce-160",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-160-s4",
+    "stationId": "osce-160",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-160-s5",
+    "stationId": "osce-160",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-160-s6",
+    "stationId": "osce-160",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-170",
+  "category": "documentation",
+  "title": "Documentation Station 170",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 42,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-170-s0",
+    "stationId": "osce-170",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-170-s1",
+    "stationId": "osce-170",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 170. Document the intervention. Patient Sophia, age 42. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-170-s2",
+    "stationId": "osce-170",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-170-s3",
+    "stationId": "osce-170",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-170-s4",
+    "stationId": "osce-170",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-170-s5",
+    "stationId": "osce-170",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-170-s6",
+    "stationId": "osce-170",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-180",
+  "category": "documentation",
+  "title": "Documentation Station 180",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 72,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-180-s0",
+    "stationId": "osce-180",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-180-s1",
+    "stationId": "osce-180",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 180. Document the intervention. Patient Sophia, age 72. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-180-s2",
+    "stationId": "osce-180",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-180-s3",
+    "stationId": "osce-180",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-180-s4",
+    "stationId": "osce-180",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-180-s5",
+    "stationId": "osce-180",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-180-s6",
+    "stationId": "osce-180",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-190",
+  "category": "documentation",
+  "title": "Documentation Station 190",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 41,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-190-s0",
+    "stationId": "osce-190",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-190-s1",
+    "stationId": "osce-190",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 190. Document the intervention. Patient Sophia, age 41. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-190-s2",
+    "stationId": "osce-190",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-190-s3",
+    "stationId": "osce-190",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-190-s4",
+    "stationId": "osce-190",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-190-s5",
+    "stationId": "osce-190",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-190-s6",
+    "stationId": "osce-190",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-200",
+  "category": "documentation",
+  "title": "Documentation Station 200",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 71,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-200-s0",
+    "stationId": "osce-200",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-200-s1",
+    "stationId": "osce-200",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 200. Document the intervention. Patient Sophia, age 71. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-200-s2",
+    "stationId": "osce-200",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-200-s3",
+    "stationId": "osce-200",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-200-s4",
+    "stationId": "osce-200",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-200-s5",
+    "stationId": "osce-200",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-200-s6",
+    "stationId": "osce-200",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-210",
+  "category": "documentation",
+  "title": "Documentation Station 210",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 40,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-210-s0",
+    "stationId": "osce-210",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-210-s1",
+    "stationId": "osce-210",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 210. Document the intervention. Patient Sophia, age 40. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-210-s2",
+    "stationId": "osce-210",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-210-s3",
+    "stationId": "osce-210",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-210-s4",
+    "stationId": "osce-210",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-210-s5",
+    "stationId": "osce-210",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-210-s6",
+    "stationId": "osce-210",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-220",
+  "category": "documentation",
+  "title": "Documentation Station 220",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 70,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-220-s0",
+    "stationId": "osce-220",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-220-s1",
+    "stationId": "osce-220",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 220. Document the intervention. Patient Sophia, age 70. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-220-s2",
+    "stationId": "osce-220",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-220-s3",
+    "stationId": "osce-220",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-220-s4",
+    "stationId": "osce-220",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-220-s5",
+    "stationId": "osce-220",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-220-s6",
+    "stationId": "osce-220",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-230",
+  "category": "documentation",
+  "title": "Documentation Station 230",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 39,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-230-s0",
+    "stationId": "osce-230",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-230-s1",
+    "stationId": "osce-230",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 230. Document the intervention. Patient Sophia, age 39. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-230-s2",
+    "stationId": "osce-230",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-230-s3",
+    "stationId": "osce-230",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-230-s4",
+    "stationId": "osce-230",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-230-s5",
+    "stationId": "osce-230",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-230-s6",
+    "stationId": "osce-230",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-240",
+  "category": "documentation",
+  "title": "Documentation Station 240",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 69,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-240-s0",
+    "stationId": "osce-240",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-240-s1",
+    "stationId": "osce-240",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 240. Document the intervention. Patient Sophia, age 69. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-240-s2",
+    "stationId": "osce-240",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-240-s3",
+    "stationId": "osce-240",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-240-s4",
+    "stationId": "osce-240",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-240-s5",
+    "stationId": "osce-240",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-240-s6",
+    "stationId": "osce-240",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-250",
+  "category": "documentation",
+  "title": "Documentation Station 250",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 38,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-250-s0",
+    "stationId": "osce-250",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-250-s1",
+    "stationId": "osce-250",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 250. Document the intervention. Patient Sophia, age 38. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-250-s2",
+    "stationId": "osce-250",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-250-s3",
+    "stationId": "osce-250",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-250-s4",
+    "stationId": "osce-250",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-250-s5",
+    "stationId": "osce-250",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-250-s6",
+    "stationId": "osce-250",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-260",
+  "category": "documentation",
+  "title": "Documentation Station 260",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 68,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-260-s0",
+    "stationId": "osce-260",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-260-s1",
+    "stationId": "osce-260",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 260. Document the intervention. Patient Sophia, age 68. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-260-s2",
+    "stationId": "osce-260",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-260-s3",
+    "stationId": "osce-260",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-260-s4",
+    "stationId": "osce-260",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-260-s5",
+    "stationId": "osce-260",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-260-s6",
+    "stationId": "osce-260",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-270",
+  "category": "documentation",
+  "title": "Documentation Station 270",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 37,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-270-s0",
+    "stationId": "osce-270",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-270-s1",
+    "stationId": "osce-270",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 270. Document the intervention. Patient Sophia, age 37. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-270-s2",
+    "stationId": "osce-270",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-270-s3",
+    "stationId": "osce-270",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-270-s4",
+    "stationId": "osce-270",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-270-s5",
+    "stationId": "osce-270",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-270-s6",
+    "stationId": "osce-270",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-280",
+  "category": "documentation",
+  "title": "Documentation Station 280",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 67,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-280-s0",
+    "stationId": "osce-280",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-280-s1",
+    "stationId": "osce-280",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 280. Document the intervention. Patient Sophia, age 67. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-280-s2",
+    "stationId": "osce-280",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-280-s3",
+    "stationId": "osce-280",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-280-s4",
+    "stationId": "osce-280",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-280-s5",
+    "stationId": "osce-280",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-280-s6",
+    "stationId": "osce-280",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-290",
+  "category": "documentation",
+  "title": "Documentation Station 290",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 36,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-290-s0",
+    "stationId": "osce-290",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-290-s1",
+    "stationId": "osce-290",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 290. Document the intervention. Patient Sophia, age 36. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-290-s2",
+    "stationId": "osce-290",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-290-s3",
+    "stationId": "osce-290",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-290-s4",
+    "stationId": "osce-290",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-290-s5",
+    "stationId": "osce-290",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-290-s6",
+    "stationId": "osce-290",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-300",
+  "category": "documentation",
+  "title": "Documentation Station 300",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 66,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-300-s0",
+    "stationId": "osce-300",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-300-s1",
+    "stationId": "osce-300",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 300. Document the intervention. Patient Sophia, age 66. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-300-s2",
+    "stationId": "osce-300",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-300-s3",
+    "stationId": "osce-300",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-300-s4",
+    "stationId": "osce-300",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-300-s5",
+    "stationId": "osce-300",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-300-s6",
+    "stationId": "osce-300",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-310",
+  "category": "documentation",
+  "title": "Documentation Station 310",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 35,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-310-s0",
+    "stationId": "osce-310",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-310-s1",
+    "stationId": "osce-310",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 310. Document the intervention. Patient Sophia, age 35. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-310-s2",
+    "stationId": "osce-310",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-310-s3",
+    "stationId": "osce-310",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-310-s4",
+    "stationId": "osce-310",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-310-s5",
+    "stationId": "osce-310",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-310-s6",
+    "stationId": "osce-310",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-320",
+  "category": "documentation",
+  "title": "Documentation Station 320",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 65,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-320-s0",
+    "stationId": "osce-320",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-320-s1",
+    "stationId": "osce-320",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 320. Document the intervention. Patient Sophia, age 65. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-320-s2",
+    "stationId": "osce-320",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-320-s3",
+    "stationId": "osce-320",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-320-s4",
+    "stationId": "osce-320",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-320-s5",
+    "stationId": "osce-320",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-320-s6",
+    "stationId": "osce-320",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-330",
+  "category": "documentation",
+  "title": "Documentation Station 330",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 34,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-330-s0",
+    "stationId": "osce-330",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-330-s1",
+    "stationId": "osce-330",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 330. Document the intervention. Patient Sophia, age 34. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-330-s2",
+    "stationId": "osce-330",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-330-s3",
+    "stationId": "osce-330",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-330-s4",
+    "stationId": "osce-330",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-330-s5",
+    "stationId": "osce-330",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-330-s6",
+    "stationId": "osce-330",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-340",
+  "category": "documentation",
+  "title": "Documentation Station 340",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 64,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-340-s0",
+    "stationId": "osce-340",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-340-s1",
+    "stationId": "osce-340",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 340. Document the intervention. Patient Sophia, age 64. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-340-s2",
+    "stationId": "osce-340",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-340-s3",
+    "stationId": "osce-340",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-340-s4",
+    "stationId": "osce-340",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-340-s5",
+    "stationId": "osce-340",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-340-s6",
+    "stationId": "osce-340",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-350",
+  "category": "documentation",
+  "title": "Documentation Station 350",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 33,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-350-s0",
+    "stationId": "osce-350",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-350-s1",
+    "stationId": "osce-350",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 350. Document the intervention. Patient Sophia, age 33. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-350-s2",
+    "stationId": "osce-350",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-350-s3",
+    "stationId": "osce-350",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-350-s4",
+    "stationId": "osce-350",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-350-s5",
+    "stationId": "osce-350",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-350-s6",
+    "stationId": "osce-350",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-360",
+  "category": "documentation",
+  "title": "Documentation Station 360",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 63,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-360-s0",
+    "stationId": "osce-360",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-360-s1",
+    "stationId": "osce-360",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 360. Document the intervention. Patient Sophia, age 63. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-360-s2",
+    "stationId": "osce-360",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-360-s3",
+    "stationId": "osce-360",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-360-s4",
+    "stationId": "osce-360",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-360-s5",
+    "stationId": "osce-360",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-360-s6",
+    "stationId": "osce-360",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-370",
+  "category": "documentation",
+  "title": "Documentation Station 370",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 32,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-370-s0",
+    "stationId": "osce-370",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-370-s1",
+    "stationId": "osce-370",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 370. Document the intervention. Patient Sophia, age 32. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-370-s2",
+    "stationId": "osce-370",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-370-s3",
+    "stationId": "osce-370",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-370-s4",
+    "stationId": "osce-370",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-370-s5",
+    "stationId": "osce-370",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-370-s6",
+    "stationId": "osce-370",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-380",
+  "category": "documentation",
+  "title": "Documentation Station 380",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 62,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-380-s0",
+    "stationId": "osce-380",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-380-s1",
+    "stationId": "osce-380",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 380. Document the intervention. Patient Sophia, age 62. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-380-s2",
+    "stationId": "osce-380",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-380-s3",
+    "stationId": "osce-380",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-380-s4",
+    "stationId": "osce-380",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-380-s5",
+    "stationId": "osce-380",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-380-s6",
+    "stationId": "osce-380",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-390",
+  "category": "documentation",
+  "title": "Documentation Station 390",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 31,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-390-s0",
+    "stationId": "osce-390",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-390-s1",
+    "stationId": "osce-390",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 390. Document the intervention. Patient Sophia, age 31. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-390-s2",
+    "stationId": "osce-390",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-390-s3",
+    "stationId": "osce-390",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-390-s4",
+    "stationId": "osce-390",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-390-s5",
+    "stationId": "osce-390",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-390-s6",
+    "stationId": "osce-390",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-400",
+  "category": "documentation",
+  "title": "Documentation Station 400",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 61,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-400-s0",
+    "stationId": "osce-400",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-400-s1",
+    "stationId": "osce-400",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 400. Document the intervention. Patient Sophia, age 61. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-400-s2",
+    "stationId": "osce-400",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-400-s3",
+    "stationId": "osce-400",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-400-s4",
+    "stationId": "osce-400",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-400-s5",
+    "stationId": "osce-400",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-400-s6",
+    "stationId": "osce-400",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-410",
+  "category": "documentation",
+  "title": "Documentation Station 410",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 30,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-410-s0",
+    "stationId": "osce-410",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-410-s1",
+    "stationId": "osce-410",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 410. Document the intervention. Patient Sophia, age 30. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-410-s2",
+    "stationId": "osce-410",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-410-s3",
+    "stationId": "osce-410",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-410-s4",
+    "stationId": "osce-410",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-410-s5",
+    "stationId": "osce-410",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-410-s6",
+    "stationId": "osce-410",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-420",
+  "category": "documentation",
+  "title": "Documentation Station 420",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 60,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-420-s0",
+    "stationId": "osce-420",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-420-s1",
+    "stationId": "osce-420",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 420. Document the intervention. Patient Sophia, age 60. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-420-s2",
+    "stationId": "osce-420",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-420-s3",
+    "stationId": "osce-420",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-420-s4",
+    "stationId": "osce-420",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-420-s5",
+    "stationId": "osce-420",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-420-s6",
+    "stationId": "osce-420",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-430",
+  "category": "documentation",
+  "title": "Documentation Station 430",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 29,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-430-s0",
+    "stationId": "osce-430",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-430-s1",
+    "stationId": "osce-430",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 430. Document the intervention. Patient Sophia, age 29. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-430-s2",
+    "stationId": "osce-430",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-430-s3",
+    "stationId": "osce-430",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-430-s4",
+    "stationId": "osce-430",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-430-s5",
+    "stationId": "osce-430",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-430-s6",
+    "stationId": "osce-430",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-440",
+  "category": "documentation",
+  "title": "Documentation Station 440",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 59,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-440-s0",
+    "stationId": "osce-440",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-440-s1",
+    "stationId": "osce-440",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 440. Document the intervention. Patient Sophia, age 59. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-440-s2",
+    "stationId": "osce-440",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-440-s3",
+    "stationId": "osce-440",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-440-s4",
+    "stationId": "osce-440",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-440-s5",
+    "stationId": "osce-440",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-440-s6",
+    "stationId": "osce-440",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-450",
+  "category": "documentation",
+  "title": "Documentation Station 450",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 28,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-450-s0",
+    "stationId": "osce-450",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-450-s1",
+    "stationId": "osce-450",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 450. Document the intervention. Patient Sophia, age 28. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-450-s2",
+    "stationId": "osce-450",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-450-s3",
+    "stationId": "osce-450",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-450-s4",
+    "stationId": "osce-450",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-450-s5",
+    "stationId": "osce-450",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-450-s6",
+    "stationId": "osce-450",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-460",
+  "category": "documentation",
+  "title": "Documentation Station 460",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 58,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-460-s0",
+    "stationId": "osce-460",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-460-s1",
+    "stationId": "osce-460",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 460. Document the intervention. Patient Sophia, age 58. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-460-s2",
+    "stationId": "osce-460",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-460-s3",
+    "stationId": "osce-460",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-460-s4",
+    "stationId": "osce-460",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-460-s5",
+    "stationId": "osce-460",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-460-s6",
+    "stationId": "osce-460",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-470",
+  "category": "documentation",
+  "title": "Documentation Station 470",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 27,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-470-s0",
+    "stationId": "osce-470",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-470-s1",
+    "stationId": "osce-470",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 470. Document the intervention. Patient Sophia, age 27. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-470-s2",
+    "stationId": "osce-470",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-470-s3",
+    "stationId": "osce-470",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-470-s4",
+    "stationId": "osce-470",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-470-s5",
+    "stationId": "osce-470",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-470-s6",
+    "stationId": "osce-470",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-480",
+  "category": "documentation",
+  "title": "Documentation Station 480",
+  "task": "Document the intervention.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Sophia",
+   "age": 57,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-480-s0",
+    "stationId": "osce-480",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-480-s1",
+    "stationId": "osce-480",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 480. Document the intervention. Patient Sophia, age 57. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-480-s2",
+    "stationId": "osce-480",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-480-s3",
+    "stationId": "osce-480",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-480-s4",
+    "stationId": "osce-480",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which entry is an example of good documentation?",
+     "options": [
+      "\"Patient had a good day\"",
+      "\"Patient seems fine\"",
+      "\"Wound 3 cm × 2 cm on left forearm, minimal serous exudate, dressing renewed, patient reports pain 2/10\"",
+      "\"No change\""
+     ],
+     "correctIndex": 2,
+     "explanation": "Records must be factual, specific and objective — measurable observations, not vague impressions."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-480-s5",
+    "stationId": "osce-480",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-480-s6",
+    "stationId": "osce-480",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-490",
+  "category": "documentation",
+  "title": "Documentation Station 490",
+  "task": "Document the intervention.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Sophia",
+   "age": 26,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-490-s0",
+    "stationId": "osce-490",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-490-s1",
+    "stationId": "osce-490",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 490. Document the intervention. Patient Sophia, age 26. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-490-s2",
+    "stationId": "osce-490",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-490-s3",
+    "stationId": "osce-490",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-490-s4",
+    "stationId": "osce-490",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "You make a written error in Sophia's chart. How do you correct it?",
+     "options": [
+      "Use correction fluid",
+      "Scribble it out completely",
+      "Draw a single line through the error, write 'error', then sign and date it",
+      "Tear out the page and rewrite it"
+     ],
+     "correctIndex": 2,
+     "explanation": "A single line keeps the original legible; correction fluid or obliteration is never acceptable in a legal record."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-490-s5",
+    "stationId": "osce-490",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-490-s6",
+    "stationId": "osce-490",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-500",
+  "category": "documentation",
+  "title": "Documentation Station 500",
+  "task": "Document the intervention.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Sophia",
+   "age": 56,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-500-s0",
+    "stationId": "osce-500",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-500-s1",
+    "stationId": "osce-500",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 500. Document the intervention. Patient Sophia, age 56. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-500-s2",
+    "stationId": "osce-500",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-500-s3",
+    "stationId": "osce-500",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Document the intervention.",
+     "options": [
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": true
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-500-s4",
+    "stationId": "osce-500",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When should nursing care given to Sophia be documented?",
+     "options": [
+      "At the end of the week",
+      "As soon as possible after the care is given, in chronological order",
+      "Before the care is given to save time",
+      "Only when something abnormal happens"
+     ],
+     "correctIndex": 1,
+     "explanation": "Contemporaneous, chronological records are a professional and legal requirement — and never pre-charted."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-500-s5",
+    "stationId": "osce-500",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Record observations accurately. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-500-s6",
+    "stationId": "osce-500",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ }
+]

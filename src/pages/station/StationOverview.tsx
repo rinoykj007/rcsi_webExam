@@ -1,13 +1,22 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import TabNavigation from "@/components/TabNavigation";
-import { LayoutGrid, Zap, Brain, FileQuestion, GitCompare } from "lucide-react";
+import {
+  ArrowRight,
+  Brain,
+  Briefcase,
+  FileQuestion,
+  GitCompare,
+  LayoutGrid,
+  Zap,
+} from "lucide-react";
 import { fetchStationOverview } from "@/lib/data";
 import { PageEnter, StaggerContainer, StaggerItem, FadeIn, LoadingSpinner } from "@/components/animations";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
 const StationOverview = () => {
   const { topicId = "" } = useParams();
+  const nav = useNavigate();
 
   const { data: overview, isLoading } = useQuery({
     queryKey: ["station", topicId, "overview"],
@@ -48,6 +57,63 @@ const StationOverview = () => {
     },
   ];
 
+  const learningModules = (
+    <FadeIn delay={0.15}>
+      <div className="mb-2 sm:mb-3">
+        <h2 className="font-display font-bold text-rcsi-navy text-base sm:text-lg px-1 mb-2">
+          Learning modules
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
+          <button
+            onClick={() => nav(`/screens/practical/${topicId}`)}
+            className="group text-left bg-card rounded-lg sm:rounded-2xl p-3 sm:p-4 border border-violet-200 shadow-soft hover:shadow-md transition"
+          >
+            <div className="flex items-start gap-3">
+              <div className="h-10 w-10 rounded-lg bg-violet-100 text-violet-700 grid place-items-center flex-shrink-0">
+                <Briefcase size={20} strokeWidth={2} />
+              </div>
+              <div className="min-w-0 flex-1">
+                <h3 className="font-display font-bold text-rcsi-navy text-sm sm:text-base">
+                  Practical Prep
+                </h3>
+                <p className="text-muted-foreground text-xs leading-relaxed mt-1">
+                  Practice procedures, checklists, and real-world technique.
+                </p>
+              </div>
+              <ArrowRight
+                className="h-4 w-4 text-violet-700 flex-shrink-0 mt-1 group-hover:translate-x-0.5 transition"
+                strokeWidth={2}
+              />
+            </div>
+          </button>
+
+          <button
+            onClick={() => nav(`/quiz/${topicId}`)}
+            className="group text-left bg-card rounded-lg sm:rounded-2xl p-3 sm:p-4 border border-sky-200 shadow-soft hover:shadow-md transition"
+          >
+            <div className="flex items-start gap-3">
+              <div className="h-10 w-10 rounded-lg bg-sky-100 text-sky-700 grid place-items-center flex-shrink-0">
+                <FileQuestion size={20} strokeWidth={2} />
+              </div>
+              <div className="min-w-0 flex-1">
+                <h3 className="font-display font-bold text-rcsi-navy text-sm sm:text-base">
+                  MCQ Challenge
+                </h3>
+                <p className="text-muted-foreground text-xs leading-relaxed mt-1">
+                  Test your recall with station-specific questions.
+                </p>
+              </div>
+              <ArrowRight
+                className="h-4 w-4 text-sky-700 flex-shrink-0 mt-1 group-hover:translate-x-0.5 transition"
+                strokeWidth={2}
+              />
+            </div>
+          </button>
+        </div>
+      </div>
+    </FadeIn>
+  );
+
   if (isLoading) {
     return (
       <div className="min-h-screen bg-background">
@@ -64,6 +130,7 @@ const StationOverview = () => {
       <div className="min-h-screen bg-background">
         <TabNavigation tabs={tabs} />
         <div className="mx-auto w-full max-w-2xl px-3 sm:px-5 py-6">
+          {learningModules}
           <div className="bg-card rounded-lg sm:rounded-2xl p-4 sm:p-6 text-center shadow-soft">
             <p className="text-muted-foreground text-sm">
               Station content not found
@@ -265,6 +332,8 @@ const StationOverview = () => {
               </p>
             </div>
           </FadeIn>
+
+          {learningModules}
 
           {/* Sections */}
           <StaggerContainer staggerDelay={0.1} delay={0.2}>

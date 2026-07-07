@@ -1,0 +1,6202 @@
+[
+ {
+  "id": "osce-003",
+  "category": "cannulation",
+  "title": "Cannulation Station 3",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 29,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-003-s0",
+    "stationId": "osce-003",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-003-s1",
+    "stationId": "osce-003",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 3. Prepare for IV cannulation. Patient David, age 29. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-003-s2",
+    "stationId": "osce-003",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-003-s3",
+    "stationId": "osce-003",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-003-s4",
+    "stationId": "osce-003",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-003-s5",
+    "stationId": "osce-003",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-003-s6",
+    "stationId": "osce-003",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-013",
+  "category": "cannulation",
+  "title": "Cannulation Station 13",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 59,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-013-s0",
+    "stationId": "osce-013",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-013-s1",
+    "stationId": "osce-013",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 13. Prepare for IV cannulation. Patient David, age 59. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-013-s2",
+    "stationId": "osce-013",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-013-s3",
+    "stationId": "osce-013",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-013-s4",
+    "stationId": "osce-013",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-013-s5",
+    "stationId": "osce-013",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-013-s6",
+    "stationId": "osce-013",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-023",
+  "category": "cannulation",
+  "title": "Cannulation Station 23",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 28,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-023-s0",
+    "stationId": "osce-023",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-023-s1",
+    "stationId": "osce-023",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 23. Prepare for IV cannulation. Patient David, age 28. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-023-s2",
+    "stationId": "osce-023",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-023-s3",
+    "stationId": "osce-023",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-023-s4",
+    "stationId": "osce-023",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-023-s5",
+    "stationId": "osce-023",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-023-s6",
+    "stationId": "osce-023",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-033",
+  "category": "cannulation",
+  "title": "Cannulation Station 33",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 58,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-033-s0",
+    "stationId": "osce-033",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-033-s1",
+    "stationId": "osce-033",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 33. Prepare for IV cannulation. Patient David, age 58. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-033-s2",
+    "stationId": "osce-033",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-033-s3",
+    "stationId": "osce-033",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-033-s4",
+    "stationId": "osce-033",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-033-s5",
+    "stationId": "osce-033",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-033-s6",
+    "stationId": "osce-033",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-043",
+  "category": "cannulation",
+  "title": "Cannulation Station 43",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 27,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-043-s0",
+    "stationId": "osce-043",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-043-s1",
+    "stationId": "osce-043",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 43. Prepare for IV cannulation. Patient David, age 27. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-043-s2",
+    "stationId": "osce-043",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-043-s3",
+    "stationId": "osce-043",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-043-s4",
+    "stationId": "osce-043",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-043-s5",
+    "stationId": "osce-043",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-043-s6",
+    "stationId": "osce-043",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-053",
+  "category": "cannulation",
+  "title": "Cannulation Station 53",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 57,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-053-s0",
+    "stationId": "osce-053",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-053-s1",
+    "stationId": "osce-053",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 53. Prepare for IV cannulation. Patient David, age 57. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-053-s2",
+    "stationId": "osce-053",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-053-s3",
+    "stationId": "osce-053",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-053-s4",
+    "stationId": "osce-053",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-053-s5",
+    "stationId": "osce-053",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-053-s6",
+    "stationId": "osce-053",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-063",
+  "category": "cannulation",
+  "title": "Cannulation Station 63",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 26,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-063-s0",
+    "stationId": "osce-063",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-063-s1",
+    "stationId": "osce-063",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 63. Prepare for IV cannulation. Patient David, age 26. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-063-s2",
+    "stationId": "osce-063",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-063-s3",
+    "stationId": "osce-063",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-063-s4",
+    "stationId": "osce-063",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-063-s5",
+    "stationId": "osce-063",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-063-s6",
+    "stationId": "osce-063",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-073",
+  "category": "cannulation",
+  "title": "Cannulation Station 73",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 56,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-073-s0",
+    "stationId": "osce-073",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-073-s1",
+    "stationId": "osce-073",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 73. Prepare for IV cannulation. Patient David, age 56. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-073-s2",
+    "stationId": "osce-073",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-073-s3",
+    "stationId": "osce-073",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-073-s4",
+    "stationId": "osce-073",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-073-s5",
+    "stationId": "osce-073",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-073-s6",
+    "stationId": "osce-073",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-083",
+  "category": "cannulation",
+  "title": "Cannulation Station 83",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 25,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-083-s0",
+    "stationId": "osce-083",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-083-s1",
+    "stationId": "osce-083",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 83. Prepare for IV cannulation. Patient David, age 25. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-083-s2",
+    "stationId": "osce-083",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-083-s3",
+    "stationId": "osce-083",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-083-s4",
+    "stationId": "osce-083",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-083-s5",
+    "stationId": "osce-083",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-083-s6",
+    "stationId": "osce-083",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-093",
+  "category": "cannulation",
+  "title": "Cannulation Station 93",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 55,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-093-s0",
+    "stationId": "osce-093",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-093-s1",
+    "stationId": "osce-093",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 93. Prepare for IV cannulation. Patient David, age 55. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-093-s2",
+    "stationId": "osce-093",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-093-s3",
+    "stationId": "osce-093",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-093-s4",
+    "stationId": "osce-093",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-093-s5",
+    "stationId": "osce-093",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-093-s6",
+    "stationId": "osce-093",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-103",
+  "category": "cannulation",
+  "title": "Cannulation Station 103",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 24,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-103-s0",
+    "stationId": "osce-103",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-103-s1",
+    "stationId": "osce-103",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 103. Prepare for IV cannulation. Patient David, age 24. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-103-s2",
+    "stationId": "osce-103",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-103-s3",
+    "stationId": "osce-103",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-103-s4",
+    "stationId": "osce-103",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-103-s5",
+    "stationId": "osce-103",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-103-s6",
+    "stationId": "osce-103",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-113",
+  "category": "cannulation",
+  "title": "Cannulation Station 113",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 54,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-113-s0",
+    "stationId": "osce-113",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-113-s1",
+    "stationId": "osce-113",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 113. Prepare for IV cannulation. Patient David, age 54. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-113-s2",
+    "stationId": "osce-113",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-113-s3",
+    "stationId": "osce-113",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-113-s4",
+    "stationId": "osce-113",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-113-s5",
+    "stationId": "osce-113",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-113-s6",
+    "stationId": "osce-113",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-123",
+  "category": "cannulation",
+  "title": "Cannulation Station 123",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 23,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-123-s0",
+    "stationId": "osce-123",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-123-s1",
+    "stationId": "osce-123",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 123. Prepare for IV cannulation. Patient David, age 23. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-123-s2",
+    "stationId": "osce-123",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-123-s3",
+    "stationId": "osce-123",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-123-s4",
+    "stationId": "osce-123",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-123-s5",
+    "stationId": "osce-123",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-123-s6",
+    "stationId": "osce-123",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-133",
+  "category": "cannulation",
+  "title": "Cannulation Station 133",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 53,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-133-s0",
+    "stationId": "osce-133",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-133-s1",
+    "stationId": "osce-133",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 133. Prepare for IV cannulation. Patient David, age 53. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-133-s2",
+    "stationId": "osce-133",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-133-s3",
+    "stationId": "osce-133",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-133-s4",
+    "stationId": "osce-133",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-133-s5",
+    "stationId": "osce-133",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-133-s6",
+    "stationId": "osce-133",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-143",
+  "category": "cannulation",
+  "title": "Cannulation Station 143",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 22,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-143-s0",
+    "stationId": "osce-143",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-143-s1",
+    "stationId": "osce-143",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 143. Prepare for IV cannulation. Patient David, age 22. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-143-s2",
+    "stationId": "osce-143",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-143-s3",
+    "stationId": "osce-143",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-143-s4",
+    "stationId": "osce-143",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-143-s5",
+    "stationId": "osce-143",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-143-s6",
+    "stationId": "osce-143",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-153",
+  "category": "cannulation",
+  "title": "Cannulation Station 153",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 52,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-153-s0",
+    "stationId": "osce-153",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-153-s1",
+    "stationId": "osce-153",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 153. Prepare for IV cannulation. Patient David, age 52. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-153-s2",
+    "stationId": "osce-153",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-153-s3",
+    "stationId": "osce-153",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-153-s4",
+    "stationId": "osce-153",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-153-s5",
+    "stationId": "osce-153",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-153-s6",
+    "stationId": "osce-153",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-163",
+  "category": "cannulation",
+  "title": "Cannulation Station 163",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 21,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-163-s0",
+    "stationId": "osce-163",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-163-s1",
+    "stationId": "osce-163",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 163. Prepare for IV cannulation. Patient David, age 21. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-163-s2",
+    "stationId": "osce-163",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-163-s3",
+    "stationId": "osce-163",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-163-s4",
+    "stationId": "osce-163",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-163-s5",
+    "stationId": "osce-163",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-163-s6",
+    "stationId": "osce-163",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-173",
+  "category": "cannulation",
+  "title": "Cannulation Station 173",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 51,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-173-s0",
+    "stationId": "osce-173",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-173-s1",
+    "stationId": "osce-173",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 173. Prepare for IV cannulation. Patient David, age 51. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-173-s2",
+    "stationId": "osce-173",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-173-s3",
+    "stationId": "osce-173",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-173-s4",
+    "stationId": "osce-173",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-173-s5",
+    "stationId": "osce-173",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-173-s6",
+    "stationId": "osce-173",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-183",
+  "category": "cannulation",
+  "title": "Cannulation Station 183",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 20,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-183-s0",
+    "stationId": "osce-183",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-183-s1",
+    "stationId": "osce-183",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 183. Prepare for IV cannulation. Patient David, age 20. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-183-s2",
+    "stationId": "osce-183",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-183-s3",
+    "stationId": "osce-183",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-183-s4",
+    "stationId": "osce-183",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-183-s5",
+    "stationId": "osce-183",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-183-s6",
+    "stationId": "osce-183",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-193",
+  "category": "cannulation",
+  "title": "Cannulation Station 193",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 50,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-193-s0",
+    "stationId": "osce-193",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-193-s1",
+    "stationId": "osce-193",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 193. Prepare for IV cannulation. Patient David, age 50. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-193-s2",
+    "stationId": "osce-193",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-193-s3",
+    "stationId": "osce-193",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-193-s4",
+    "stationId": "osce-193",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-193-s5",
+    "stationId": "osce-193",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-193-s6",
+    "stationId": "osce-193",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-203",
+  "category": "cannulation",
+  "title": "Cannulation Station 203",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 80,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-203-s0",
+    "stationId": "osce-203",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-203-s1",
+    "stationId": "osce-203",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 203. Prepare for IV cannulation. Patient David, age 80. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-203-s2",
+    "stationId": "osce-203",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-203-s3",
+    "stationId": "osce-203",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-203-s4",
+    "stationId": "osce-203",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-203-s5",
+    "stationId": "osce-203",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-203-s6",
+    "stationId": "osce-203",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-213",
+  "category": "cannulation",
+  "title": "Cannulation Station 213",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 49,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-213-s0",
+    "stationId": "osce-213",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-213-s1",
+    "stationId": "osce-213",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 213. Prepare for IV cannulation. Patient David, age 49. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-213-s2",
+    "stationId": "osce-213",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-213-s3",
+    "stationId": "osce-213",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-213-s4",
+    "stationId": "osce-213",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-213-s5",
+    "stationId": "osce-213",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-213-s6",
+    "stationId": "osce-213",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-223",
+  "category": "cannulation",
+  "title": "Cannulation Station 223",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 79,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-223-s0",
+    "stationId": "osce-223",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-223-s1",
+    "stationId": "osce-223",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 223. Prepare for IV cannulation. Patient David, age 79. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-223-s2",
+    "stationId": "osce-223",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-223-s3",
+    "stationId": "osce-223",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-223-s4",
+    "stationId": "osce-223",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-223-s5",
+    "stationId": "osce-223",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-223-s6",
+    "stationId": "osce-223",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-233",
+  "category": "cannulation",
+  "title": "Cannulation Station 233",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 48,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-233-s0",
+    "stationId": "osce-233",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-233-s1",
+    "stationId": "osce-233",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 233. Prepare for IV cannulation. Patient David, age 48. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-233-s2",
+    "stationId": "osce-233",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-233-s3",
+    "stationId": "osce-233",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-233-s4",
+    "stationId": "osce-233",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-233-s5",
+    "stationId": "osce-233",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-233-s6",
+    "stationId": "osce-233",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-243",
+  "category": "cannulation",
+  "title": "Cannulation Station 243",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 78,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-243-s0",
+    "stationId": "osce-243",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-243-s1",
+    "stationId": "osce-243",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 243. Prepare for IV cannulation. Patient David, age 78. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-243-s2",
+    "stationId": "osce-243",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-243-s3",
+    "stationId": "osce-243",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-243-s4",
+    "stationId": "osce-243",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-243-s5",
+    "stationId": "osce-243",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-243-s6",
+    "stationId": "osce-243",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-253",
+  "category": "cannulation",
+  "title": "Cannulation Station 253",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 47,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-253-s0",
+    "stationId": "osce-253",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-253-s1",
+    "stationId": "osce-253",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 253. Prepare for IV cannulation. Patient David, age 47. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-253-s2",
+    "stationId": "osce-253",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-253-s3",
+    "stationId": "osce-253",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-253-s4",
+    "stationId": "osce-253",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-253-s5",
+    "stationId": "osce-253",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-253-s6",
+    "stationId": "osce-253",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-263",
+  "category": "cannulation",
+  "title": "Cannulation Station 263",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 77,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-263-s0",
+    "stationId": "osce-263",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-263-s1",
+    "stationId": "osce-263",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 263. Prepare for IV cannulation. Patient David, age 77. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-263-s2",
+    "stationId": "osce-263",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-263-s3",
+    "stationId": "osce-263",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-263-s4",
+    "stationId": "osce-263",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-263-s5",
+    "stationId": "osce-263",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-263-s6",
+    "stationId": "osce-263",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-273",
+  "category": "cannulation",
+  "title": "Cannulation Station 273",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 46,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-273-s0",
+    "stationId": "osce-273",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-273-s1",
+    "stationId": "osce-273",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 273. Prepare for IV cannulation. Patient David, age 46. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-273-s2",
+    "stationId": "osce-273",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-273-s3",
+    "stationId": "osce-273",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-273-s4",
+    "stationId": "osce-273",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-273-s5",
+    "stationId": "osce-273",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-273-s6",
+    "stationId": "osce-273",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-283",
+  "category": "cannulation",
+  "title": "Cannulation Station 283",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 76,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-283-s0",
+    "stationId": "osce-283",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-283-s1",
+    "stationId": "osce-283",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 283. Prepare for IV cannulation. Patient David, age 76. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-283-s2",
+    "stationId": "osce-283",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-283-s3",
+    "stationId": "osce-283",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-283-s4",
+    "stationId": "osce-283",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-283-s5",
+    "stationId": "osce-283",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-283-s6",
+    "stationId": "osce-283",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-293",
+  "category": "cannulation",
+  "title": "Cannulation Station 293",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 45,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-293-s0",
+    "stationId": "osce-293",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-293-s1",
+    "stationId": "osce-293",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 293. Prepare for IV cannulation. Patient David, age 45. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-293-s2",
+    "stationId": "osce-293",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-293-s3",
+    "stationId": "osce-293",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-293-s4",
+    "stationId": "osce-293",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-293-s5",
+    "stationId": "osce-293",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-293-s6",
+    "stationId": "osce-293",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-303",
+  "category": "cannulation",
+  "title": "Cannulation Station 303",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 75,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-303-s0",
+    "stationId": "osce-303",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-303-s1",
+    "stationId": "osce-303",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 303. Prepare for IV cannulation. Patient David, age 75. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-303-s2",
+    "stationId": "osce-303",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-303-s3",
+    "stationId": "osce-303",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-303-s4",
+    "stationId": "osce-303",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-303-s5",
+    "stationId": "osce-303",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-303-s6",
+    "stationId": "osce-303",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-313",
+  "category": "cannulation",
+  "title": "Cannulation Station 313",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 44,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-313-s0",
+    "stationId": "osce-313",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-313-s1",
+    "stationId": "osce-313",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 313. Prepare for IV cannulation. Patient David, age 44. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-313-s2",
+    "stationId": "osce-313",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-313-s3",
+    "stationId": "osce-313",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-313-s4",
+    "stationId": "osce-313",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-313-s5",
+    "stationId": "osce-313",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-313-s6",
+    "stationId": "osce-313",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-323",
+  "category": "cannulation",
+  "title": "Cannulation Station 323",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 74,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-323-s0",
+    "stationId": "osce-323",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-323-s1",
+    "stationId": "osce-323",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 323. Prepare for IV cannulation. Patient David, age 74. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-323-s2",
+    "stationId": "osce-323",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-323-s3",
+    "stationId": "osce-323",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-323-s4",
+    "stationId": "osce-323",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-323-s5",
+    "stationId": "osce-323",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-323-s6",
+    "stationId": "osce-323",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-333",
+  "category": "cannulation",
+  "title": "Cannulation Station 333",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 43,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-333-s0",
+    "stationId": "osce-333",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-333-s1",
+    "stationId": "osce-333",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 333. Prepare for IV cannulation. Patient David, age 43. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-333-s2",
+    "stationId": "osce-333",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-333-s3",
+    "stationId": "osce-333",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-333-s4",
+    "stationId": "osce-333",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-333-s5",
+    "stationId": "osce-333",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-333-s6",
+    "stationId": "osce-333",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-343",
+  "category": "cannulation",
+  "title": "Cannulation Station 343",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 73,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-343-s0",
+    "stationId": "osce-343",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-343-s1",
+    "stationId": "osce-343",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 343. Prepare for IV cannulation. Patient David, age 73. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-343-s2",
+    "stationId": "osce-343",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-343-s3",
+    "stationId": "osce-343",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-343-s4",
+    "stationId": "osce-343",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-343-s5",
+    "stationId": "osce-343",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-343-s6",
+    "stationId": "osce-343",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-353",
+  "category": "cannulation",
+  "title": "Cannulation Station 353",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 42,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-353-s0",
+    "stationId": "osce-353",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-353-s1",
+    "stationId": "osce-353",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 353. Prepare for IV cannulation. Patient David, age 42. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-353-s2",
+    "stationId": "osce-353",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-353-s3",
+    "stationId": "osce-353",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-353-s4",
+    "stationId": "osce-353",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-353-s5",
+    "stationId": "osce-353",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-353-s6",
+    "stationId": "osce-353",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-363",
+  "category": "cannulation",
+  "title": "Cannulation Station 363",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 72,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-363-s0",
+    "stationId": "osce-363",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-363-s1",
+    "stationId": "osce-363",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 363. Prepare for IV cannulation. Patient David, age 72. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-363-s2",
+    "stationId": "osce-363",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-363-s3",
+    "stationId": "osce-363",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-363-s4",
+    "stationId": "osce-363",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-363-s5",
+    "stationId": "osce-363",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-363-s6",
+    "stationId": "osce-363",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-373",
+  "category": "cannulation",
+  "title": "Cannulation Station 373",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 41,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-373-s0",
+    "stationId": "osce-373",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-373-s1",
+    "stationId": "osce-373",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 373. Prepare for IV cannulation. Patient David, age 41. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-373-s2",
+    "stationId": "osce-373",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-373-s3",
+    "stationId": "osce-373",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-373-s4",
+    "stationId": "osce-373",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-373-s5",
+    "stationId": "osce-373",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-373-s6",
+    "stationId": "osce-373",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-383",
+  "category": "cannulation",
+  "title": "Cannulation Station 383",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 71,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-383-s0",
+    "stationId": "osce-383",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-383-s1",
+    "stationId": "osce-383",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 383. Prepare for IV cannulation. Patient David, age 71. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-383-s2",
+    "stationId": "osce-383",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-383-s3",
+    "stationId": "osce-383",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-383-s4",
+    "stationId": "osce-383",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-383-s5",
+    "stationId": "osce-383",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-383-s6",
+    "stationId": "osce-383",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-393",
+  "category": "cannulation",
+  "title": "Cannulation Station 393",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 40,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-393-s0",
+    "stationId": "osce-393",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-393-s1",
+    "stationId": "osce-393",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 393. Prepare for IV cannulation. Patient David, age 40. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-393-s2",
+    "stationId": "osce-393",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-393-s3",
+    "stationId": "osce-393",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-393-s4",
+    "stationId": "osce-393",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-393-s5",
+    "stationId": "osce-393",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-393-s6",
+    "stationId": "osce-393",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-403",
+  "category": "cannulation",
+  "title": "Cannulation Station 403",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 70,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-403-s0",
+    "stationId": "osce-403",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-403-s1",
+    "stationId": "osce-403",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 403. Prepare for IV cannulation. Patient David, age 70. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-403-s2",
+    "stationId": "osce-403",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-403-s3",
+    "stationId": "osce-403",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-403-s4",
+    "stationId": "osce-403",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-403-s5",
+    "stationId": "osce-403",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-403-s6",
+    "stationId": "osce-403",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-413",
+  "category": "cannulation",
+  "title": "Cannulation Station 413",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 39,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-413-s0",
+    "stationId": "osce-413",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-413-s1",
+    "stationId": "osce-413",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 413. Prepare for IV cannulation. Patient David, age 39. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-413-s2",
+    "stationId": "osce-413",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-413-s3",
+    "stationId": "osce-413",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-413-s4",
+    "stationId": "osce-413",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-413-s5",
+    "stationId": "osce-413",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-413-s6",
+    "stationId": "osce-413",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-423",
+  "category": "cannulation",
+  "title": "Cannulation Station 423",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 69,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-423-s0",
+    "stationId": "osce-423",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-423-s1",
+    "stationId": "osce-423",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 423. Prepare for IV cannulation. Patient David, age 69. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-423-s2",
+    "stationId": "osce-423",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-423-s3",
+    "stationId": "osce-423",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-423-s4",
+    "stationId": "osce-423",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-423-s5",
+    "stationId": "osce-423",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-423-s6",
+    "stationId": "osce-423",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-433",
+  "category": "cannulation",
+  "title": "Cannulation Station 433",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 38,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-433-s0",
+    "stationId": "osce-433",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-433-s1",
+    "stationId": "osce-433",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 433. Prepare for IV cannulation. Patient David, age 38. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-433-s2",
+    "stationId": "osce-433",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-433-s3",
+    "stationId": "osce-433",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-433-s4",
+    "stationId": "osce-433",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-433-s5",
+    "stationId": "osce-433",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-433-s6",
+    "stationId": "osce-433",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-443",
+  "category": "cannulation",
+  "title": "Cannulation Station 443",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 68,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-443-s0",
+    "stationId": "osce-443",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-443-s1",
+    "stationId": "osce-443",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 443. Prepare for IV cannulation. Patient David, age 68. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-443-s2",
+    "stationId": "osce-443",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-443-s3",
+    "stationId": "osce-443",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-443-s4",
+    "stationId": "osce-443",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-443-s5",
+    "stationId": "osce-443",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-443-s6",
+    "stationId": "osce-443",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-453",
+  "category": "cannulation",
+  "title": "Cannulation Station 453",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 37,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-453-s0",
+    "stationId": "osce-453",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-453-s1",
+    "stationId": "osce-453",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 453. Prepare for IV cannulation. Patient David, age 37. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-453-s2",
+    "stationId": "osce-453",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-453-s3",
+    "stationId": "osce-453",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-453-s4",
+    "stationId": "osce-453",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-453-s5",
+    "stationId": "osce-453",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-453-s6",
+    "stationId": "osce-453",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-463",
+  "category": "cannulation",
+  "title": "Cannulation Station 463",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 67,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-463-s0",
+    "stationId": "osce-463",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-463-s1",
+    "stationId": "osce-463",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 463. Prepare for IV cannulation. Patient David, age 67. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-463-s2",
+    "stationId": "osce-463",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-463-s3",
+    "stationId": "osce-463",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-463-s4",
+    "stationId": "osce-463",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-463-s5",
+    "stationId": "osce-463",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-463-s6",
+    "stationId": "osce-463",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-473",
+  "category": "cannulation",
+  "title": "Cannulation Station 473",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "David",
+   "age": 36,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-473-s0",
+    "stationId": "osce-473",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-473-s1",
+    "stationId": "osce-473",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 473. Prepare for IV cannulation. Patient David, age 36. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-473-s2",
+    "stationId": "osce-473",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-473-s3",
+    "stationId": "osce-473",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-473-s4",
+    "stationId": "osce-473",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Which vein is the preferred first choice for routine peripheral cannulation?",
+     "options": [
+      "Veins of the antecubital fossa over a joint",
+      "Distal veins of the non-dominant forearm",
+      "Veins of the foot",
+      "The largest visible vein regardless of site"
+     ],
+     "correctIndex": 1,
+     "explanation": "Distal forearm veins on the non-dominant side preserve proximal sites and avoid areas of flexion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-473-s5",
+    "stationId": "osce-473",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-473-s6",
+    "stationId": "osce-473",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-483",
+  "category": "cannulation",
+  "title": "Cannulation Station 483",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "David",
+   "age": 66,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-483-s0",
+    "stationId": "osce-483",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-483-s1",
+    "stationId": "osce-483",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 483. Prepare for IV cannulation. Patient David, age 66. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-483-s2",
+    "stationId": "osce-483",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-483-s3",
+    "stationId": "osce-483",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-483-s4",
+    "stationId": "osce-483",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Before inserting the cannula into David's vein, how long should the skin be cleaned with a 2% chlorhexidine in 70% alcohol wipe?",
+     "options": [
+      "5 seconds, no drying needed",
+      "At least 30 seconds and allowed to air dry",
+      "A quick wipe immediately before insertion",
+      "Cleaning is unnecessary for peripheral cannulation"
+     ],
+     "correctIndex": 1,
+     "explanation": "Skin must be disinfected for at least 30 seconds and allowed to fully air dry to reduce infection risk."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-483-s5",
+    "stationId": "osce-483",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-483-s6",
+    "stationId": "osce-483",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-493",
+  "category": "cannulation",
+  "title": "Cannulation Station 493",
+  "task": "Prepare for IV cannulation.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "David",
+   "age": 35,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-493-s0",
+    "stationId": "osce-493",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-493-s1",
+    "stationId": "osce-493",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 493. Prepare for IV cannulation. Patient David, age 35. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-493-s2",
+    "stationId": "osce-493",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-493-s3",
+    "stationId": "osce-493",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Prepare for IV cannulation.",
+     "options": [
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": true
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: a Foley catheter is a urinary device — inserting the wrong invasive device endangers the patient."
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-493-s4",
+    "stationId": "osce-493",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "Immediately after cannulating David, where does the needle go?",
+     "options": [
+      "Into the nearest general waste bin",
+      "Onto the trolley to dispose of later",
+      "Directly into the sharps container at the point of care",
+      "Recapped and into your pocket"
+     ],
+     "correctIndex": 2,
+     "explanation": "Sharps must be disposed of immediately at the point of use, never recapped or carried."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-493-s5",
+    "stationId": "osce-493",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Insert the cannula safely. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-493-s6",
+    "stationId": "osce-493",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ }
+]

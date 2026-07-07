@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -39,6 +39,11 @@ import ExamResults from "./pages/exam/ExamResults";
 import ExamScoreBreakdown from "./pages/exam/ExamScoreBreakdown";
 import ExamAllQuestions from "./pages/exam/ExamAllQuestions";
 import NotFound from "./pages/NotFound";
+
+// Lazy so the OSCE engine + 500-station seed data stay out of the main bundle.
+const OsceCatalog = lazy(() => import("./pages/osce/OsceCatalog"));
+const OsceStationRunner = lazy(() => import("./pages/osce/OsceStationRunner"));
+const OsceProgress = lazy(() => import("./pages/osce/OsceProgress"));
 
 const queryClient = new QueryClient();
 
@@ -89,6 +94,9 @@ const App = () => {
             <Route path="/station/:topicId/compare" element={<ProtectedRoute><StationCompare /></ProtectedRoute>} />
             <Route path="/station/:topicId" element={<ProtectedRoute><StationOverview /></ProtectedRoute>} />
             <Route path="/question-bank" element={<ProtectedRoute><QuestionBank /></ProtectedRoute>} />
+            <Route path="/osce" element={<ProtectedRoute><Suspense fallback={null}><OsceCatalog /></Suspense></ProtectedRoute>} />
+            <Route path="/osce/progress" element={<ProtectedRoute><Suspense fallback={null}><OsceProgress /></Suspense></ProtectedRoute>} />
+            <Route path="/osce/station/:stationId" element={<ProtectedRoute><Suspense fallback={null}><OsceStationRunner /></Suspense></ProtectedRoute>} />
             <Route path="/quiz/mock" element={<ProtectedRoute><Quiz /></ProtectedRoute>} />
             <Route path="/quiz/:topicId" element={<ProtectedRoute><Quiz /></ProtectedRoute>} />
 

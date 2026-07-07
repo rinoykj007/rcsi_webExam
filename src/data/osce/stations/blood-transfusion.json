@@ -1,0 +1,6202 @@
+[
+ {
+  "id": "osce-006",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 6",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 38,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-006-s0",
+    "stationId": "osce-006",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-006-s1",
+    "stationId": "osce-006",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 6. Verify blood products. Patient Emma, age 38. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-006-s2",
+    "stationId": "osce-006",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-006-s3",
+    "stationId": "osce-006",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-006-s4",
+    "stationId": "osce-006",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-006-s5",
+    "stationId": "osce-006",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-006-s6",
+    "stationId": "osce-006",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-016",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 16",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 68,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-016-s0",
+    "stationId": "osce-016",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-016-s1",
+    "stationId": "osce-016",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 16. Verify blood products. Patient Emma, age 68. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-016-s2",
+    "stationId": "osce-016",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-016-s3",
+    "stationId": "osce-016",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-016-s4",
+    "stationId": "osce-016",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-016-s5",
+    "stationId": "osce-016",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-016-s6",
+    "stationId": "osce-016",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-026",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 26",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 37,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-026-s0",
+    "stationId": "osce-026",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-026-s1",
+    "stationId": "osce-026",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 26. Verify blood products. Patient Emma, age 37. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-026-s2",
+    "stationId": "osce-026",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-026-s3",
+    "stationId": "osce-026",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-026-s4",
+    "stationId": "osce-026",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-026-s5",
+    "stationId": "osce-026",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-026-s6",
+    "stationId": "osce-026",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-036",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 36",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 67,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-036-s0",
+    "stationId": "osce-036",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-036-s1",
+    "stationId": "osce-036",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 36. Verify blood products. Patient Emma, age 67. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-036-s2",
+    "stationId": "osce-036",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-036-s3",
+    "stationId": "osce-036",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-036-s4",
+    "stationId": "osce-036",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-036-s5",
+    "stationId": "osce-036",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-036-s6",
+    "stationId": "osce-036",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-046",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 46",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 36,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-046-s0",
+    "stationId": "osce-046",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-046-s1",
+    "stationId": "osce-046",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 46. Verify blood products. Patient Emma, age 36. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-046-s2",
+    "stationId": "osce-046",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-046-s3",
+    "stationId": "osce-046",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-046-s4",
+    "stationId": "osce-046",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-046-s5",
+    "stationId": "osce-046",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-046-s6",
+    "stationId": "osce-046",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-056",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 56",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 66,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-056-s0",
+    "stationId": "osce-056",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-056-s1",
+    "stationId": "osce-056",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 56. Verify blood products. Patient Emma, age 66. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-056-s2",
+    "stationId": "osce-056",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-056-s3",
+    "stationId": "osce-056",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-056-s4",
+    "stationId": "osce-056",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-056-s5",
+    "stationId": "osce-056",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-056-s6",
+    "stationId": "osce-056",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-066",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 66",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 35,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-066-s0",
+    "stationId": "osce-066",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-066-s1",
+    "stationId": "osce-066",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 66. Verify blood products. Patient Emma, age 35. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-066-s2",
+    "stationId": "osce-066",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-066-s3",
+    "stationId": "osce-066",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-066-s4",
+    "stationId": "osce-066",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-066-s5",
+    "stationId": "osce-066",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-066-s6",
+    "stationId": "osce-066",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-076",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 76",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 65,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-076-s0",
+    "stationId": "osce-076",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-076-s1",
+    "stationId": "osce-076",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 76. Verify blood products. Patient Emma, age 65. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-076-s2",
+    "stationId": "osce-076",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-076-s3",
+    "stationId": "osce-076",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-076-s4",
+    "stationId": "osce-076",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-076-s5",
+    "stationId": "osce-076",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-076-s6",
+    "stationId": "osce-076",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-086",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 86",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 34,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-086-s0",
+    "stationId": "osce-086",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-086-s1",
+    "stationId": "osce-086",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 86. Verify blood products. Patient Emma, age 34. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-086-s2",
+    "stationId": "osce-086",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-086-s3",
+    "stationId": "osce-086",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-086-s4",
+    "stationId": "osce-086",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-086-s5",
+    "stationId": "osce-086",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-086-s6",
+    "stationId": "osce-086",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-096",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 96",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 64,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-096-s0",
+    "stationId": "osce-096",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-096-s1",
+    "stationId": "osce-096",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 96. Verify blood products. Patient Emma, age 64. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-096-s2",
+    "stationId": "osce-096",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-096-s3",
+    "stationId": "osce-096",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-096-s4",
+    "stationId": "osce-096",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-096-s5",
+    "stationId": "osce-096",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-096-s6",
+    "stationId": "osce-096",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-106",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 106",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 33,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-106-s0",
+    "stationId": "osce-106",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-106-s1",
+    "stationId": "osce-106",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 106. Verify blood products. Patient Emma, age 33. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-106-s2",
+    "stationId": "osce-106",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-106-s3",
+    "stationId": "osce-106",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-106-s4",
+    "stationId": "osce-106",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-106-s5",
+    "stationId": "osce-106",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-106-s6",
+    "stationId": "osce-106",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-116",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 116",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 63,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-116-s0",
+    "stationId": "osce-116",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-116-s1",
+    "stationId": "osce-116",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 116. Verify blood products. Patient Emma, age 63. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-116-s2",
+    "stationId": "osce-116",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-116-s3",
+    "stationId": "osce-116",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-116-s4",
+    "stationId": "osce-116",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-116-s5",
+    "stationId": "osce-116",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-116-s6",
+    "stationId": "osce-116",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-126",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 126",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 32,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-126-s0",
+    "stationId": "osce-126",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-126-s1",
+    "stationId": "osce-126",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 126. Verify blood products. Patient Emma, age 32. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-126-s2",
+    "stationId": "osce-126",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-126-s3",
+    "stationId": "osce-126",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-126-s4",
+    "stationId": "osce-126",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-126-s5",
+    "stationId": "osce-126",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-126-s6",
+    "stationId": "osce-126",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-136",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 136",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 62,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-136-s0",
+    "stationId": "osce-136",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-136-s1",
+    "stationId": "osce-136",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 136. Verify blood products. Patient Emma, age 62. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-136-s2",
+    "stationId": "osce-136",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-136-s3",
+    "stationId": "osce-136",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-136-s4",
+    "stationId": "osce-136",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-136-s5",
+    "stationId": "osce-136",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-136-s6",
+    "stationId": "osce-136",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-146",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 146",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 31,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-146-s0",
+    "stationId": "osce-146",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-146-s1",
+    "stationId": "osce-146",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 146. Verify blood products. Patient Emma, age 31. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-146-s2",
+    "stationId": "osce-146",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-146-s3",
+    "stationId": "osce-146",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-146-s4",
+    "stationId": "osce-146",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-146-s5",
+    "stationId": "osce-146",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-146-s6",
+    "stationId": "osce-146",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-156",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 156",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 61,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-156-s0",
+    "stationId": "osce-156",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-156-s1",
+    "stationId": "osce-156",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 156. Verify blood products. Patient Emma, age 61. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-156-s2",
+    "stationId": "osce-156",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-156-s3",
+    "stationId": "osce-156",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-156-s4",
+    "stationId": "osce-156",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-156-s5",
+    "stationId": "osce-156",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-156-s6",
+    "stationId": "osce-156",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-166",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 166",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 30,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-166-s0",
+    "stationId": "osce-166",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-166-s1",
+    "stationId": "osce-166",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 166. Verify blood products. Patient Emma, age 30. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-166-s2",
+    "stationId": "osce-166",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-166-s3",
+    "stationId": "osce-166",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-166-s4",
+    "stationId": "osce-166",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-166-s5",
+    "stationId": "osce-166",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-166-s6",
+    "stationId": "osce-166",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-176",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 176",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 60,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-176-s0",
+    "stationId": "osce-176",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-176-s1",
+    "stationId": "osce-176",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 176. Verify blood products. Patient Emma, age 60. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-176-s2",
+    "stationId": "osce-176",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-176-s3",
+    "stationId": "osce-176",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-176-s4",
+    "stationId": "osce-176",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-176-s5",
+    "stationId": "osce-176",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-176-s6",
+    "stationId": "osce-176",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-186",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 186",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 29,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-186-s0",
+    "stationId": "osce-186",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-186-s1",
+    "stationId": "osce-186",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 186. Verify blood products. Patient Emma, age 29. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-186-s2",
+    "stationId": "osce-186",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-186-s3",
+    "stationId": "osce-186",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-186-s4",
+    "stationId": "osce-186",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-186-s5",
+    "stationId": "osce-186",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-186-s6",
+    "stationId": "osce-186",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-196",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 196",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 59,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-196-s0",
+    "stationId": "osce-196",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-196-s1",
+    "stationId": "osce-196",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 196. Verify blood products. Patient Emma, age 59. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-196-s2",
+    "stationId": "osce-196",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-196-s3",
+    "stationId": "osce-196",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-196-s4",
+    "stationId": "osce-196",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-196-s5",
+    "stationId": "osce-196",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-196-s6",
+    "stationId": "osce-196",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-206",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 206",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 28,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-206-s0",
+    "stationId": "osce-206",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-206-s1",
+    "stationId": "osce-206",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 206. Verify blood products. Patient Emma, age 28. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-206-s2",
+    "stationId": "osce-206",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-206-s3",
+    "stationId": "osce-206",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-206-s4",
+    "stationId": "osce-206",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-206-s5",
+    "stationId": "osce-206",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-206-s6",
+    "stationId": "osce-206",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-216",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 216",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 58,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-216-s0",
+    "stationId": "osce-216",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-216-s1",
+    "stationId": "osce-216",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 216. Verify blood products. Patient Emma, age 58. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-216-s2",
+    "stationId": "osce-216",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-216-s3",
+    "stationId": "osce-216",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-216-s4",
+    "stationId": "osce-216",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-216-s5",
+    "stationId": "osce-216",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-216-s6",
+    "stationId": "osce-216",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-226",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 226",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 27,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-226-s0",
+    "stationId": "osce-226",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-226-s1",
+    "stationId": "osce-226",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 226. Verify blood products. Patient Emma, age 27. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-226-s2",
+    "stationId": "osce-226",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-226-s3",
+    "stationId": "osce-226",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-226-s4",
+    "stationId": "osce-226",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-226-s5",
+    "stationId": "osce-226",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-226-s6",
+    "stationId": "osce-226",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-236",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 236",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 57,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-236-s0",
+    "stationId": "osce-236",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-236-s1",
+    "stationId": "osce-236",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 236. Verify blood products. Patient Emma, age 57. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-236-s2",
+    "stationId": "osce-236",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-236-s3",
+    "stationId": "osce-236",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-236-s4",
+    "stationId": "osce-236",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-236-s5",
+    "stationId": "osce-236",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-236-s6",
+    "stationId": "osce-236",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-246",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 246",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 26,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-246-s0",
+    "stationId": "osce-246",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-246-s1",
+    "stationId": "osce-246",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 246. Verify blood products. Patient Emma, age 26. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-246-s2",
+    "stationId": "osce-246",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-246-s3",
+    "stationId": "osce-246",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-246-s4",
+    "stationId": "osce-246",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-246-s5",
+    "stationId": "osce-246",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-246-s6",
+    "stationId": "osce-246",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-256",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 256",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 56,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-256-s0",
+    "stationId": "osce-256",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-256-s1",
+    "stationId": "osce-256",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 256. Verify blood products. Patient Emma, age 56. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-256-s2",
+    "stationId": "osce-256",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-256-s3",
+    "stationId": "osce-256",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-256-s4",
+    "stationId": "osce-256",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-256-s5",
+    "stationId": "osce-256",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-256-s6",
+    "stationId": "osce-256",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-266",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 266",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 25,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-266-s0",
+    "stationId": "osce-266",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-266-s1",
+    "stationId": "osce-266",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 266. Verify blood products. Patient Emma, age 25. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-266-s2",
+    "stationId": "osce-266",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-266-s3",
+    "stationId": "osce-266",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-266-s4",
+    "stationId": "osce-266",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-266-s5",
+    "stationId": "osce-266",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-266-s6",
+    "stationId": "osce-266",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-276",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 276",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 55,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-276-s0",
+    "stationId": "osce-276",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-276-s1",
+    "stationId": "osce-276",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 276. Verify blood products. Patient Emma, age 55. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-276-s2",
+    "stationId": "osce-276",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-276-s3",
+    "stationId": "osce-276",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-276-s4",
+    "stationId": "osce-276",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-276-s5",
+    "stationId": "osce-276",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-276-s6",
+    "stationId": "osce-276",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-286",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 286",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 24,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-286-s0",
+    "stationId": "osce-286",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-286-s1",
+    "stationId": "osce-286",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 286. Verify blood products. Patient Emma, age 24. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-286-s2",
+    "stationId": "osce-286",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-286-s3",
+    "stationId": "osce-286",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-286-s4",
+    "stationId": "osce-286",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-286-s5",
+    "stationId": "osce-286",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-286-s6",
+    "stationId": "osce-286",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-296",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 296",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 54,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-296-s0",
+    "stationId": "osce-296",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-296-s1",
+    "stationId": "osce-296",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 296. Verify blood products. Patient Emma, age 54. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-296-s2",
+    "stationId": "osce-296",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-296-s3",
+    "stationId": "osce-296",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-296-s4",
+    "stationId": "osce-296",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-296-s5",
+    "stationId": "osce-296",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-296-s6",
+    "stationId": "osce-296",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-306",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 306",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 23,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-306-s0",
+    "stationId": "osce-306",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-306-s1",
+    "stationId": "osce-306",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 306. Verify blood products. Patient Emma, age 23. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-306-s2",
+    "stationId": "osce-306",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-306-s3",
+    "stationId": "osce-306",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-306-s4",
+    "stationId": "osce-306",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-306-s5",
+    "stationId": "osce-306",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-306-s6",
+    "stationId": "osce-306",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-316",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 316",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 53,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-316-s0",
+    "stationId": "osce-316",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-316-s1",
+    "stationId": "osce-316",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 316. Verify blood products. Patient Emma, age 53. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-316-s2",
+    "stationId": "osce-316",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-316-s3",
+    "stationId": "osce-316",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-316-s4",
+    "stationId": "osce-316",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-316-s5",
+    "stationId": "osce-316",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-316-s6",
+    "stationId": "osce-316",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-326",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 326",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 22,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-326-s0",
+    "stationId": "osce-326",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-326-s1",
+    "stationId": "osce-326",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 326. Verify blood products. Patient Emma, age 22. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-326-s2",
+    "stationId": "osce-326",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-326-s3",
+    "stationId": "osce-326",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-326-s4",
+    "stationId": "osce-326",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-326-s5",
+    "stationId": "osce-326",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-326-s6",
+    "stationId": "osce-326",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-336",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 336",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 52,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-336-s0",
+    "stationId": "osce-336",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-336-s1",
+    "stationId": "osce-336",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 336. Verify blood products. Patient Emma, age 52. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-336-s2",
+    "stationId": "osce-336",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-336-s3",
+    "stationId": "osce-336",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-336-s4",
+    "stationId": "osce-336",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-336-s5",
+    "stationId": "osce-336",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-336-s6",
+    "stationId": "osce-336",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-346",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 346",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 21,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-346-s0",
+    "stationId": "osce-346",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-346-s1",
+    "stationId": "osce-346",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 346. Verify blood products. Patient Emma, age 21. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-346-s2",
+    "stationId": "osce-346",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-346-s3",
+    "stationId": "osce-346",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-346-s4",
+    "stationId": "osce-346",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-346-s5",
+    "stationId": "osce-346",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-346-s6",
+    "stationId": "osce-346",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-356",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 356",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 51,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-356-s0",
+    "stationId": "osce-356",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-356-s1",
+    "stationId": "osce-356",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 356. Verify blood products. Patient Emma, age 51. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-356-s2",
+    "stationId": "osce-356",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-356-s3",
+    "stationId": "osce-356",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-356-s4",
+    "stationId": "osce-356",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-356-s5",
+    "stationId": "osce-356",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-356-s6",
+    "stationId": "osce-356",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-366",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 366",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 20,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-366-s0",
+    "stationId": "osce-366",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-366-s1",
+    "stationId": "osce-366",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 366. Verify blood products. Patient Emma, age 20. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-366-s2",
+    "stationId": "osce-366",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-366-s3",
+    "stationId": "osce-366",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-366-s4",
+    "stationId": "osce-366",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-366-s5",
+    "stationId": "osce-366",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-366-s6",
+    "stationId": "osce-366",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-376",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 376",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 50,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-376-s0",
+    "stationId": "osce-376",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-376-s1",
+    "stationId": "osce-376",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 376. Verify blood products. Patient Emma, age 50. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-376-s2",
+    "stationId": "osce-376",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-376-s3",
+    "stationId": "osce-376",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-376-s4",
+    "stationId": "osce-376",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-376-s5",
+    "stationId": "osce-376",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-376-s6",
+    "stationId": "osce-376",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-386",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 386",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 80,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-386-s0",
+    "stationId": "osce-386",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-386-s1",
+    "stationId": "osce-386",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 386. Verify blood products. Patient Emma, age 80. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-386-s2",
+    "stationId": "osce-386",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-386-s3",
+    "stationId": "osce-386",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-386-s4",
+    "stationId": "osce-386",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-386-s5",
+    "stationId": "osce-386",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-386-s6",
+    "stationId": "osce-386",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-396",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 396",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 49,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-396-s0",
+    "stationId": "osce-396",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-396-s1",
+    "stationId": "osce-396",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 396. Verify blood products. Patient Emma, age 49. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-396-s2",
+    "stationId": "osce-396",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-396-s3",
+    "stationId": "osce-396",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-396-s4",
+    "stationId": "osce-396",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-396-s5",
+    "stationId": "osce-396",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-396-s6",
+    "stationId": "osce-396",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-406",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 406",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 79,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-406-s0",
+    "stationId": "osce-406",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-406-s1",
+    "stationId": "osce-406",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 406. Verify blood products. Patient Emma, age 79. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-406-s2",
+    "stationId": "osce-406",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-406-s3",
+    "stationId": "osce-406",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-406-s4",
+    "stationId": "osce-406",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-406-s5",
+    "stationId": "osce-406",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-406-s6",
+    "stationId": "osce-406",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-416",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 416",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 48,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-416-s0",
+    "stationId": "osce-416",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-416-s1",
+    "stationId": "osce-416",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 416. Verify blood products. Patient Emma, age 48. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-416-s2",
+    "stationId": "osce-416",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-416-s3",
+    "stationId": "osce-416",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-416-s4",
+    "stationId": "osce-416",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-416-s5",
+    "stationId": "osce-416",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-416-s6",
+    "stationId": "osce-416",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-426",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 426",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 78,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-426-s0",
+    "stationId": "osce-426",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-426-s1",
+    "stationId": "osce-426",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 426. Verify blood products. Patient Emma, age 78. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-426-s2",
+    "stationId": "osce-426",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-426-s3",
+    "stationId": "osce-426",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-426-s4",
+    "stationId": "osce-426",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-426-s5",
+    "stationId": "osce-426",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-426-s6",
+    "stationId": "osce-426",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-436",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 436",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 47,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-436-s0",
+    "stationId": "osce-436",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-436-s1",
+    "stationId": "osce-436",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 436. Verify blood products. Patient Emma, age 47. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-436-s2",
+    "stationId": "osce-436",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-436-s3",
+    "stationId": "osce-436",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      },
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-436-s4",
+    "stationId": "osce-436",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-436-s5",
+    "stationId": "osce-436",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-436-s6",
+    "stationId": "osce-436",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-446",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 446",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 77,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-446-s0",
+    "stationId": "osce-446",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-446-s1",
+    "stationId": "osce-446",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 446. Verify blood products. Patient Emma, age 77. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-446-s2",
+    "stationId": "osce-446",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-446-s3",
+    "stationId": "osce-446",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-446-s4",
+    "stationId": "osce-446",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-446-s5",
+    "stationId": "osce-446",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-446-s6",
+    "stationId": "osce-446",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-456",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 456",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 46,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-456-s0",
+    "stationId": "osce-456",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-456-s1",
+    "stationId": "osce-456",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 456. Verify blood products. Patient Emma, age 46. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-456-s2",
+    "stationId": "osce-456",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-456-s3",
+    "stationId": "osce-456",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-456-s4",
+    "stationId": "osce-456",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-456-s5",
+    "stationId": "osce-456",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-456-s6",
+    "stationId": "osce-456",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-466",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 466",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 76,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-466-s0",
+    "stationId": "osce-466",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-466-s1",
+    "stationId": "osce-466",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 466. Verify blood products. Patient Emma, age 76. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-466-s2",
+    "stationId": "osce-466",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-466-s3",
+    "stationId": "osce-466",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-466-s4",
+    "stationId": "osce-466",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-466-s5",
+    "stationId": "osce-466",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-466-s6",
+    "stationId": "osce-466",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-476",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 476",
+  "task": "Verify blood products.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "Emma",
+   "age": 45,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-476-s0",
+    "stationId": "osce-476",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-476-s1",
+    "stationId": "osce-476",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 476. Verify blood products. Patient Emma, age 45. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-476-s2",
+    "stationId": "osce-476",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-476-s3",
+    "stationId": "osce-476",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-476-s4",
+    "stationId": "osce-476",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "The final bedside identity check before transfusion must be done by:",
+     "options": [
+      "Checking the compatibility label against the patient's ID band at the bedside",
+      "Checking the notes at the nurses' station",
+      "Asking the patient's visitor",
+      "Confirming the room number matches"
+     ],
+     "correctIndex": 0,
+     "explanation": "Positive patient identification at the bedside against the blood component label prevents fatal ABO-incompatible transfusion."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-476-s5",
+    "stationId": "osce-476",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-476-s6",
+    "stationId": "osce-476",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-486",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 486",
+  "task": "Verify blood products.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "Emma",
+   "age": 75,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-486-s0",
+    "stationId": "osce-486",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-486-s1",
+    "stationId": "osce-486",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 486. Verify blood products. Patient Emma, age 75. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-486-s2",
+    "stationId": "osce-486",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-486-s3",
+    "stationId": "osce-486",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-486-s4",
+    "stationId": "osce-486",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "When must Emma's vital signs be checked during a red cell transfusion?",
+     "options": [
+      "Only at the start",
+      "Baseline, 15 minutes after starting, then per policy and at completion",
+      "Every 4 hours",
+      "Only if the patient complains"
+     ],
+     "correctIndex": 1,
+     "explanation": "Most acute transfusion reactions occur early — the 15-minute check is mandatory."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-486-s5",
+    "stationId": "osce-486",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-486-s6",
+    "stationId": "osce-486",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-496",
+  "category": "blood-transfusion",
+  "title": "Blood Transfusion Station 496",
+  "task": "Verify blood products.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "Emma",
+   "age": 44,
+   "gender": "Female"
+  },
+  "steps": [
+   {
+    "id": "osce-496-s0",
+    "stationId": "osce-496",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-496-s1",
+    "stationId": "osce-496",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 496. Verify blood products. Patient Emma, age 44. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-496-s2",
+    "stationId": "osce-496",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-496-s3",
+    "stationId": "osce-496",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Verify blood products.",
+     "options": [
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": true
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: blood must be transfused through a blood giving set with an integral filter — a standard IV set is unsafe."
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-496-s4",
+    "stationId": "osce-496",
+    "orderIndex": 4,
+    "pluginKey": "mcq.question",
+    "pluginVersion": 1,
+    "config": {
+     "question": "During the transfusion Emma develops fever, rigors and back pain. What is your first action?",
+     "options": [
+      "Slow the transfusion and observe",
+      "Stop the transfusion immediately, maintain IV access with saline and call for help",
+      "Give paracetamol and continue",
+      "Remove the cannula"
+     ],
+     "correctIndex": 1,
+     "explanation": "Suspected transfusion reaction: stop immediately, keep the line open with saline, escalate urgently."
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-496-s5",
+    "stationId": "osce-496",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Monitor for transfusion reactions. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-496-s6",
+    "stationId": "osce-496",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ }
+]

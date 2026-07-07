@@ -1,0 +1,7102 @@
+[
+ {
+  "id": "osce-001",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 1",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 23,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-001-s0",
+    "stationId": "osce-001",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-001-s1",
+    "stationId": "osce-001",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 1. Select the correct syringe. Patient John, age 23. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-001-s2",
+    "stationId": "osce-001",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-001-s3",
+    "stationId": "osce-001",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-001-s4",
+    "stationId": "osce-001",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-001-s5",
+    "stationId": "osce-001",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-001-s6",
+    "stationId": "osce-001",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-011",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 11",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 53,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-011-s0",
+    "stationId": "osce-011",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-011-s1",
+    "stationId": "osce-011",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 11. Select the correct syringe. Patient John, age 53. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-011-s2",
+    "stationId": "osce-011",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-011-s3",
+    "stationId": "osce-011",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-011-s4",
+    "stationId": "osce-011",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-011-s5",
+    "stationId": "osce-011",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-011-s6",
+    "stationId": "osce-011",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-021",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 21",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 22,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-021-s0",
+    "stationId": "osce-021",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-021-s1",
+    "stationId": "osce-021",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 21. Select the correct syringe. Patient John, age 22. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-021-s2",
+    "stationId": "osce-021",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-021-s3",
+    "stationId": "osce-021",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-021-s4",
+    "stationId": "osce-021",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-021-s5",
+    "stationId": "osce-021",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-021-s6",
+    "stationId": "osce-021",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-031",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 31",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 52,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-031-s0",
+    "stationId": "osce-031",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-031-s1",
+    "stationId": "osce-031",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 31. Select the correct syringe. Patient John, age 52. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-031-s2",
+    "stationId": "osce-031",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-031-s3",
+    "stationId": "osce-031",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-031-s4",
+    "stationId": "osce-031",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-031-s5",
+    "stationId": "osce-031",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-031-s6",
+    "stationId": "osce-031",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-041",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 41",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 21,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-041-s0",
+    "stationId": "osce-041",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-041-s1",
+    "stationId": "osce-041",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 41. Select the correct syringe. Patient John, age 21. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-041-s2",
+    "stationId": "osce-041",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-041-s3",
+    "stationId": "osce-041",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-041-s4",
+    "stationId": "osce-041",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-041-s5",
+    "stationId": "osce-041",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-041-s6",
+    "stationId": "osce-041",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-051",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 51",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 51,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-051-s0",
+    "stationId": "osce-051",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-051-s1",
+    "stationId": "osce-051",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 51. Select the correct syringe. Patient John, age 51. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-051-s2",
+    "stationId": "osce-051",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-051-s3",
+    "stationId": "osce-051",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-051-s4",
+    "stationId": "osce-051",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-051-s5",
+    "stationId": "osce-051",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-051-s6",
+    "stationId": "osce-051",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-061",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 61",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 20,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-061-s0",
+    "stationId": "osce-061",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-061-s1",
+    "stationId": "osce-061",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 61. Select the correct syringe. Patient John, age 20. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-061-s2",
+    "stationId": "osce-061",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-061-s3",
+    "stationId": "osce-061",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-061-s4",
+    "stationId": "osce-061",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-061-s5",
+    "stationId": "osce-061",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-061-s6",
+    "stationId": "osce-061",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-071",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 71",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 50,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-071-s0",
+    "stationId": "osce-071",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-071-s1",
+    "stationId": "osce-071",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 71. Select the correct syringe. Patient John, age 50. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-071-s2",
+    "stationId": "osce-071",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-071-s3",
+    "stationId": "osce-071",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-071-s4",
+    "stationId": "osce-071",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-071-s5",
+    "stationId": "osce-071",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-071-s6",
+    "stationId": "osce-071",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-081",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 81",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 80,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-081-s0",
+    "stationId": "osce-081",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-081-s1",
+    "stationId": "osce-081",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 81. Select the correct syringe. Patient John, age 80. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-081-s2",
+    "stationId": "osce-081",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-081-s3",
+    "stationId": "osce-081",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-081-s4",
+    "stationId": "osce-081",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-081-s5",
+    "stationId": "osce-081",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-081-s6",
+    "stationId": "osce-081",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-091",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 91",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 49,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-091-s0",
+    "stationId": "osce-091",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-091-s1",
+    "stationId": "osce-091",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 91. Select the correct syringe. Patient John, age 49. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-091-s2",
+    "stationId": "osce-091",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-091-s3",
+    "stationId": "osce-091",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-091-s4",
+    "stationId": "osce-091",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-091-s5",
+    "stationId": "osce-091",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-091-s6",
+    "stationId": "osce-091",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-101",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 101",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 79,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-101-s0",
+    "stationId": "osce-101",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-101-s1",
+    "stationId": "osce-101",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 101. Select the correct syringe. Patient John, age 79. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-101-s2",
+    "stationId": "osce-101",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-101-s3",
+    "stationId": "osce-101",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-101-s4",
+    "stationId": "osce-101",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-101-s5",
+    "stationId": "osce-101",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-101-s6",
+    "stationId": "osce-101",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-111",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 111",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 48,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-111-s0",
+    "stationId": "osce-111",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-111-s1",
+    "stationId": "osce-111",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 111. Select the correct syringe. Patient John, age 48. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-111-s2",
+    "stationId": "osce-111",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-111-s3",
+    "stationId": "osce-111",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-111-s4",
+    "stationId": "osce-111",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-111-s5",
+    "stationId": "osce-111",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-111-s6",
+    "stationId": "osce-111",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-121",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 121",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 78,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-121-s0",
+    "stationId": "osce-121",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-121-s1",
+    "stationId": "osce-121",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 121. Select the correct syringe. Patient John, age 78. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-121-s2",
+    "stationId": "osce-121",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-121-s3",
+    "stationId": "osce-121",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-121-s4",
+    "stationId": "osce-121",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-121-s5",
+    "stationId": "osce-121",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-121-s6",
+    "stationId": "osce-121",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-131",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 131",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 47,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-131-s0",
+    "stationId": "osce-131",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-131-s1",
+    "stationId": "osce-131",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 131. Select the correct syringe. Patient John, age 47. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-131-s2",
+    "stationId": "osce-131",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-131-s3",
+    "stationId": "osce-131",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-131-s4",
+    "stationId": "osce-131",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-131-s5",
+    "stationId": "osce-131",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-131-s6",
+    "stationId": "osce-131",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-141",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 141",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 77,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-141-s0",
+    "stationId": "osce-141",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-141-s1",
+    "stationId": "osce-141",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 141. Select the correct syringe. Patient John, age 77. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-141-s2",
+    "stationId": "osce-141",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-141-s3",
+    "stationId": "osce-141",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-141-s4",
+    "stationId": "osce-141",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-141-s5",
+    "stationId": "osce-141",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-141-s6",
+    "stationId": "osce-141",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-151",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 151",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 46,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-151-s0",
+    "stationId": "osce-151",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-151-s1",
+    "stationId": "osce-151",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 151. Select the correct syringe. Patient John, age 46. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-151-s2",
+    "stationId": "osce-151",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-151-s3",
+    "stationId": "osce-151",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-151-s4",
+    "stationId": "osce-151",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-151-s5",
+    "stationId": "osce-151",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-151-s6",
+    "stationId": "osce-151",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-161",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 161",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 76,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-161-s0",
+    "stationId": "osce-161",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-161-s1",
+    "stationId": "osce-161",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 161. Select the correct syringe. Patient John, age 76. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-161-s2",
+    "stationId": "osce-161",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-161-s3",
+    "stationId": "osce-161",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-161-s4",
+    "stationId": "osce-161",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-161-s5",
+    "stationId": "osce-161",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-161-s6",
+    "stationId": "osce-161",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-171",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 171",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 45,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-171-s0",
+    "stationId": "osce-171",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-171-s1",
+    "stationId": "osce-171",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 171. Select the correct syringe. Patient John, age 45. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-171-s2",
+    "stationId": "osce-171",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-171-s3",
+    "stationId": "osce-171",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-171-s4",
+    "stationId": "osce-171",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-171-s5",
+    "stationId": "osce-171",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-171-s6",
+    "stationId": "osce-171",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-181",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 181",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 75,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-181-s0",
+    "stationId": "osce-181",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-181-s1",
+    "stationId": "osce-181",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 181. Select the correct syringe. Patient John, age 75. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-181-s2",
+    "stationId": "osce-181",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-181-s3",
+    "stationId": "osce-181",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-181-s4",
+    "stationId": "osce-181",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-181-s5",
+    "stationId": "osce-181",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-181-s6",
+    "stationId": "osce-181",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-191",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 191",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 44,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-191-s0",
+    "stationId": "osce-191",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-191-s1",
+    "stationId": "osce-191",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 191. Select the correct syringe. Patient John, age 44. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-191-s2",
+    "stationId": "osce-191",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-191-s3",
+    "stationId": "osce-191",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-191-s4",
+    "stationId": "osce-191",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-191-s5",
+    "stationId": "osce-191",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-191-s6",
+    "stationId": "osce-191",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-201",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 201",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 74,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-201-s0",
+    "stationId": "osce-201",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-201-s1",
+    "stationId": "osce-201",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 201. Select the correct syringe. Patient John, age 74. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-201-s2",
+    "stationId": "osce-201",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-201-s3",
+    "stationId": "osce-201",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-201-s4",
+    "stationId": "osce-201",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-201-s5",
+    "stationId": "osce-201",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-201-s6",
+    "stationId": "osce-201",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-211",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 211",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 43,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-211-s0",
+    "stationId": "osce-211",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-211-s1",
+    "stationId": "osce-211",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 211. Select the correct syringe. Patient John, age 43. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-211-s2",
+    "stationId": "osce-211",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-211-s3",
+    "stationId": "osce-211",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-211-s4",
+    "stationId": "osce-211",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-211-s5",
+    "stationId": "osce-211",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-211-s6",
+    "stationId": "osce-211",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-221",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 221",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 73,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-221-s0",
+    "stationId": "osce-221",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-221-s1",
+    "stationId": "osce-221",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 221. Select the correct syringe. Patient John, age 73. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-221-s2",
+    "stationId": "osce-221",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-221-s3",
+    "stationId": "osce-221",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-221-s4",
+    "stationId": "osce-221",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-221-s5",
+    "stationId": "osce-221",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-221-s6",
+    "stationId": "osce-221",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-231",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 231",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 42,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-231-s0",
+    "stationId": "osce-231",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-231-s1",
+    "stationId": "osce-231",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 231. Select the correct syringe. Patient John, age 42. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-231-s2",
+    "stationId": "osce-231",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-231-s3",
+    "stationId": "osce-231",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-231-s4",
+    "stationId": "osce-231",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-231-s5",
+    "stationId": "osce-231",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-231-s6",
+    "stationId": "osce-231",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-241",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 241",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 72,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-241-s0",
+    "stationId": "osce-241",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-241-s1",
+    "stationId": "osce-241",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 241. Select the correct syringe. Patient John, age 72. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-241-s2",
+    "stationId": "osce-241",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-241-s3",
+    "stationId": "osce-241",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-241-s4",
+    "stationId": "osce-241",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-241-s5",
+    "stationId": "osce-241",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-241-s6",
+    "stationId": "osce-241",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-251",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 251",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 41,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-251-s0",
+    "stationId": "osce-251",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-251-s1",
+    "stationId": "osce-251",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 251. Select the correct syringe. Patient John, age 41. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-251-s2",
+    "stationId": "osce-251",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-251-s3",
+    "stationId": "osce-251",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-251-s4",
+    "stationId": "osce-251",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-251-s5",
+    "stationId": "osce-251",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-251-s6",
+    "stationId": "osce-251",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-261",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 261",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 71,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-261-s0",
+    "stationId": "osce-261",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-261-s1",
+    "stationId": "osce-261",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 261. Select the correct syringe. Patient John, age 71. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-261-s2",
+    "stationId": "osce-261",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-261-s3",
+    "stationId": "osce-261",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-261-s4",
+    "stationId": "osce-261",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-261-s5",
+    "stationId": "osce-261",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-261-s6",
+    "stationId": "osce-261",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-271",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 271",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 40,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-271-s0",
+    "stationId": "osce-271",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-271-s1",
+    "stationId": "osce-271",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 271. Select the correct syringe. Patient John, age 40. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-271-s2",
+    "stationId": "osce-271",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-271-s3",
+    "stationId": "osce-271",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-271-s4",
+    "stationId": "osce-271",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-271-s5",
+    "stationId": "osce-271",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-271-s6",
+    "stationId": "osce-271",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-281",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 281",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 70,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-281-s0",
+    "stationId": "osce-281",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-281-s1",
+    "stationId": "osce-281",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 281. Select the correct syringe. Patient John, age 70. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-281-s2",
+    "stationId": "osce-281",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-281-s3",
+    "stationId": "osce-281",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-281-s4",
+    "stationId": "osce-281",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-281-s5",
+    "stationId": "osce-281",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-281-s6",
+    "stationId": "osce-281",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-291",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 291",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 39,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-291-s0",
+    "stationId": "osce-291",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-291-s1",
+    "stationId": "osce-291",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 291. Select the correct syringe. Patient John, age 39. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-291-s2",
+    "stationId": "osce-291",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-291-s3",
+    "stationId": "osce-291",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-291-s4",
+    "stationId": "osce-291",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-291-s5",
+    "stationId": "osce-291",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-291-s6",
+    "stationId": "osce-291",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-301",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 301",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 69,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-301-s0",
+    "stationId": "osce-301",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-301-s1",
+    "stationId": "osce-301",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 301. Select the correct syringe. Patient John, age 69. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-301-s2",
+    "stationId": "osce-301",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-301-s3",
+    "stationId": "osce-301",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-301-s4",
+    "stationId": "osce-301",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-301-s5",
+    "stationId": "osce-301",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-301-s6",
+    "stationId": "osce-301",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-311",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 311",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 38,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-311-s0",
+    "stationId": "osce-311",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-311-s1",
+    "stationId": "osce-311",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 311. Select the correct syringe. Patient John, age 38. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-311-s2",
+    "stationId": "osce-311",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-311-s3",
+    "stationId": "osce-311",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-311-s4",
+    "stationId": "osce-311",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-311-s5",
+    "stationId": "osce-311",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-311-s6",
+    "stationId": "osce-311",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-321",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 321",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 68,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-321-s0",
+    "stationId": "osce-321",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-321-s1",
+    "stationId": "osce-321",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 321. Select the correct syringe. Patient John, age 68. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-321-s2",
+    "stationId": "osce-321",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-321-s3",
+    "stationId": "osce-321",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-321-s4",
+    "stationId": "osce-321",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-321-s5",
+    "stationId": "osce-321",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-321-s6",
+    "stationId": "osce-321",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-331",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 331",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 37,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-331-s0",
+    "stationId": "osce-331",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-331-s1",
+    "stationId": "osce-331",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 331. Select the correct syringe. Patient John, age 37. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-331-s2",
+    "stationId": "osce-331",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-331-s3",
+    "stationId": "osce-331",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-331-s4",
+    "stationId": "osce-331",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-331-s5",
+    "stationId": "osce-331",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-331-s6",
+    "stationId": "osce-331",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-341",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 341",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 67,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-341-s0",
+    "stationId": "osce-341",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-341-s1",
+    "stationId": "osce-341",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 341. Select the correct syringe. Patient John, age 67. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-341-s2",
+    "stationId": "osce-341",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-341-s3",
+    "stationId": "osce-341",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-341-s4",
+    "stationId": "osce-341",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-341-s5",
+    "stationId": "osce-341",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-341-s6",
+    "stationId": "osce-341",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-351",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 351",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 36,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-351-s0",
+    "stationId": "osce-351",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-351-s1",
+    "stationId": "osce-351",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 351. Select the correct syringe. Patient John, age 36. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-351-s2",
+    "stationId": "osce-351",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-351-s3",
+    "stationId": "osce-351",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-351-s4",
+    "stationId": "osce-351",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-351-s5",
+    "stationId": "osce-351",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-351-s6",
+    "stationId": "osce-351",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-361",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 361",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 66,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-361-s0",
+    "stationId": "osce-361",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-361-s1",
+    "stationId": "osce-361",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 361. Select the correct syringe. Patient John, age 66. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-361-s2",
+    "stationId": "osce-361",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-361-s3",
+    "stationId": "osce-361",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-361-s4",
+    "stationId": "osce-361",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-361-s5",
+    "stationId": "osce-361",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-361-s6",
+    "stationId": "osce-361",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-371",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 371",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 35,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-371-s0",
+    "stationId": "osce-371",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-371-s1",
+    "stationId": "osce-371",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 371. Select the correct syringe. Patient John, age 35. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-371-s2",
+    "stationId": "osce-371",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-371-s3",
+    "stationId": "osce-371",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      },
+      {
+       "id": "blood_giving_set",
+       "label": "Blood Giving Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-371-s4",
+    "stationId": "osce-371",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-371-s5",
+    "stationId": "osce-371",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-371-s6",
+    "stationId": "osce-371",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-381",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 381",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 65,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-381-s0",
+    "stationId": "osce-381",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-381-s1",
+    "stationId": "osce-381",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 381. Select the correct syringe. Patient John, age 65. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-381-s2",
+    "stationId": "osce-381",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-381-s3",
+    "stationId": "osce-381",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-381-s4",
+    "stationId": "osce-381",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-381-s5",
+    "stationId": "osce-381",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-381-s6",
+    "stationId": "osce-381",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-391",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 391",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 34,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-391-s0",
+    "stationId": "osce-391",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-391-s1",
+    "stationId": "osce-391",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 391. Select the correct syringe. Patient John, age 34. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-391-s2",
+    "stationId": "osce-391",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-391-s3",
+    "stationId": "osce-391",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-391-s4",
+    "stationId": "osce-391",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-391-s5",
+    "stationId": "osce-391",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-391-s6",
+    "stationId": "osce-391",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-401",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 401",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 64,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-401-s0",
+    "stationId": "osce-401",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-401-s1",
+    "stationId": "osce-401",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 401. Select the correct syringe. Patient John, age 64. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-401-s2",
+    "stationId": "osce-401",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-401-s3",
+    "stationId": "osce-401",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "alcohol_swab",
+       "label": "Alcohol Swab",
+       "correct": false
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-401-s4",
+    "stationId": "osce-401",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-401-s5",
+    "stationId": "osce-401",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-401-s6",
+    "stationId": "osce-401",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-411",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 411",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 33,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-411-s0",
+    "stationId": "osce-411",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-411-s1",
+    "stationId": "osce-411",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 411. Select the correct syringe. Patient John, age 33. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-411-s2",
+    "stationId": "osce-411",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-411-s3",
+    "stationId": "osce-411",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "nasogastric_tube",
+       "label": "Nasogastric Tube",
+       "correct": false
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-411-s4",
+    "stationId": "osce-411",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-411-s5",
+    "stationId": "osce-411",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-411-s6",
+    "stationId": "osce-411",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-421",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 421",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 63,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-421-s0",
+    "stationId": "osce-421",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-421-s1",
+    "stationId": "osce-421",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 421. Select the correct syringe. Patient John, age 63. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-421-s2",
+    "stationId": "osce-421",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-421-s3",
+    "stationId": "osce-421",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "foley_catheter",
+       "label": "Foley Catheter",
+       "correct": false
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-421-s4",
+    "stationId": "osce-421",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-421-s5",
+    "stationId": "osce-421",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-421-s6",
+    "stationId": "osce-421",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-431",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 431",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 32,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-431-s0",
+    "stationId": "osce-431",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-431-s1",
+    "stationId": "osce-431",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 431. Select the correct syringe. Patient John, age 32. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-431-s2",
+    "stationId": "osce-431",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-431-s3",
+    "stationId": "osce-431",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "gauze_roll",
+       "label": "Gauze Roll",
+       "correct": false
+      },
+      {
+       "id": "cannula_20g",
+       "label": "20G Cannula",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-431-s4",
+    "stationId": "osce-431",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-431-s5",
+    "stationId": "osce-431",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-431-s6",
+    "stationId": "osce-431",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-441",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 441",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 62,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-441-s0",
+    "stationId": "osce-441",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-441-s1",
+    "stationId": "osce-441",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 441. Select the correct syringe. Patient John, age 62. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-441-s2",
+    "stationId": "osce-441",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-441-s3",
+    "stationId": "osce-441",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "patient_chart",
+       "label": "Patient Chart",
+       "correct": false
+      },
+      {
+       "id": "suction_catheter",
+       "label": "Suction Catheter",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-441-s4",
+    "stationId": "osce-441",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-441-s5",
+    "stationId": "osce-441",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-441-s6",
+    "stationId": "osce-441",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-451",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 451",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 31,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-451-s0",
+    "stationId": "osce-451",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-451-s1",
+    "stationId": "osce-451",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 451. Select the correct syringe. Patient John, age 31. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-451-s2",
+    "stationId": "osce-451",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-451-s3",
+    "stationId": "osce-451",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "sterile_dressing_kit",
+       "label": "Sterile Dressing Kit",
+       "correct": false
+      },
+      {
+       "id": "iv_infusion_set",
+       "label": "IV Infusion Set",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-451-s4",
+    "stationId": "osce-451",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-451-s5",
+    "stationId": "osce-451",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-451-s6",
+    "stationId": "osce-451",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-461",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 461",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 61,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-461-s0",
+    "stationId": "osce-461",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-461-s1",
+    "stationId": "osce-461",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 461. Select the correct syringe. Patient John, age 61. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-461-s2",
+    "stationId": "osce-461",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-461-s3",
+    "stationId": "osce-461",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-461-s4",
+    "stationId": "osce-461",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-461-s5",
+    "stationId": "osce-461",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-461-s6",
+    "stationId": "osce-461",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-471",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 471",
+  "task": "Select the correct syringe.",
+  "difficulty": "Hard",
+  "timeLimitSec": 180,
+  "patient": {
+   "name": "John",
+   "age": 30,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-471-s0",
+    "stationId": "osce-471",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 180
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-471-s1",
+    "stationId": "osce-471",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 471. Select the correct syringe. Patient John, age 30. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-471-s2",
+    "stationId": "osce-471",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-471-s3",
+    "stationId": "osce-471",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-471-s4",
+    "stationId": "osce-471",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-471-s5",
+    "stationId": "osce-471",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-471-s6",
+    "stationId": "osce-471",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-481",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 481",
+  "task": "Select the correct syringe.",
+  "difficulty": "Easy",
+  "timeLimitSec": 300,
+  "patient": {
+   "name": "John",
+   "age": 60,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-481-s0",
+    "stationId": "osce-481",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 300
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-481-s1",
+    "stationId": "osce-481",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 481. Select the correct syringe. Patient John, age 60. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-481-s2",
+    "stationId": "osce-481",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-481-s3",
+    "stationId": "osce-481",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "tourniquet",
+       "label": "Tourniquet",
+       "correct": false
+      },
+      {
+       "id": "bp_cuff",
+       "label": "BP Cuff",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-481-s4",
+    "stationId": "osce-481",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-481-s5",
+    "stationId": "osce-481",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-481-s6",
+    "stationId": "osce-481",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ },
+ {
+  "id": "osce-491",
+  "category": "medication-administration",
+  "title": "Medication Administration Station 491",
+  "task": "Select the correct syringe.",
+  "difficulty": "Medium",
+  "timeLimitSec": 240,
+  "patient": {
+   "name": "John",
+   "age": 29,
+   "gender": "Male"
+  },
+  "steps": [
+   {
+    "id": "osce-491-s0",
+    "stationId": "osce-491",
+    "orderIndex": 0,
+    "pluginKey": "timer.countdown",
+    "pluginVersion": 1,
+    "config": {
+     "seconds": 240
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-491-s1",
+    "stationId": "osce-491",
+    "orderIndex": 1,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "Station 491. Select the correct syringe. Patient John, age 29. Follow standard precautions."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-491-s2",
+    "stationId": "osce-491",
+    "orderIndex": 2,
+    "pluginKey": "patient.card",
+    "pluginVersion": 1,
+    "config": {
+     "requireConfirm": true
+    },
+    "marksAvailable": 1
+   },
+   {
+    "id": "osce-491-s3",
+    "stationId": "osce-491",
+    "orderIndex": 3,
+    "pluginKey": "equipment.select",
+    "pluginVersion": 1,
+    "config": {
+     "prompt": "Select the correct equipment: Select the correct syringe.",
+     "options": [
+      {
+       "id": "syringe_3ml",
+       "label": "3 ml Syringe",
+       "correct": true
+      },
+      {
+       "id": "insulin_syringe",
+       "label": "Insulin Syringe",
+       "correct": false,
+       "critical": true,
+       "feedback": "Critical error: an insulin syringe is calibrated in units, not ml — using it for a standard medication risks a serious dosing error."
+      },
+      {
+       "id": "aed",
+       "label": "AED",
+       "correct": false
+      },
+      {
+       "id": "oxygen_mask",
+       "label": "Oxygen Mask",
+       "correct": false
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-491-s4",
+    "stationId": "osce-491",
+    "orderIndex": 4,
+    "pluginKey": "injection.perform",
+    "pluginVersion": 1,
+    "config": {
+     "correctSite": "Deltoid",
+     "sites": [
+      {
+       "site": "Deltoid",
+       "label": "Deltoid (upper arm)",
+       "x": 71,
+       "y": 26
+      },
+      {
+       "site": "Vastus Lateralis",
+       "label": "Vastus lateralis (thigh)",
+       "x": 58,
+       "y": 65
+      },
+      {
+       "site": "Abdomen",
+       "label": "Abdomen",
+       "x": 50,
+       "y": 44
+      },
+      {
+       "site": "Forearm",
+       "label": "Forearm",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    "marksAvailable": 2
+   },
+   {
+    "id": "osce-491-s5",
+    "stationId": "osce-491",
+    "orderIndex": 5,
+    "pluginKey": "voice.play",
+    "pluginVersion": 1,
+    "config": {
+     "transcript": "After completing the task, Verify the medication order. Ensure patient safety before finishing."
+    },
+    "marksAvailable": 0
+   },
+   {
+    "id": "osce-491-s6",
+    "stationId": "osce-491",
+    "orderIndex": 6,
+    "pluginKey": "score.summary",
+    "pluginVersion": 1,
+    "config": {
+     "passMarkPct": 70
+    },
+    "marksAvailable": 0
+   }
+  ]
+ }
+]

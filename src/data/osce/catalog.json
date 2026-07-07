@@ -1,0 +1,3002 @@
+[
+ {
+  "id": "osce-001",
+  "title": "Medication Administration Station 1",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-002",
+  "title": "Vital Signs Station 2",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-003",
+  "title": "Cannulation Station 3",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-004",
+  "title": "Wound Dressing Station 4",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-005",
+  "title": "Catheterization Station 5",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-006",
+  "title": "Blood Transfusion Station 6",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-007",
+  "title": "IV Medication Station 7",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-008",
+  "title": "Patient Communication Station 8",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-009",
+  "title": "Emergency Response (BLS/CPR) Station 9",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-010",
+  "title": "Documentation Station 10",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-011",
+  "title": "Medication Administration Station 11",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-012",
+  "title": "Vital Signs Station 12",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-013",
+  "title": "Cannulation Station 13",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-014",
+  "title": "Wound Dressing Station 14",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-015",
+  "title": "Catheterization Station 15",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-016",
+  "title": "Blood Transfusion Station 16",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-017",
+  "title": "IV Medication Station 17",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-018",
+  "title": "Patient Communication Station 18",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-019",
+  "title": "Emergency Response (BLS/CPR) Station 19",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-020",
+  "title": "Documentation Station 20",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-021",
+  "title": "Medication Administration Station 21",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-022",
+  "title": "Vital Signs Station 22",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-023",
+  "title": "Cannulation Station 23",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-024",
+  "title": "Wound Dressing Station 24",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-025",
+  "title": "Catheterization Station 25",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-026",
+  "title": "Blood Transfusion Station 26",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-027",
+  "title": "IV Medication Station 27",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-028",
+  "title": "Patient Communication Station 28",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-029",
+  "title": "Emergency Response (BLS/CPR) Station 29",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-030",
+  "title": "Documentation Station 30",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-031",
+  "title": "Medication Administration Station 31",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-032",
+  "title": "Vital Signs Station 32",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-033",
+  "title": "Cannulation Station 33",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-034",
+  "title": "Wound Dressing Station 34",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-035",
+  "title": "Catheterization Station 35",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-036",
+  "title": "Blood Transfusion Station 36",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-037",
+  "title": "IV Medication Station 37",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-038",
+  "title": "Patient Communication Station 38",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-039",
+  "title": "Emergency Response (BLS/CPR) Station 39",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-040",
+  "title": "Documentation Station 40",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-041",
+  "title": "Medication Administration Station 41",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-042",
+  "title": "Vital Signs Station 42",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-043",
+  "title": "Cannulation Station 43",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-044",
+  "title": "Wound Dressing Station 44",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-045",
+  "title": "Catheterization Station 45",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-046",
+  "title": "Blood Transfusion Station 46",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-047",
+  "title": "IV Medication Station 47",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-048",
+  "title": "Patient Communication Station 48",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-049",
+  "title": "Emergency Response (BLS/CPR) Station 49",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-050",
+  "title": "Documentation Station 50",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-051",
+  "title": "Medication Administration Station 51",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-052",
+  "title": "Vital Signs Station 52",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-053",
+  "title": "Cannulation Station 53",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-054",
+  "title": "Wound Dressing Station 54",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-055",
+  "title": "Catheterization Station 55",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-056",
+  "title": "Blood Transfusion Station 56",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-057",
+  "title": "IV Medication Station 57",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-058",
+  "title": "Patient Communication Station 58",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-059",
+  "title": "Emergency Response (BLS/CPR) Station 59",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-060",
+  "title": "Documentation Station 60",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-061",
+  "title": "Medication Administration Station 61",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-062",
+  "title": "Vital Signs Station 62",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-063",
+  "title": "Cannulation Station 63",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-064",
+  "title": "Wound Dressing Station 64",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-065",
+  "title": "Catheterization Station 65",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-066",
+  "title": "Blood Transfusion Station 66",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-067",
+  "title": "IV Medication Station 67",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-068",
+  "title": "Patient Communication Station 68",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-069",
+  "title": "Emergency Response (BLS/CPR) Station 69",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-070",
+  "title": "Documentation Station 70",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-071",
+  "title": "Medication Administration Station 71",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-072",
+  "title": "Vital Signs Station 72",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-073",
+  "title": "Cannulation Station 73",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-074",
+  "title": "Wound Dressing Station 74",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-075",
+  "title": "Catheterization Station 75",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-076",
+  "title": "Blood Transfusion Station 76",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-077",
+  "title": "IV Medication Station 77",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-078",
+  "title": "Patient Communication Station 78",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-079",
+  "title": "Emergency Response (BLS/CPR) Station 79",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-080",
+  "title": "Documentation Station 80",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-081",
+  "title": "Medication Administration Station 81",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-082",
+  "title": "Vital Signs Station 82",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-083",
+  "title": "Cannulation Station 83",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-084",
+  "title": "Wound Dressing Station 84",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-085",
+  "title": "Catheterization Station 85",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-086",
+  "title": "Blood Transfusion Station 86",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-087",
+  "title": "IV Medication Station 87",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-088",
+  "title": "Patient Communication Station 88",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-089",
+  "title": "Emergency Response (BLS/CPR) Station 89",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-090",
+  "title": "Documentation Station 90",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-091",
+  "title": "Medication Administration Station 91",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-092",
+  "title": "Vital Signs Station 92",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-093",
+  "title": "Cannulation Station 93",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-094",
+  "title": "Wound Dressing Station 94",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-095",
+  "title": "Catheterization Station 95",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-096",
+  "title": "Blood Transfusion Station 96",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-097",
+  "title": "IV Medication Station 97",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-098",
+  "title": "Patient Communication Station 98",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-099",
+  "title": "Emergency Response (BLS/CPR) Station 99",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-100",
+  "title": "Documentation Station 100",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-101",
+  "title": "Medication Administration Station 101",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-102",
+  "title": "Vital Signs Station 102",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-103",
+  "title": "Cannulation Station 103",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-104",
+  "title": "Wound Dressing Station 104",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-105",
+  "title": "Catheterization Station 105",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-106",
+  "title": "Blood Transfusion Station 106",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-107",
+  "title": "IV Medication Station 107",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-108",
+  "title": "Patient Communication Station 108",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-109",
+  "title": "Emergency Response (BLS/CPR) Station 109",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-110",
+  "title": "Documentation Station 110",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-111",
+  "title": "Medication Administration Station 111",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-112",
+  "title": "Vital Signs Station 112",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-113",
+  "title": "Cannulation Station 113",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-114",
+  "title": "Wound Dressing Station 114",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-115",
+  "title": "Catheterization Station 115",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-116",
+  "title": "Blood Transfusion Station 116",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-117",
+  "title": "IV Medication Station 117",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-118",
+  "title": "Patient Communication Station 118",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-119",
+  "title": "Emergency Response (BLS/CPR) Station 119",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-120",
+  "title": "Documentation Station 120",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-121",
+  "title": "Medication Administration Station 121",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-122",
+  "title": "Vital Signs Station 122",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-123",
+  "title": "Cannulation Station 123",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-124",
+  "title": "Wound Dressing Station 124",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-125",
+  "title": "Catheterization Station 125",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-126",
+  "title": "Blood Transfusion Station 126",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-127",
+  "title": "IV Medication Station 127",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-128",
+  "title": "Patient Communication Station 128",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-129",
+  "title": "Emergency Response (BLS/CPR) Station 129",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-130",
+  "title": "Documentation Station 130",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-131",
+  "title": "Medication Administration Station 131",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-132",
+  "title": "Vital Signs Station 132",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-133",
+  "title": "Cannulation Station 133",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-134",
+  "title": "Wound Dressing Station 134",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-135",
+  "title": "Catheterization Station 135",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-136",
+  "title": "Blood Transfusion Station 136",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-137",
+  "title": "IV Medication Station 137",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-138",
+  "title": "Patient Communication Station 138",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-139",
+  "title": "Emergency Response (BLS/CPR) Station 139",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-140",
+  "title": "Documentation Station 140",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-141",
+  "title": "Medication Administration Station 141",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-142",
+  "title": "Vital Signs Station 142",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-143",
+  "title": "Cannulation Station 143",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-144",
+  "title": "Wound Dressing Station 144",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-145",
+  "title": "Catheterization Station 145",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-146",
+  "title": "Blood Transfusion Station 146",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-147",
+  "title": "IV Medication Station 147",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-148",
+  "title": "Patient Communication Station 148",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-149",
+  "title": "Emergency Response (BLS/CPR) Station 149",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-150",
+  "title": "Documentation Station 150",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-151",
+  "title": "Medication Administration Station 151",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-152",
+  "title": "Vital Signs Station 152",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-153",
+  "title": "Cannulation Station 153",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-154",
+  "title": "Wound Dressing Station 154",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-155",
+  "title": "Catheterization Station 155",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-156",
+  "title": "Blood Transfusion Station 156",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-157",
+  "title": "IV Medication Station 157",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-158",
+  "title": "Patient Communication Station 158",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-159",
+  "title": "Emergency Response (BLS/CPR) Station 159",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-160",
+  "title": "Documentation Station 160",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-161",
+  "title": "Medication Administration Station 161",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-162",
+  "title": "Vital Signs Station 162",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-163",
+  "title": "Cannulation Station 163",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-164",
+  "title": "Wound Dressing Station 164",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-165",
+  "title": "Catheterization Station 165",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-166",
+  "title": "Blood Transfusion Station 166",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-167",
+  "title": "IV Medication Station 167",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-168",
+  "title": "Patient Communication Station 168",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-169",
+  "title": "Emergency Response (BLS/CPR) Station 169",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-170",
+  "title": "Documentation Station 170",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-171",
+  "title": "Medication Administration Station 171",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-172",
+  "title": "Vital Signs Station 172",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-173",
+  "title": "Cannulation Station 173",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-174",
+  "title": "Wound Dressing Station 174",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-175",
+  "title": "Catheterization Station 175",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-176",
+  "title": "Blood Transfusion Station 176",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-177",
+  "title": "IV Medication Station 177",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-178",
+  "title": "Patient Communication Station 178",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-179",
+  "title": "Emergency Response (BLS/CPR) Station 179",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-180",
+  "title": "Documentation Station 180",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-181",
+  "title": "Medication Administration Station 181",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-182",
+  "title": "Vital Signs Station 182",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-183",
+  "title": "Cannulation Station 183",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-184",
+  "title": "Wound Dressing Station 184",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-185",
+  "title": "Catheterization Station 185",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-186",
+  "title": "Blood Transfusion Station 186",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-187",
+  "title": "IV Medication Station 187",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-188",
+  "title": "Patient Communication Station 188",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-189",
+  "title": "Emergency Response (BLS/CPR) Station 189",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-190",
+  "title": "Documentation Station 190",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-191",
+  "title": "Medication Administration Station 191",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-192",
+  "title": "Vital Signs Station 192",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-193",
+  "title": "Cannulation Station 193",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-194",
+  "title": "Wound Dressing Station 194",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-195",
+  "title": "Catheterization Station 195",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-196",
+  "title": "Blood Transfusion Station 196",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-197",
+  "title": "IV Medication Station 197",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-198",
+  "title": "Patient Communication Station 198",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-199",
+  "title": "Emergency Response (BLS/CPR) Station 199",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-200",
+  "title": "Documentation Station 200",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-201",
+  "title": "Medication Administration Station 201",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-202",
+  "title": "Vital Signs Station 202",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-203",
+  "title": "Cannulation Station 203",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-204",
+  "title": "Wound Dressing Station 204",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-205",
+  "title": "Catheterization Station 205",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-206",
+  "title": "Blood Transfusion Station 206",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-207",
+  "title": "IV Medication Station 207",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-208",
+  "title": "Patient Communication Station 208",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-209",
+  "title": "Emergency Response (BLS/CPR) Station 209",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-210",
+  "title": "Documentation Station 210",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-211",
+  "title": "Medication Administration Station 211",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-212",
+  "title": "Vital Signs Station 212",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-213",
+  "title": "Cannulation Station 213",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-214",
+  "title": "Wound Dressing Station 214",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-215",
+  "title": "Catheterization Station 215",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-216",
+  "title": "Blood Transfusion Station 216",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-217",
+  "title": "IV Medication Station 217",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-218",
+  "title": "Patient Communication Station 218",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-219",
+  "title": "Emergency Response (BLS/CPR) Station 219",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-220",
+  "title": "Documentation Station 220",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-221",
+  "title": "Medication Administration Station 221",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-222",
+  "title": "Vital Signs Station 222",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-223",
+  "title": "Cannulation Station 223",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-224",
+  "title": "Wound Dressing Station 224",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-225",
+  "title": "Catheterization Station 225",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-226",
+  "title": "Blood Transfusion Station 226",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-227",
+  "title": "IV Medication Station 227",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-228",
+  "title": "Patient Communication Station 228",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-229",
+  "title": "Emergency Response (BLS/CPR) Station 229",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-230",
+  "title": "Documentation Station 230",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-231",
+  "title": "Medication Administration Station 231",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-232",
+  "title": "Vital Signs Station 232",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-233",
+  "title": "Cannulation Station 233",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-234",
+  "title": "Wound Dressing Station 234",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-235",
+  "title": "Catheterization Station 235",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-236",
+  "title": "Blood Transfusion Station 236",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-237",
+  "title": "IV Medication Station 237",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-238",
+  "title": "Patient Communication Station 238",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-239",
+  "title": "Emergency Response (BLS/CPR) Station 239",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-240",
+  "title": "Documentation Station 240",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-241",
+  "title": "Medication Administration Station 241",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-242",
+  "title": "Vital Signs Station 242",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-243",
+  "title": "Cannulation Station 243",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-244",
+  "title": "Wound Dressing Station 244",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-245",
+  "title": "Catheterization Station 245",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-246",
+  "title": "Blood Transfusion Station 246",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-247",
+  "title": "IV Medication Station 247",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-248",
+  "title": "Patient Communication Station 248",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-249",
+  "title": "Emergency Response (BLS/CPR) Station 249",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-250",
+  "title": "Documentation Station 250",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-251",
+  "title": "Medication Administration Station 251",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-252",
+  "title": "Vital Signs Station 252",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-253",
+  "title": "Cannulation Station 253",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-254",
+  "title": "Wound Dressing Station 254",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-255",
+  "title": "Catheterization Station 255",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-256",
+  "title": "Blood Transfusion Station 256",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-257",
+  "title": "IV Medication Station 257",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-258",
+  "title": "Patient Communication Station 258",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-259",
+  "title": "Emergency Response (BLS/CPR) Station 259",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-260",
+  "title": "Documentation Station 260",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-261",
+  "title": "Medication Administration Station 261",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-262",
+  "title": "Vital Signs Station 262",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-263",
+  "title": "Cannulation Station 263",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-264",
+  "title": "Wound Dressing Station 264",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-265",
+  "title": "Catheterization Station 265",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-266",
+  "title": "Blood Transfusion Station 266",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-267",
+  "title": "IV Medication Station 267",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-268",
+  "title": "Patient Communication Station 268",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-269",
+  "title": "Emergency Response (BLS/CPR) Station 269",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-270",
+  "title": "Documentation Station 270",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-271",
+  "title": "Medication Administration Station 271",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-272",
+  "title": "Vital Signs Station 272",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-273",
+  "title": "Cannulation Station 273",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-274",
+  "title": "Wound Dressing Station 274",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-275",
+  "title": "Catheterization Station 275",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-276",
+  "title": "Blood Transfusion Station 276",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-277",
+  "title": "IV Medication Station 277",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-278",
+  "title": "Patient Communication Station 278",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-279",
+  "title": "Emergency Response (BLS/CPR) Station 279",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-280",
+  "title": "Documentation Station 280",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-281",
+  "title": "Medication Administration Station 281",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-282",
+  "title": "Vital Signs Station 282",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-283",
+  "title": "Cannulation Station 283",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-284",
+  "title": "Wound Dressing Station 284",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-285",
+  "title": "Catheterization Station 285",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-286",
+  "title": "Blood Transfusion Station 286",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-287",
+  "title": "IV Medication Station 287",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-288",
+  "title": "Patient Communication Station 288",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-289",
+  "title": "Emergency Response (BLS/CPR) Station 289",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-290",
+  "title": "Documentation Station 290",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-291",
+  "title": "Medication Administration Station 291",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-292",
+  "title": "Vital Signs Station 292",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-293",
+  "title": "Cannulation Station 293",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-294",
+  "title": "Wound Dressing Station 294",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-295",
+  "title": "Catheterization Station 295",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-296",
+  "title": "Blood Transfusion Station 296",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-297",
+  "title": "IV Medication Station 297",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-298",
+  "title": "Patient Communication Station 298",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-299",
+  "title": "Emergency Response (BLS/CPR) Station 299",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-300",
+  "title": "Documentation Station 300",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-301",
+  "title": "Medication Administration Station 301",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-302",
+  "title": "Vital Signs Station 302",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-303",
+  "title": "Cannulation Station 303",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-304",
+  "title": "Wound Dressing Station 304",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-305",
+  "title": "Catheterization Station 305",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-306",
+  "title": "Blood Transfusion Station 306",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-307",
+  "title": "IV Medication Station 307",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-308",
+  "title": "Patient Communication Station 308",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-309",
+  "title": "Emergency Response (BLS/CPR) Station 309",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-310",
+  "title": "Documentation Station 310",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-311",
+  "title": "Medication Administration Station 311",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-312",
+  "title": "Vital Signs Station 312",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-313",
+  "title": "Cannulation Station 313",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-314",
+  "title": "Wound Dressing Station 314",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-315",
+  "title": "Catheterization Station 315",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-316",
+  "title": "Blood Transfusion Station 316",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-317",
+  "title": "IV Medication Station 317",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-318",
+  "title": "Patient Communication Station 318",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-319",
+  "title": "Emergency Response (BLS/CPR) Station 319",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-320",
+  "title": "Documentation Station 320",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-321",
+  "title": "Medication Administration Station 321",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-322",
+  "title": "Vital Signs Station 322",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-323",
+  "title": "Cannulation Station 323",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-324",
+  "title": "Wound Dressing Station 324",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-325",
+  "title": "Catheterization Station 325",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-326",
+  "title": "Blood Transfusion Station 326",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-327",
+  "title": "IV Medication Station 327",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-328",
+  "title": "Patient Communication Station 328",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-329",
+  "title": "Emergency Response (BLS/CPR) Station 329",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-330",
+  "title": "Documentation Station 330",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-331",
+  "title": "Medication Administration Station 331",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-332",
+  "title": "Vital Signs Station 332",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-333",
+  "title": "Cannulation Station 333",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-334",
+  "title": "Wound Dressing Station 334",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-335",
+  "title": "Catheterization Station 335",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-336",
+  "title": "Blood Transfusion Station 336",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-337",
+  "title": "IV Medication Station 337",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-338",
+  "title": "Patient Communication Station 338",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-339",
+  "title": "Emergency Response (BLS/CPR) Station 339",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-340",
+  "title": "Documentation Station 340",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-341",
+  "title": "Medication Administration Station 341",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-342",
+  "title": "Vital Signs Station 342",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-343",
+  "title": "Cannulation Station 343",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-344",
+  "title": "Wound Dressing Station 344",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-345",
+  "title": "Catheterization Station 345",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-346",
+  "title": "Blood Transfusion Station 346",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-347",
+  "title": "IV Medication Station 347",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-348",
+  "title": "Patient Communication Station 348",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-349",
+  "title": "Emergency Response (BLS/CPR) Station 349",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-350",
+  "title": "Documentation Station 350",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-351",
+  "title": "Medication Administration Station 351",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-352",
+  "title": "Vital Signs Station 352",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-353",
+  "title": "Cannulation Station 353",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-354",
+  "title": "Wound Dressing Station 354",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-355",
+  "title": "Catheterization Station 355",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-356",
+  "title": "Blood Transfusion Station 356",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-357",
+  "title": "IV Medication Station 357",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-358",
+  "title": "Patient Communication Station 358",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-359",
+  "title": "Emergency Response (BLS/CPR) Station 359",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-360",
+  "title": "Documentation Station 360",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-361",
+  "title": "Medication Administration Station 361",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-362",
+  "title": "Vital Signs Station 362",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-363",
+  "title": "Cannulation Station 363",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-364",
+  "title": "Wound Dressing Station 364",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-365",
+  "title": "Catheterization Station 365",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-366",
+  "title": "Blood Transfusion Station 366",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-367",
+  "title": "IV Medication Station 367",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-368",
+  "title": "Patient Communication Station 368",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-369",
+  "title": "Emergency Response (BLS/CPR) Station 369",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-370",
+  "title": "Documentation Station 370",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-371",
+  "title": "Medication Administration Station 371",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-372",
+  "title": "Vital Signs Station 372",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-373",
+  "title": "Cannulation Station 373",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-374",
+  "title": "Wound Dressing Station 374",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-375",
+  "title": "Catheterization Station 375",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-376",
+  "title": "Blood Transfusion Station 376",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-377",
+  "title": "IV Medication Station 377",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-378",
+  "title": "Patient Communication Station 378",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-379",
+  "title": "Emergency Response (BLS/CPR) Station 379",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-380",
+  "title": "Documentation Station 380",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-381",
+  "title": "Medication Administration Station 381",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-382",
+  "title": "Vital Signs Station 382",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-383",
+  "title": "Cannulation Station 383",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-384",
+  "title": "Wound Dressing Station 384",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-385",
+  "title": "Catheterization Station 385",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-386",
+  "title": "Blood Transfusion Station 386",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-387",
+  "title": "IV Medication Station 387",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-388",
+  "title": "Patient Communication Station 388",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-389",
+  "title": "Emergency Response (BLS/CPR) Station 389",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-390",
+  "title": "Documentation Station 390",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-391",
+  "title": "Medication Administration Station 391",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-392",
+  "title": "Vital Signs Station 392",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-393",
+  "title": "Cannulation Station 393",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-394",
+  "title": "Wound Dressing Station 394",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-395",
+  "title": "Catheterization Station 395",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-396",
+  "title": "Blood Transfusion Station 396",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-397",
+  "title": "IV Medication Station 397",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-398",
+  "title": "Patient Communication Station 398",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-399",
+  "title": "Emergency Response (BLS/CPR) Station 399",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-400",
+  "title": "Documentation Station 400",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-401",
+  "title": "Medication Administration Station 401",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-402",
+  "title": "Vital Signs Station 402",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-403",
+  "title": "Cannulation Station 403",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-404",
+  "title": "Wound Dressing Station 404",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-405",
+  "title": "Catheterization Station 405",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-406",
+  "title": "Blood Transfusion Station 406",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-407",
+  "title": "IV Medication Station 407",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-408",
+  "title": "Patient Communication Station 408",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-409",
+  "title": "Emergency Response (BLS/CPR) Station 409",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-410",
+  "title": "Documentation Station 410",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-411",
+  "title": "Medication Administration Station 411",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-412",
+  "title": "Vital Signs Station 412",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-413",
+  "title": "Cannulation Station 413",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-414",
+  "title": "Wound Dressing Station 414",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-415",
+  "title": "Catheterization Station 415",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-416",
+  "title": "Blood Transfusion Station 416",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-417",
+  "title": "IV Medication Station 417",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-418",
+  "title": "Patient Communication Station 418",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-419",
+  "title": "Emergency Response (BLS/CPR) Station 419",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-420",
+  "title": "Documentation Station 420",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-421",
+  "title": "Medication Administration Station 421",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-422",
+  "title": "Vital Signs Station 422",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-423",
+  "title": "Cannulation Station 423",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-424",
+  "title": "Wound Dressing Station 424",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-425",
+  "title": "Catheterization Station 425",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-426",
+  "title": "Blood Transfusion Station 426",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-427",
+  "title": "IV Medication Station 427",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-428",
+  "title": "Patient Communication Station 428",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-429",
+  "title": "Emergency Response (BLS/CPR) Station 429",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-430",
+  "title": "Documentation Station 430",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-431",
+  "title": "Medication Administration Station 431",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-432",
+  "title": "Vital Signs Station 432",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-433",
+  "title": "Cannulation Station 433",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-434",
+  "title": "Wound Dressing Station 434",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-435",
+  "title": "Catheterization Station 435",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-436",
+  "title": "Blood Transfusion Station 436",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-437",
+  "title": "IV Medication Station 437",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-438",
+  "title": "Patient Communication Station 438",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-439",
+  "title": "Emergency Response (BLS/CPR) Station 439",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-440",
+  "title": "Documentation Station 440",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-441",
+  "title": "Medication Administration Station 441",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-442",
+  "title": "Vital Signs Station 442",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-443",
+  "title": "Cannulation Station 443",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-444",
+  "title": "Wound Dressing Station 444",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-445",
+  "title": "Catheterization Station 445",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-446",
+  "title": "Blood Transfusion Station 446",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-447",
+  "title": "IV Medication Station 447",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-448",
+  "title": "Patient Communication Station 448",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-449",
+  "title": "Emergency Response (BLS/CPR) Station 449",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-450",
+  "title": "Documentation Station 450",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-451",
+  "title": "Medication Administration Station 451",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-452",
+  "title": "Vital Signs Station 452",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-453",
+  "title": "Cannulation Station 453",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-454",
+  "title": "Wound Dressing Station 454",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-455",
+  "title": "Catheterization Station 455",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-456",
+  "title": "Blood Transfusion Station 456",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-457",
+  "title": "IV Medication Station 457",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-458",
+  "title": "Patient Communication Station 458",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-459",
+  "title": "Emergency Response (BLS/CPR) Station 459",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-460",
+  "title": "Documentation Station 460",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-461",
+  "title": "Medication Administration Station 461",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-462",
+  "title": "Vital Signs Station 462",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-463",
+  "title": "Cannulation Station 463",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-464",
+  "title": "Wound Dressing Station 464",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-465",
+  "title": "Catheterization Station 465",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-466",
+  "title": "Blood Transfusion Station 466",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-467",
+  "title": "IV Medication Station 467",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-468",
+  "title": "Patient Communication Station 468",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-469",
+  "title": "Emergency Response (BLS/CPR) Station 469",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-470",
+  "title": "Documentation Station 470",
+  "category": "documentation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-471",
+  "title": "Medication Administration Station 471",
+  "category": "medication-administration",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-472",
+  "title": "Vital Signs Station 472",
+  "category": "vital-signs",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-473",
+  "title": "Cannulation Station 473",
+  "category": "cannulation",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-474",
+  "title": "Wound Dressing Station 474",
+  "category": "wound-dressing",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-475",
+  "title": "Catheterization Station 475",
+  "category": "catheterization",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-476",
+  "title": "Blood Transfusion Station 476",
+  "category": "blood-transfusion",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-477",
+  "title": "IV Medication Station 477",
+  "category": "iv-medication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-478",
+  "title": "Patient Communication Station 478",
+  "category": "patient-communication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-479",
+  "title": "Emergency Response (BLS/CPR) Station 479",
+  "category": "emergency-response",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-480",
+  "title": "Documentation Station 480",
+  "category": "documentation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-481",
+  "title": "Medication Administration Station 481",
+  "category": "medication-administration",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-482",
+  "title": "Vital Signs Station 482",
+  "category": "vital-signs",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-483",
+  "title": "Cannulation Station 483",
+  "category": "cannulation",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-484",
+  "title": "Wound Dressing Station 484",
+  "category": "wound-dressing",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-485",
+  "title": "Catheterization Station 485",
+  "category": "catheterization",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-486",
+  "title": "Blood Transfusion Station 486",
+  "category": "blood-transfusion",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-487",
+  "title": "IV Medication Station 487",
+  "category": "iv-medication",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-488",
+  "title": "Patient Communication Station 488",
+  "category": "patient-communication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-489",
+  "title": "Emergency Response (BLS/CPR) Station 489",
+  "category": "emergency-response",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-490",
+  "title": "Documentation Station 490",
+  "category": "documentation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-491",
+  "title": "Medication Administration Station 491",
+  "category": "medication-administration",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-492",
+  "title": "Vital Signs Station 492",
+  "category": "vital-signs",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-493",
+  "title": "Cannulation Station 493",
+  "category": "cannulation",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-494",
+  "title": "Wound Dressing Station 494",
+  "category": "wound-dressing",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-495",
+  "title": "Catheterization Station 495",
+  "category": "catheterization",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-496",
+  "title": "Blood Transfusion Station 496",
+  "category": "blood-transfusion",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-497",
+  "title": "IV Medication Station 497",
+  "category": "iv-medication",
+  "difficulty": "Medium"
+ },
+ {
+  "id": "osce-498",
+  "title": "Patient Communication Station 498",
+  "category": "patient-communication",
+  "difficulty": "Hard"
+ },
+ {
+  "id": "osce-499",
+  "title": "Emergency Response (BLS/CPR) Station 499",
+  "category": "emergency-response",
+  "difficulty": "Easy"
+ },
+ {
+  "id": "osce-500",
+  "title": "Documentation Station 500",
+  "category": "documentation",
+  "difficulty": "Medium"
+ }
+]
